@@ -18,4 +18,5 @@ __pycache__
 *.tar.bz2
 *.tar
 
+phrases
 CUDA-Optimized
