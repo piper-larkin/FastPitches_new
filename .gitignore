@@ -1,0 +1,8 @@
+repos.cfg
+repos_init.cfg
+nvtool*
+PyTorch/SpeechSynthesis/FastPitch/tmp/
+PyTorch/SpeechSynthesis/FastPitch/output/
+PyTorch/SpeechSynthesis/FastPitch/cmudict/
+PyTorch/SpeechSynthesis/FastPitch/LSJ/
+PyTorch/SpeechSynthesis/FastPitch/LJSpeech-1.1/
