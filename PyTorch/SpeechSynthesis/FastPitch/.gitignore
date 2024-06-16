@@ -17,6 +17,6 @@ __pycache__
 *.wav
 *.tar.bz2
 *.tar
+*.png
 
 phrases
-CUDA-Optimized

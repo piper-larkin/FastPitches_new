@@ -2,10 +2,8 @@
 
 : ${WAVEGLOW:="pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt"}
 
-: ${FASTPITCH:="./output2/FastPitch_checkpoint_1000.pt"}  # Changed to trained baseline
-: ${BATCH_SIZE:=32}
-: ${PHRASES:="phrases/devset10.tsv"}
-: ${OUTPUT_DIR:="./output2/audio5_$(basename ${PHRASES} .tsv)"}      # changed dir name
+: ${BATCH_SIZE:=1}
+: ${OUTPUT_DIR:="./output3/vocoded1"}      # changed dir name
 : ${LOG_FILE:="$OUTPUT_DIR/nvlog_infer.json"}
 : ${AMP:=false}
 : ${TORCHSCRIPT:=false}
@@ -22,10 +20,10 @@
 echo -e "\nAMP=$AMP, batch_size=$BATCH_SIZE\n"
 
 ARGS=""
-ARGS+=" -i $PHRASES"
+ARGS+=" -i filelists/test_audio_mel_pitch.txt"
 ARGS+=" -o $OUTPUT_DIR"
 ARGS+=" --log-file $LOG_FILE"
-ARGS+=" --fastpitch $FASTPITCH"
+ARGS+=" --fastpitch SKIP"
 ARGS+=" --waveglow $WAVEGLOW"
 ARGS+=" --wn-channels 256"
 ARGS+=" --batch-size $BATCH_SIZE"
@@ -34,11 +32,11 @@ ARGS+=" --repeats $REPEATS"
 ARGS+=" --warmup-steps $WARMUP"
 ARGS+=" --speaker $SPEAKER"
 ARGS+=" --n-speakers $NUM_SPEAKERS"
+ARGS+=" --dataset-path audio/"
 [ "$CPU" = false ]          && ARGS+=" --cuda"
 [ "$CPU" = false ]          && ARGS+=" --cudnn-benchmark"
 [ "$AMP" = true ]           && ARGS+=" --amp"
 [ "$PHONE" = "true" ]       && ARGS+=" --p-arpabet 1.0"
-[ "$ENERGY" = "true" ]      && ARGS+=" --energy-conditioning"
 [ "$TORCHSCRIPT" = "true" ] && ARGS+=" --torchscript"
 
 mkdir -p "$OUTPUT_DIR"
