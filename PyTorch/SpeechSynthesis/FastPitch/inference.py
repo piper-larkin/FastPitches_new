@@ -189,9 +189,6 @@ def load_fields(fpath):
     if fpath.endswith('.tsv'):
         columns = lines[0].split('\t')
         fields = list(zip(*[t.split('\t') for t in lines[1:]]))
-    elif fpath.endswith('.txt'):    # added to fix fields['mel'] error 
-        columns = ['mels', 'pitch', 'text']
-        fields = list(zip(*[t.split('|') for t in lines[0:]]))
     else:
         columns = ['text']
         fields = [lines]
@@ -214,10 +211,10 @@ def prepare_input_sequence(fields, device, symbol_set, text_cleaners,
         print(tp.sequence_to_text(t.numpy()))
 
     if load_mels:
-        assert 'mels' in fields     # Changed from mel to mels in 6 places
-        fields['mels'] = [
-            torch.load(Path(dataset, fields['mels'][i])).t() for i in order]
-        fields['mel_lens'] = torch.LongTensor([t.size(0) for t in fields['mels']])
+        assert 'mel' in fields
+        fields['mel'] = [
+            torch.load(Path(dataset, fields['mel'][i])).t() for i in order]
+        fields['mel_lens'] = torch.LongTensor([t.size(0) for t in fields['mel']])
 
     if load_pitch:
         assert 'pitch' in fields
@@ -235,7 +232,7 @@ def prepare_input_sequence(fields, device, symbol_set, text_cleaners,
         for f in batch:
             if f == 'text':
                 batch[f] = pad_sequence(batch[f], batch_first=True)
-            elif f == 'mels' and load_mels:
+            elif f == 'mel' and load_mels:
                 batch[f] = pad_sequence(batch[f], batch_first=True).permute(0, 2, 1)
             elif f == 'pitch' and load_pitch:
                 batch[f] = pad_sequence(batch[f], batch_first=True)
@@ -381,7 +378,7 @@ def main():
         for b in batches:
             if generator is None:
                 log(rep, {'Synthesizing from ground truth mels': None})
-                mel, mel_lens = b['mels'], b['mel_lens']
+                mel, mel_lens = b['mel'], b['mel_lens']
             else:
                 with torch.no_grad(), gen_measures:
                     mel, mel_lens, *_ = generator(b['text'], **gen_kw)

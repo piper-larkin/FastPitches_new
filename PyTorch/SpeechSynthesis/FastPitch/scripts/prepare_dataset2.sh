@@ -5,7 +5,6 @@ set -e
 : ${DATA_DIR:=audio} # CHANGED
 : ${ARGS="--extract-mels"}
 
-# todo: change prepare_dataset.py to edited version?
 python prepare_dataset.py \
     --wav-text-filelists filelists/test_audio_text.txt \
     --n-workers 0 \

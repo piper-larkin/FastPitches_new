@@ -20,5 +20,5 @@ librosa.display.specshow(librosa.power_to_db(S, ref=numpy.max), x_axis='time', y
 plt.colorbar(format='%+2.0f dB')
 plt.title('Mel Spectrogram')
 plt.tight_layout()
-plt.savefig('mel_spectrogram_1994_2.png')
+plt.savefig('mel_spectrogram_1994_4.png')
 plt.show()

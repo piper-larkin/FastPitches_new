@@ -3,9 +3,9 @@
 : ${WAVEGLOW:="pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt"}
 
 : ${FASTPITCH:="./output2/FastPitch_checkpoint_1000.pt"}  # Changed to trained baseline
-: ${BATCH_SIZE:=32}
-: ${PHRASES:="phrases/devset10.tsv"}
-: ${OUTPUT_DIR:="./output2/audio5_$(basename ${PHRASES} .tsv)"}      # changed dir name
+: ${BATCH_SIZE:=32}  
+: ${PHRASES:="phrases/devset_1994.tsv"}    # was "phrases/devset10.tsv"
+: ${OUTPUT_DIR:="./output3/audio2_$(basename ${PHRASES} .tsv)"}      # changed dir name
 : ${LOG_FILE:="$OUTPUT_DIR/nvlog_infer.json"}
 : ${AMP:=false}
 : ${TORCHSCRIPT:=false}
