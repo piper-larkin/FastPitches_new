@@ -3,7 +3,7 @@
 : ${WAVEGLOW:="pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt"}
 
 : ${BATCH_SIZE:=32}     # No difference if 1 or 32 
-: ${OUTPUT_DIR:="./output3/vocoded12"}      # changed dir name
+: ${OUTPUT_DIR:="./output3/vocoded_3_wavs"}      # changed dir name
 : ${LOG_FILE:="$OUTPUT_DIR/nvlog_infer.json"}
 : ${AMP:=false}
 : ${TORCHSCRIPT:=false}
