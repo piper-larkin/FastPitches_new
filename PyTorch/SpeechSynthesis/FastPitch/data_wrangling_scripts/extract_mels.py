@@ -35,7 +35,7 @@ torch.save(S_dB_tensor, output_tensor_path)
 
 print(f"Mel spectrogram saved to {output_tensor_path}")
 
-# # Plot the Mel spectrogram
+# Plot the Mel spectrogram
 plt.figure(figsize=(10, 4))
 librosa.display.specshow(S_dB, sr=22050, hop_length=256, x_axis='time', y_axis='mel', fmax=8000, win_length=1024, n_fft=1024)
 plt.colorbar(format='%+2.0f dB')

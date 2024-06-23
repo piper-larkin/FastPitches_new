@@ -10,8 +10,8 @@ def change_sample_rate(input_wav_path, output_wav_path, new_sample_rate):
     torchaudio.save(output_wav_path, waveform, new_sample_rate)
 
 # Run
-input_wav_path = 'audio/wavs/1994_first_sentence.wav'
-output_wav_path = 'audio/wavs/1994_first_sentence_edit.wav'
+input_wav_path = 'audio/wavs/1948_last_sentence.wav'
+output_wav_path = 'audio/wavs/1948_last_sentence_edit.wav'
 new_sample_rate = 22050  # Desired sample rate
 
 change_sample_rate(input_wav_path, output_wav_path, new_sample_rate)

@@ -1,1 +1,2 @@
 wavs/1994_first_sentence_edit.wav|I am delighted to congratulate all of you on Young America's foundation's 15th annual National Conservative Student Conference.
+wavs/1948_last_sentence_edit.wav|Candidate for United States senator.
