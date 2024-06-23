@@ -40,6 +40,7 @@ import numpy as np
 import torch
 import torch.distributed as dist
 import wandb
+from wandb_osh.hooks import TriggerWandbSyncHook  # <-- New!
 from matplotlib import pyplot as plt
 from torch.nn.parallel import DistributedDataParallel
 from torch.utils.data import DataLoader
@@ -55,6 +56,7 @@ from fastpitch.data_function import batch_to_gpu, TTSCollate, TTSDataset
 from fastpitch.loss_function import FastPitchLoss
 from fastpitch.model import regulate_len
 
+trigger_sync = TriggerWandbSyncHook(communication_dir = "/work/tc062/tc062/plarkin/.wandb_osh_command_dir")  # <--- New!
 os.environ["WANDB_MODE"] = "offline"
 
 
@@ -469,6 +471,8 @@ def apply_ema_decay(model, ema_model, decay):
 def log(dictionary, rank):
     if rank == 0:
         wandb.log(dictionary)
+        trigger_sync()  # <-- New!
+
 
 
 def main():
@@ -513,11 +517,16 @@ def main():
     attention_kl_loss = AttentionBinarizationLoss()
 
     if args.local_rank == 0:
+        #changed dir from args.output 
+        # '/work/tc062/tc062/plarkin/wandb_output'
+        # '/work/tc062/tc062/plarkin/.wandb_osh_command_dir'
+
         wandb.init(project=args.project,
                    config=vars(args),
                    notes=args.experiment_desc,
-                   dir=args.output,
-                   magic=True
+                   dir='/work/tc062/tc062/plarkin/wandb_output',
+                   magic=True,
+                   mode="offline"
                    )
         print(f'Weights and Biases run name: {wandb.run.name}')
         wandb.watch(model, log='all')
