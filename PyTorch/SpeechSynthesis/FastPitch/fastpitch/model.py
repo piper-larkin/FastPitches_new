@@ -244,6 +244,16 @@ class FastPitch(nn.Module):
         (inputs, input_lens, mel_tgt, mel_lens, pitch_dense, energy_dense,
          speaker, attn_prior, audiopaths) = inputs
 
+        # print shapes of inputs
+        # print("inputs shape: ", inputs.shape)
+        # print("input_lens shape: ", input_lens.shape)
+        # print("mel_tgt shape: ", mel_tgt.shape)
+        # print("mel_lens shape: ", mel_lens.shape)
+        # print("pitch_dense shape: ", pitch_dense.shape)
+        # print("energy_dense shape: ", energy_dense.shape)
+        # print("attn_prior shape: ", attn_prior.shape)
+        # print("\n\n")
+
         mel_max_len = mel_tgt.size(2)
 
         # Calculate speaker embedding

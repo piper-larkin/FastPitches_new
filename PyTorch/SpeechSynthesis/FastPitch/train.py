@@ -529,7 +529,7 @@ def main():
                    mode="offline"
                    )
         print(f'Weights and Biases run name: {wandb.run.name}')
-        wandb.watch(model, log='all')
+        # wandb.watch(model, log='all')
 
     # Store pitch mean/std as params to translate from Hz during inference
     model.pitch_mean[0] = args.pitch_mean

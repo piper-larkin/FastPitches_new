@@ -8,14 +8,13 @@ import numpy as np
 # mels_path = 'LJSpeech-1.1/mels/LJ001-0002.pt'
 # mels_path = 'audio/mels/1948_last_sentence_edit.pt'
 # mels_path = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/test_LJ_reagan/mels/LJ001-0001.pt'
-mels_path ='/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/test_LJ_reagan/mels/reagan_1989_11_11_001.pt'
-
+mels_path = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/80s_reagan/mels/reagan_1994_030.pt'
 
 # Load the spectrogram from the .pt file
 mel_spectrogram = torch.load(mels_path)
 S = mel_spectrogram.numpy()
 print(S)
-S_dB = librosa.power_to_db(S, ref=np.max) 
+# S_dB = librosa.power_to_db(S, ref=np.max) 
 # print(S_dB)
 
 # Convert the torch.Tensor to a NumPy array for visualization
@@ -38,7 +37,7 @@ S_dB = librosa.power_to_db(S, ref=np.max)
 plt.figure(figsize=(10, 4))
 librosa.display.specshow(S, sr=22050, hop_length=256, x_axis='time', y_axis='mel', fmax=8000, win_length=1024, n_fft=1024)
 plt.colorbar(format='%+2.0f dB')
-plt.title('Mel spectrogram reagan_1989_11_11_001')
+plt.title('Mel spectrogram reagan_1994_030')
 plt.tight_layout()
-plt.savefig('mels_plots/mels_test_reagan_1989_11_11_001_alone.png')
+plt.savefig('mels_plots/reagan_1994_030.png')
 plt.show()

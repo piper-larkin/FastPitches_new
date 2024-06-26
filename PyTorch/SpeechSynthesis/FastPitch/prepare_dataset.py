@@ -156,6 +156,8 @@ def main():
                     fname = Path(fpaths[j]).with_suffix('.pt').name
                     fpath = Path(args.dataset_path, 'mels', fname)
                     torch.save(mel[:, :mel_lens[j]], fpath)
+                    # print(mel[:, :mel_lens[j]].shape)
+                    # raise
 
             if args.extract_pitch:
                 for j, p in enumerate(pitch):
