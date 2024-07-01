@@ -5,10 +5,10 @@ export OMP_NUM_THREADS=1
 : ${NUM_GPUS:=1} # changed from 8
 : ${BATCH_SIZE:=16} # was 16 (8 or 4 didn't help)
 : ${GRAD_ACCUMULATION:=16} # changed from 2 and from 16 (or 32)
-: ${OUTPUT_DIR:="./output_80s_reagan"}
-: ${DATASET_PATH:=80s_reagan}
-: ${TRAIN_FILELIST:=filelists/80s_reagan/reagan_audio_pitch_1980s_text_train_2.txt}
-: ${VAL_FILELIST:=filelists/80s_reagan/reagan_audio_pitch_1980s_text_dev_2.txt}
+: ${OUTPUT_DIR:="./output_80s_reagan_2"}
+: ${DATASET_PATH:=80s_reagan_2}
+: ${TRAIN_FILELIST:=filelists/80s_reagan_2/reagan_audio_pitch_1980s_text_train_3.txt}
+: ${VAL_FILELIST:=filelists/80s_reagan_2/reagan_audio_pitch_1980s_text_dev_3.txt}
 : ${AMP:=false}
 : ${SEED:=""}
 

@@ -5,11 +5,11 @@ export OMP_NUM_THREADS=1
 : ${NUM_GPUS:=1} # changed from 8
 : ${BATCH_SIZE:=16}
 : ${GRAD_ACCUMULATION:=16} # changed from 2
-: ${OUTPUT_DIR:="./output6"}
+: ${OUTPUT_DIR:="./output5"}  # Changed
 : ${DATASET_PATH:=LJSpeech-1.1}
-: ${TRAIN_FILELIST:=filelists/ljs_audio_pitch_text_train_v3.txt}
+: ${TRAIN_FILELIST:=filelists/ljs_audio_pitch_text_train_v3_small.txt}  # Changed 
 # : ${TRAIN_FILELIST:=filelists/ljs_train_small.txt}
-: ${VAL_FILELIST:=filelists/ljs_audio_pitch_text_val.txt}
+: ${VAL_FILELIST:=filelists/ljs_audio_pitch_text_val_small.txt} # Changed
 : ${AMP:=false}
 : ${SEED:=""}
 
@@ -60,7 +60,7 @@ ARGS+=" --weight-decay 1e-6"
 ARGS+=" --grad-clip-thresh 1000.0"
 ARGS+=" --dur-predictor-loss-scale 0.1"
 ARGS+=" --pitch-predictor-loss-scale 0.1"
-ARGS+=" --project debug_train"
+ARGS+=" --project train_LJ_small"
 
 # Autoalign & new features
 ARGS+=" --kl-loss-start-epoch 0"
