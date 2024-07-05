@@ -3,7 +3,7 @@
 : ${WAVEGLOW:="pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt"}
 
 : ${BATCH_SIZE:=32}     # No difference if 1 or 32 
-: ${OUTPUT_DIR:="./output4/vocoded_reagan_1989_first10"}      # changed dir name
+: ${OUTPUT_DIR:="./output6_marie/vocoded_marie"}      # changed dir name
 : ${LOG_FILE:="$OUTPUT_DIR/nvlog_infer.json"}
 : ${AMP:=false}
 : ${TORCHSCRIPT:=false}
@@ -20,7 +20,7 @@
 echo -e "\nAMP=$AMP, batch_size=$BATCH_SIZE\n"
 
 ARGS=""
-ARGS+=" -i phrases/1989_first10.tsv"
+ARGS+=" -i phrases/marie.tsv"   # Change
 ARGS+=" -o $OUTPUT_DIR"
 ARGS+=" --log-file $LOG_FILE"
 ARGS+=" --fastpitch SKIP"
@@ -32,7 +32,7 @@ ARGS+=" --repeats $REPEATS"
 ARGS+=" --warmup-steps $WARMUP"
 ARGS+=" --speaker $SPEAKER"
 ARGS+=" --n-speakers $NUM_SPEAKERS"
-ARGS+=" --dataset-path test_LJ_reagan/"
+ARGS+=" --dataset-path marie/" # Change
 [ "$CPU" = false ]          && ARGS+=" --cuda"
 [ "$CPU" = false ]          && ARGS+=" --cudnn-benchmark"
 [ "$AMP" = true ]           && ARGS+=" --amp"
