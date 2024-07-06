@@ -9,7 +9,7 @@ pretrained_models/
 __pycache__
 
 .idea/
-.DS_Store
+*.DS_Store
 
 *.swp
 *.swo
@@ -22,3 +22,4 @@ __pycache__
 phrases
 *.pt
 *.zip
+*.json
