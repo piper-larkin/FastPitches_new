@@ -228,7 +228,7 @@ class TTSDataset(torch.utils.data.Dataset):
         #     speaker = None
         # print("\n audiopaths_and_text: ", self.audiopaths_and_text)
         audiopath, *extra, text, speaker, age = self.audiopaths_and_text[index] # include age
-        print('speaker from audiopaths_and_text before making int: ', speaker)
+        # print('speaker from audiopaths_and_text before making int: ', speaker)
         speaker = int(speaker)
         age = int(age)  # ADDED
         # print('age from audiopaths_and_text: ', age)
@@ -407,11 +407,10 @@ class TTSCollate:
 
         # ADDED print to see if age is loaded ok
         # TODO: actually process / use age info
-        print('HERE')
         age = torch.zeros_like(input_lengths)
         for i in range(len(ids_sorted_decreasing)):
             age[i] = batch[ids_sorted_decreasing[i]][-1]    # Last thing in batch, so using -1 here 
-            print("Age loaded successfully, the age is: ", age)
+            # print("Age loaded successfully, the age is: ", age)
 
         attn_prior_padded = torch.zeros(len(batch), max_target_len,
                                         max_input_len)

@@ -22,4 +22,4 @@ __pycache__
 phrases
 *.pt
 *.zip
-*.json
+*.json*

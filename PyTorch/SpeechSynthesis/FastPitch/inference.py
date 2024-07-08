@@ -102,6 +102,7 @@ def parse_args(parser):
                         help='')
     parser.add_argument('--cmudict-path', type=str, default='cmudict/cmudict-0.7b',
                         help='')
+    parser.add_argument('-a', '--age', type=int, help='Age of speaker') # ADDED age arg here
     transform = parser.add_argument_group('transform')
     transform.add_argument('--fade-out', type=int, default=10,
                            help='Number of fadeout frames at the end')
@@ -338,7 +339,7 @@ def main():
     if len(unk_args) > 0:
         raise ValueError(f'Invalid options {unk_args}')
 
-    fields = load_fields(args.input)
+    fields = load_fields(args.input)    # Fields from tsv header 
     batches = prepare_input_sequence(
         fields, device, args.symbol_set, args.text_cleaners, args.batch_size,
         args.dataset_path, load_mels=(generator is None), p_arpabet=args.p_arpabet)
@@ -359,7 +360,9 @@ def main():
     gen_kw = {'pace': args.pace,
               'speaker': args.speaker,
               'pitch_tgt': None,
-              'pitch_transform': build_pitch_transformation(args)}
+              'pitch_transform': build_pitch_transformation(args),
+              'age': args.age}
+    # ADDED age to generator keyword dict above 
 
     if args.torchscript:
         gen_kw.pop('pitch_transform')
@@ -377,7 +380,7 @@ def main():
     for rep in (tqdm(range(reps), 'Inference') if reps > 1 else range(reps)):
         for b in batches:
             if generator is None:
-                log(rep, {'Synthesizing from ground truth mels': None})
+                log(rep, {'Synthesizing from ground truth mels': None}) # edited for vocoder-only inference
                 mel, mel_lens = b['mel'], b['mel_lens']
             else:
                 with torch.no_grad(), gen_measures:

@@ -368,9 +368,10 @@ def plot_batch_mels(pred_tgt_lists, rank):
 
 
 def log_validation_batch(x, y_pred, rank):
+    # ADDED 'age' to x_fields (reflects x in data_function.py)
     x_fields = ['text_padded', 'input_lengths', 'mel_padded',
                 'output_lengths', 'pitch_padded', 'energy_padded',
-                'speaker', 'attn_prior', 'audiopaths']
+                'speaker', 'attn_prior', 'audiopaths', 'age']
     y_pred_fields = ['mel_out', 'dec_mask', 'dur_pred', 'log_dur_pred',
                      'pitch_pred', 'pitch_tgt', 'energy_pred',
                      'energy_tgt', 'attn_soft', 'attn_hard',
@@ -587,6 +588,8 @@ def main():
     if args.local_rank == 0:
         prepare_tmp(args.pitch_online_dir)
 
+    # ADDED print
+    # print('here:', args)
     trainset = TTSDataset(audiopaths_and_text=args.training_files, **vars(args))
     valset = TTSDataset(audiopaths_and_text=args.validation_files, **vars(args))
 

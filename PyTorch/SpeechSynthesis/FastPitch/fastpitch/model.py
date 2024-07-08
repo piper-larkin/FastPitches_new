@@ -241,8 +241,9 @@ class FastPitch(nn.Module):
 
     def forward(self, inputs, use_gt_pitch=True, pace=1.0, max_duration=75):
 
+        # ADDED age to inputs below
         (inputs, input_lens, mel_tgt, mel_lens, pitch_dense, energy_dense,
-         speaker, attn_prior, audiopaths) = inputs
+         speaker, attn_prior, audiopaths, age) = inputs
 
         # print shapes of inputs
         # print("inputs shape: ", inputs.shape)
@@ -327,10 +328,11 @@ class FastPitch(nn.Module):
                 pitch_tgt, energy_pred, energy_tgt, attn_soft, attn_hard,
                 attn_hard_dur, attn_logprob)
 
-    def infer(self, inputs, pace=1.0, dur_tgt=None, pitch_tgt=None,
+    def infer(self, inputs, age, pace=1.0, dur_tgt=None, pitch_tgt=None,
               energy_tgt=None, pitch_transform=None, max_duration=75,
               speaker=0):
-
+        # ADDED age above
+        print('here: ', age)
         if self.speaker_emb is None:
             spk_emb = 0
         else:

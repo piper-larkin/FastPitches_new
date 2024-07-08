@@ -5,11 +5,10 @@ export OMP_NUM_THREADS=1
 : ${NUM_GPUS:=1} # changed from 8
 : ${BATCH_SIZE:=16}
 : ${GRAD_ACCUMULATION:=16} # changed from 2
-: ${OUTPUT_DIR:="./output5"}  # Changed
-: ${DATASET_PATH:=LJSpeech-1.1}
-: ${TRAIN_FILELIST:=filelists/ljs_audio_pitch_text_train_v3_small.txt}  # Changed 
-# : ${TRAIN_FILELIST:=filelists/ljs_train_small.txt}
-: ${VAL_FILELIST:=filelists/ljs_audio_pitch_text_val_small.txt} # Changed
+: ${OUTPUT_DIR:="./reagan_all/output_2"}  # Changed
+: ${DATASET_PATH:=reagan_all}
+: ${TRAIN_FILELIST:=filelists/reagan_all/reagan_audio_pitch_text_train_age_spk.txt}  # Changed 
+: ${VAL_FILELIST:=filelists/reagan_all/reagan_audio_pitch_text_dev_age_spk.txt} # Changed
 : ${AMP:=false}
 : ${SEED:=""}
 
@@ -17,7 +16,7 @@ export OMP_NUM_THREADS=1
 
 # Adjust these when the amount of data changes
 : ${EPOCHS:=1000}
-: ${EPOCHS_PER_CHECKPOINT:=100}
+: ${EPOCHS_PER_CHECKPOINT:=50}  # Changed from 100
 : ${WARMUP_STEPS:=1000}
 : ${KL_LOSS_WARMUP:=100}
 
@@ -60,7 +59,7 @@ ARGS+=" --weight-decay 1e-6"
 ARGS+=" --grad-clip-thresh 1000.0"
 ARGS+=" --dur-predictor-loss-scale 0.1"
 ARGS+=" --pitch-predictor-loss-scale 0.1"
-ARGS+=" --project train_LJ_small"
+ARGS+=" --project train_age_all"
 
 # Autoalign & new features
 ARGS+=" --kl-loss-start-epoch 0"
