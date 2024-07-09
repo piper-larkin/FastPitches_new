@@ -2,10 +2,10 @@
 
 : ${WAVEGLOW:="pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt"}
 
-: ${FASTPITCH:="./output_80s_reagan/FastPitch_checkpoint_1000.pt"}  # Changed 
+: ${FASTPITCH:="./reagan_all/output_2/FastPitch_checkpoint_1000.pt"}  # Changed 
 : ${BATCH_SIZE:=32}  
 : ${PHRASES:="phrases/testset_1to30_80s.tsv"}    # was "phrases/devset10.tsv" or phrases/devset_1994.tsv or phrases/testset_1to30_80s.tsv
-: ${OUTPUT_DIR:="./output_80s_reagan/audio_$(basename ${PHRASES} .tsv)"}      # changed dir name
+: ${OUTPUT_DIR:="./reagan_all/audio_$(basename ${PHRASES}_1000 .tsv)"}      # changed dir name
 : ${LOG_FILE:="$OUTPUT_DIR/nvlog_infer.json"}
 : ${AMP:=false}
 : ${TORCHSCRIPT:=false}
@@ -15,7 +15,7 @@
 : ${WARMUP:=0}
 : ${REPEATS:=1}
 : ${CPU:=false}
-: ${AGE:=70}
+: ${AGE:=65}
 : ${SPEAKER:=1}
 : ${NUM_SPEAKERS:=1}
 

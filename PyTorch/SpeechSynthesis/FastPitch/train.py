@@ -408,11 +408,16 @@ def validate(model, criterion, valset, batch_size, collate_fn, distributed_run,
             # x = (inputs, input_lens, mel_tgt, mel_lens, pitch_dense,
             # energy_dense, spectral_tilt_dense, speaker, attn_prior, audiopaths)
             x, y, num_frames = batch_to_gpu(batch)
+            # print('\n Here is x: ', x)
+            # print('\n Here is x[-1]', x[-1])
+            # print('\n Here is length x: ', len(x))
+            # print('\n Here is y: ', y)
             # (mel_out, dec_mask, dur_pred, log_dur_pred,
             #  pitch_pred, pitch_tgt, energy_pred, energy_tgt,
             #  spectral_tilt_pred, spectral_tilt_tgt,
             #  attn_soft, attn_hard, attn_hard_dur, attn_logprob)
             y_pred = model(x)
+            # print('\n Here is y_pred: ', y_pred)
 
             loss, meta = criterion(y_pred, y, is_training=False, meta_agg='sum')
             if i % 5 == 0:
@@ -484,6 +489,7 @@ def main():
     # first item is 'train.py', which causes an exception later on (and is irrelevant)
     fixed_args_list = shlex.split(' '.join(sys.argv))[1:]
     args, _ = parser.parse_known_args(fixed_args_list)
+    # print('Here args: ', args)  # NOTE: Age not here (have not added it to args at top yet, may need to?)
 
     if args.p_arpabet > 0.0:
         cmudict.initialize(args.cmudict_path, keep_ambiguous=True)

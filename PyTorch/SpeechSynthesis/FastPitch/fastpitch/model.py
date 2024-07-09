@@ -253,6 +253,7 @@ class FastPitch(nn.Module):
         # print("pitch_dense shape: ", pitch_dense.shape)
         # print("energy_dense shape: ", energy_dense.shape)
         # print("attn_prior shape: ", attn_prior.shape)
+        # print("Age in forward: ", age)
         # print("\n\n")
 
         mel_max_len = mel_tgt.size(2)

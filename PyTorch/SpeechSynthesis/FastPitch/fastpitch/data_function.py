@@ -228,6 +228,8 @@ class TTSDataset(torch.utils.data.Dataset):
         #     speaker = None
         # print("\n audiopaths_and_text: ", self.audiopaths_and_text)
         audiopath, *extra, text, speaker, age = self.audiopaths_and_text[index] # include age
+        # print('audiopath from getitem: ', audiopath)
+        # print('text:', text)
         # print('speaker from audiopaths_and_text before making int: ', speaker)
         speaker = int(speaker)
         age = int(age)  # ADDED
@@ -235,6 +237,7 @@ class TTSDataset(torch.utils.data.Dataset):
 
         mel = self.get_mel(audiopath)
         text = self.get_text(text)
+        # print('text from getitem: ', text)
         pitch = self.get_pitch(index, mel.size(-1))
         energy = torch.norm(mel.float(), dim=0, p=2)
         attn_prior = self.get_prior(index, mel.shape[1], text.shape[0])
@@ -365,6 +368,7 @@ class TTSCollate:
         text_padded.zero_()
         for i in range(len(ids_sorted_decreasing)):
             text = batch[ids_sorted_decreasing[i]][0]
+            # print('Here is the text for ', i, " in the batch: ", text)
             text_padded[i, :text.size(0)] = text
 
         # Right zero-pad mel-spec
@@ -410,7 +414,7 @@ class TTSCollate:
         age = torch.zeros_like(input_lengths)
         for i in range(len(ids_sorted_decreasing)):
             age[i] = batch[ids_sorted_decreasing[i]][-1]    # Last thing in batch, so using -1 here 
-            # print("Age loaded successfully, the age is: ", age)
+        # print("Ages loaded successfully, the batch ages are: ", age)
 
         attn_prior_padded = torch.zeros(len(batch), max_target_len,
                                         max_input_len)
@@ -446,7 +450,7 @@ def batch_to_gpu(batch):
     # if speaker is not None: 
     #     speaker = to_gpu(speaker).long()
     speaker = to_gpu(speaker).long()    # CHANGED from above, speaker is never None
-    age = to_gpu(age).long # NOTE: not sure if should be long?
+    age = to_gpu(age).long() # NOTE: not sure if should be long?
 
     # Alignments act as both inputs and targets - pass shallow copies
     x = [text_padded, input_lengths, mel_padded, output_lengths,
