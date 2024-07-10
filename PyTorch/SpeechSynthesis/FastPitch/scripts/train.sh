@@ -5,7 +5,7 @@ export OMP_NUM_THREADS=1
 : ${NUM_GPUS:=1} # changed from 8
 : ${BATCH_SIZE:=16}
 : ${GRAD_ACCUMULATION:=16} # changed from 2
-: ${OUTPUT_DIR:="./reagan_all_2/output_1"}  # Changed
+: ${OUTPUT_DIR:="./reagan_all_2/output_2"}  # Changed
 : ${DATASET_PATH:=reagan_all}
 : ${TRAIN_FILELIST:=filelists/reagan_all/reagan_audio_pitch_text_train_age_spk.txt}  # Changed 
 : ${VAL_FILELIST:=filelists/reagan_all/reagan_audio_pitch_text_dev_age_spk.txt} # Changed
@@ -32,7 +32,7 @@ export OMP_NUM_THREADS=1
 : ${LOAD_MEL_FROM_DISK:=true}
 
 # For multispeaker models, add speaker ID = {0, 1, ...} as the last filelist column
-: ${NSPEAKERS:=1}
+: ${NSPEAKERS:=2} # NOTE: changed for now
 : ${SAMPLING_RATE:=22050}
 
 # Adjust env variables to maintain the global batch size: NUM_GPUS x BATCH_SIZE x GRAD_ACCUMULATION = 256.

@@ -192,7 +192,7 @@ class FFTransformer(nn.Module):
                     dropatt=dropatt, pre_lnorm=pre_lnorm)
             )
 
-    def forward(self, dec_inp, seq_lens=None, conditioning=0):
+    def forward(self, dec_inp, seq_lens=None, conditioning=None):
         if self.word_emb is None:
             inp = dec_inp
             mask = mask_from_lens(seq_lens).unsqueeze(2)
@@ -204,7 +204,22 @@ class FFTransformer(nn.Module):
         pos_seq = torch.arange(inp.size(1), device=inp.device).to(inp.dtype)
         pos_emb = self.pos_emb(pos_seq) * mask
 
-        out = self.drop(inp + pos_emb + conditioning)
+        # ADDED to get age_emb to the right size
+        # conditioning = age_emb for now
+        if conditioning is not None:
+            print('conditioning size from transformer.py', conditioning.size())
+            print('pos_emb size ', pos_emb.size())  # [16, 133, 384]
+
+            # Broadcast `age_emb` to match the shape of `pos_emb`
+            # conditioning = conditioning.unsqueeze(1).expand(-1, pos_emb.size(1), -1) # FOR AGE_EMB ONLY
+            # conditioning = conditioning.unsqueeze(1)    # [16, 1, 1, 768]
+
+            # conditioning = 
+            print('conditioning size from transformer.py 2', conditioning.size())
+            print('inp from transformer ', inp.size())  # [16, 133, 384]
+            out = self.drop(inp + pos_emb + conditioning)
+        else:
+            out = self.drop(inp + pos_emb)
 
         for layer in self.layers:
             out = layer(out, mask=mask)

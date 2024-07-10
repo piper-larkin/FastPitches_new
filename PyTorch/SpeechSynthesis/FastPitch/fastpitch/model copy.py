@@ -143,10 +143,12 @@ class FastPitch(nn.Module):
             n_embed=n_symbols,
             padding_idx=padding_idx)
 
-        if n_speakers > 1:  #NOTE: may want to change this so always make speaker emb
-            self.speaker_emb = nn.Embedding(n_speakers, symbols_embedding_dim)
-        else:
-            self.speaker_emb = None
+        # if n_speakers > 1:  #NOTE: may want to change this so always make speaker emb
+        #     self.speaker_emb = nn.Embedding(n_speakers, symbols_embedding_dim)
+        # else:
+        #     self.speaker_emb = None
+        # REMOVED above and moved self.speaker_emb line below; speaker emb should never be None
+        self.speaker_emb = nn.Embedding(n_speakers, symbols_embedding_dim)
         self.speaker_emb_weight = speaker_emb_weight
 
         self.duration_predictor = TemporalPredictor(
@@ -210,7 +212,7 @@ class FastPitch(nn.Module):
 
         #TODO: need seperate age_emb dim?
         # NOTE: starting with simple linear layer, will see if it runs?
-        self.age_embedding = nn.Linear(1, symbols_embedding_dim)
+        # self.age_embedding = nn.Linear(1, symbols_embedding_dim)
         
     def binarize_attention(self, attn, in_lens, out_lens):
         """For training purposes only. Binarizes attention with MAS.
@@ -260,42 +262,27 @@ class FastPitch(nn.Module):
         # print("Age in forward: ", age)
         # print("\n\n")
 
+        print('In forward pass')
         mel_max_len = mel_tgt.size(2)
 
         # Calculate speaker embedding
-        if self.speaker_emb is None:
-            spk_emb = 0
-        else:
-            spk_emb = self.speaker_emb(speaker).unsqueeze(1)
-            spk_emb.mul_(self.speaker_emb_weight)
+        # if self.speaker_emb is None:
+        #     spk_emb = 0
+        # else:
+        # REMOVED above, speaker emb should never be None in current implementation
+        spk_emb = self.speaker_emb(speaker).unsqueeze(1)
+        spk_emb.mul_(self.speaker_emb_weight)
 
         # Age embeddings - ADDED
+        # print('Age from forward in model.py: ', age)
         # age = age.unsqueeze(1).float()  # Make 2D & float (apparently float is better for NN)
-        # age = (torch.ones(inputs.size(0)).long().to(inputs.device) * age)
-        # age = torch.tensor([age] * inputs.size(0), dtype=torch.float32).unsqueeze(1).to(inputs.device)
-        # print('age in forward ', age)
-
-        # age is tensor here: tensor([74, 74, 74, 75, 75, 72, 75, 75, 73, 71, 74, 70, 77, 70, 71, 77])
-        age = age.unsqueeze(1)
-        # print(f"Age tensor shape: {age.shape}") [16, 1]
-        age_tensor = age.float().to(inputs.device)
-        age_emb = self.age_embedding(age_tensor).unsqueeze(1)   # need to unsqueeze to concat with spk_emb
-
-        # Broadcast `age_emb` to match the shape of `pos_emb` so will work as
-        # conditioning = age_emb.expand_as(pos_emb)
+        # age_emb = self.age_embedding(age)   # get emb using network defined in init
 
         # Input FFT
-        print('size spk emb ', spk_emb.size())
-        print('size age emb ', age_emb.size())
         # cond_input = torch.cat([age_emb, spk_emb], dim=-1)
-        cond_input = age_emb + spk_emb      # need to do this rather than concat, or size is wrong for transformer
-        print('cond input size: ', cond_input.size())
-        enc_out, enc_mask = self.encoder(inputs, conditioning=cond_input)
+        # enc_out, enc_mask = self.encoder(inputs, conditioning=cond_input)
         # CHANGED below to above, to condition on both speaker and age info
-        # enc_out, enc_mask = self.encoder(inputs, conditioning=spk_emb)
-
-        # enc_out, enc_mask = self.encoder(inputs, conditioning=age_emb)   
-
+        enc_out, enc_mask = self.encoder(inputs, conditioning=spk_emb)
 
         # Alignment
         text_emb = self.encoder.word_emb(inputs)
@@ -363,29 +350,48 @@ class FastPitch(nn.Module):
               speaker=0):
         # ADDED age above
         print('here: ', age)
-        if self.speaker_emb is None:
-            spk_emb = 0
-        else:
-            speaker = (torch.ones(inputs.size(0)).long().to(inputs.device)
-                       * speaker)
-            spk_emb = self.speaker_emb(speaker).unsqueeze(1)
-            spk_emb.mul_(self.speaker_emb_weight)
+        # if self.speaker_emb is None:
+        #     spk_emb = 0
+        # else:
+        # REMOVED above, speaker emb should never be None in current implementation
+        # print('speaker before: ', speaker)
+        # print('speaker size 1 ', speaker.size)    # int
+        
+        speaker = (torch.ones(inputs.size(0)).long().to(inputs.device)  
+                    * speaker)  # inputs.device sends to CUDA device where inputs is located
+        # print('speaker after: ', speaker)
+        # print('speaker size 2 ', speaker.size())    # speaker size is [30] 
+        spk_emb = self.speaker_emb(speaker).unsqueeze(1)    # size = [30, 1, 384] (30 is batch size?)
+        spk_emb.mul_(self.speaker_emb_weight)
 
+        # Age embeddings - ADDED
+        # NOTE: age emb dim from init: self.age_embedding = nn.Linear(1, symbols_embedding_dim)
+
+        # print(age)  # 65 --> this is the age input with inference_age.sh script
+        # age = torch.tensor([age], dtype=torch.float32).unsqueeze(1).to(inputs.device)  # [age] avoids making scalar tensor of 0-dim
+        # age = torch.tensor([age], dtype=torch.float32).to(inputs.device)
+        # age = torch.tensor([age] * inputs.size(0), dtype=torch.float32).unsqueeze(1)
+        # age = torch.tensor(age * inputs.size(0), dtype=torch.float32).unsqueeze(1)
+        # age = torch.tensor(age * inputs.size(0), dtype=torch.float32)
+        
         # age = (torch.ones(inputs.size(0)).long().to(inputs.device) * age)
-        # inputs.size(0) = batch size
-        age = torch.tensor([age] * inputs.size(0), dtype=torch.float32).unsqueeze(1).to(inputs.device)
-        age_emb = self.age_embedding(age)   # get emb using network defined in init
+        # print('here 2')
 
-        # # Age embeddings - ADDED
-        # age = age.unsqueeze(1).float()  # Make 2D & float (apparently float is better for NN)
-        # age_emb = self.age_embedding(age)   # get emb using network defined in init
+        # print("Age shape and type:", age.shape, age.dtype)  # torch.Size([30]) & int64
+        # print('here 3')
+
+        # age = age.unsqueeze(1).float()  # need to make into [30, 1] from [30] for input into self.age_embedding
+        # age_emb = self.age_embedding(age) # get emb using network defined in init
+        # print('here 4')
+        # print('age_emb shape: ', age_emb.size())
 
         # # Input FFT
+        # print('spk_emb shape: ', spk_emb.size())
+        # print('age_emb shape: ', age_emb.size())
         # cond_input = torch.cat([age_emb, spk_emb], dim=-1)
         # enc_out, enc_mask = self.encoder(inputs, conditioning=cond_input)
-        # # CHANGED below to above, to condition on speaker and age info
+        # CHANGED below to above, to condition on speaker and age info
         enc_out, enc_mask = self.encoder(inputs, conditioning=spk_emb)
-        # enc_out, enc_mask = self.encoder(inputs, conditioning=age_emb)  
 
         # Predict durations
         log_dur_pred = self.duration_predictor(enc_out, enc_mask).squeeze(-1)

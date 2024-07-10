@@ -279,22 +279,18 @@ class FastPitch(nn.Module):
         age = age.unsqueeze(1)
         # print(f"Age tensor shape: {age.shape}") [16, 1]
         age_tensor = age.float().to(inputs.device)
-        age_emb = self.age_embedding(age_tensor).unsqueeze(1)   # need to unsqueeze to concat with spk_emb
+        age_emb = self.age_embedding(age_tensor)   # get emb using network defined in init
 
         # Broadcast `age_emb` to match the shape of `pos_emb` so will work as
         # conditioning = age_emb.expand_as(pos_emb)
 
         # Input FFT
-        print('size spk emb ', spk_emb.size())
-        print('size age emb ', age_emb.size())
         # cond_input = torch.cat([age_emb, spk_emb], dim=-1)
-        cond_input = age_emb + spk_emb      # need to do this rather than concat, or size is wrong for transformer
-        print('cond input size: ', cond_input.size())
-        enc_out, enc_mask = self.encoder(inputs, conditioning=cond_input)
+        # enc_out, enc_mask = self.encoder(inputs, conditioning=cond_input)
         # CHANGED below to above, to condition on both speaker and age info
         # enc_out, enc_mask = self.encoder(inputs, conditioning=spk_emb)
 
-        # enc_out, enc_mask = self.encoder(inputs, conditioning=age_emb)   
+        enc_out, enc_mask = self.encoder(inputs, conditioning=age_emb)   
 
 
         # Alignment

@@ -2,10 +2,10 @@
 
 : ${WAVEGLOW:="pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt"}
 
-: ${FASTPITCH:="./reagan_all/output_2/FastPitch_checkpoint_1000.pt"}  # Changed 
-: ${BATCH_SIZE:=32}  
+: ${FASTPITCH:="./reagan_all_2/output_1/FastPitch_checkpoint_150.pt"}  # Changed 
+: ${BATCH_SIZE:=32}  # originally 32
 : ${PHRASES:="phrases/testset_1to30_80s.tsv"}    # was "phrases/devset10.tsv" or phrases/devset_1994.tsv or phrases/testset_1to30_80s.tsv
-: ${OUTPUT_DIR:="./reagan_all/audio_$(basename ${PHRASES}_1000 .tsv)"}      # changed dir name
+: ${OUTPUT_DIR:="./reagan_all_2/audio_$(basename ${PHRASES}_test2 .tsv)"}      # changed dir name
 : ${LOG_FILE:="$OUTPUT_DIR/nvlog_infer.json"}
 : ${AMP:=false}
 : ${TORCHSCRIPT:=false}
@@ -44,4 +44,5 @@ ARGS+=" --n-speakers $NUM_SPEAKERS"
 
 mkdir -p "$OUTPUT_DIR"
 
-python inference.py $ARGS "$@" 
+# CUDA_LAUNCH_BLOCKING=1 
+python inference.py $ARGS "$@" # ADDED for debugging
