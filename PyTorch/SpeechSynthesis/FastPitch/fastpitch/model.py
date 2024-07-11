@@ -262,40 +262,27 @@ class FastPitch(nn.Module):
 
         mel_max_len = mel_tgt.size(2)
 
-        # Calculate speaker embedding
-        if self.speaker_emb is None:
-            spk_emb = 0
-        else:
-            spk_emb = self.speaker_emb(speaker).unsqueeze(1)
-            spk_emb.mul_(self.speaker_emb_weight)
-
-        # Age embeddings - ADDED
-        # age = age.unsqueeze(1).float()  # Make 2D & float (apparently float is better for NN)
-        # age = (torch.ones(inputs.size(0)).long().to(inputs.device) * age)
-        # age = torch.tensor([age] * inputs.size(0), dtype=torch.float32).unsqueeze(1).to(inputs.device)
-        # print('age in forward ', age)
-
+        # Calculate age embedding - ADDED
         # age is tensor here: tensor([74, 74, 74, 75, 75, 72, 75, 75, 73, 71, 74, 70, 77, 70, 71, 77])
         age = age.unsqueeze(1)
         # print(f"Age tensor shape: {age.shape}") [16, 1]
         age_tensor = age.float().to(inputs.device)
         age_emb = self.age_embedding(age_tensor).unsqueeze(1)   # need to unsqueeze to concat with spk_emb
 
-        # Broadcast `age_emb` to match the shape of `pos_emb` so will work as
-        # conditioning = age_emb.expand_as(pos_emb)
+        # Calculate speaker embedding
+        if self.speaker_emb is None:
+            spk_emb = 0
+            cond_input = age_emb    # ADDED
+        else:
+            spk_emb = self.speaker_emb(speaker).unsqueeze(1)
+            spk_emb.mul_(self.speaker_emb_weight)
+            cond_input = age_emb + spk_emb  # ADDED
 
-        # Input FFT
-        print('size spk emb ', spk_emb.size())
-        print('size age emb ', age_emb.size())
-        # cond_input = torch.cat([age_emb, spk_emb], dim=-1)
-        cond_input = age_emb + spk_emb      # need to do this rather than concat, or size is wrong for transformer
-        print('cond input size: ', cond_input.size())
+        # Input FFT (cond_input from loop above)
         enc_out, enc_mask = self.encoder(inputs, conditioning=cond_input)
         # CHANGED below to above, to condition on both speaker and age info
         # enc_out, enc_mask = self.encoder(inputs, conditioning=spk_emb)
-
         # enc_out, enc_mask = self.encoder(inputs, conditioning=age_emb)   
-
 
         # Alignment
         text_emb = self.encoder.word_emb(inputs)
@@ -362,30 +349,31 @@ class FastPitch(nn.Module):
               energy_tgt=None, pitch_transform=None, max_duration=75,
               speaker=0):
         # ADDED age above
+
         print('here: ', age)
+        # Calculate age embeddings - ADDED
+        # inputs.size(0) = batch size
+        age = torch.tensor([age] * inputs.size(0), dtype=torch.float32).unsqueeze(1).to(inputs.device)
+        age_emb = self.age_embedding(age)   # get emb using network defined in init
+
         if self.speaker_emb is None:
             spk_emb = 0
+            # Define cond_input without speaker
+            cond_input = age_emb.unsqueeze(1)   # Added
         else:
             speaker = (torch.ones(inputs.size(0)).long().to(inputs.device)
                        * speaker)
             spk_emb = self.speaker_emb(speaker).unsqueeze(1)
             spk_emb.mul_(self.speaker_emb_weight)
 
-        # age = (torch.ones(inputs.size(0)).long().to(inputs.device) * age)
-        # inputs.size(0) = batch size
-        age = torch.tensor([age] * inputs.size(0), dtype=torch.float32).unsqueeze(1).to(inputs.device)
-        age_emb = self.age_embedding(age)   # get emb using network defined in init
-
-        # # Age embeddings - ADDED
-        # age = age.unsqueeze(1).float()  # Make 2D & float (apparently float is better for NN)
-        # age_emb = self.age_embedding(age)   # get emb using network defined in init
-
-        # # Input FFT
-        # cond_input = torch.cat([age_emb, spk_emb], dim=-1)
-        # enc_out, enc_mask = self.encoder(inputs, conditioning=cond_input)
-        # # CHANGED below to above, to condition on speaker and age info
-        enc_out, enc_mask = self.encoder(inputs, conditioning=spk_emb)
-        # enc_out, enc_mask = self.encoder(inputs, conditioning=age_emb)  
+            # Define cond_input with speaker emb - ADDED lines below
+            cond_input = age_emb + spk_emb      # need to do this rather than concat, or size is wrong for transformer
+            cond_input = cond_input.unsqueeze(1)
+        
+        # Input FFT (cond_input defined above)
+        enc_out, enc_mask = self.encoder(inputs, conditioning=cond_input)
+        # CHANGED below to above, to condition on both speaker and age info
+        # enc_out, enc_mask = self.encoder(inputs, conditioning=spk_emb)
 
         # Predict durations
         log_dur_pred = self.duration_predictor(enc_out, enc_mask).squeeze(-1)

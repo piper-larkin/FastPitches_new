@@ -16,7 +16,7 @@
 : ${REPEATS:=1}
 : ${CPU:=false}
 : ${AGE:=65}
-: ${SPEAKER:=1}
+: ${SPEAKER:=1} 
 : ${NUM_SPEAKERS:=1}
 
 echo -e "\nAMP=$AMP, batch_size=$BATCH_SIZE\n"
