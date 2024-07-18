@@ -143,7 +143,7 @@ class FastPitch(nn.Module):
             n_embed=n_symbols,
             padding_idx=padding_idx)
 
-        if n_speakers > 1:  #NOTE: may want to change this so always make speaker emb
+        if n_speakers > 1:
             self.speaker_emb = nn.Embedding(n_speakers, symbols_embedding_dim)
         else:
             self.speaker_emb = None
@@ -208,15 +208,6 @@ class FastPitch(nn.Module):
             n_mel_channels, 0, symbols_embedding_dim,
             use_query_proj=True, align_query_enc_type='3xconv')
 
-        # NOTE: deeper age embedding, see model copy 3 for linear embedding
-        # self.age_embedding = nn.Linear(1, symbols_embedding_dim)
-        hidden_dim = 256    # TODO: maybe change 
-        self.age_embedding = nn.Sequential(
-            nn.Linear(1, hidden_dim),
-            nn.ReLU(),
-            nn.Linear(hidden_dim, symbols_embedding_dim)
-        )
-        
     def binarize_attention(self, attn, in_lens, out_lens):
         """For training purposes only. Binarizes attention with MAS.
            These will no longer recieve a gradient.
@@ -250,9 +241,8 @@ class FastPitch(nn.Module):
 
     def forward(self, inputs, use_gt_pitch=True, pace=1.0, max_duration=75):
 
-        # ADDED age to inputs below
         (inputs, input_lens, mel_tgt, mel_lens, pitch_dense, energy_dense,
-         speaker, attn_prior, audiopaths, age) = inputs
+         speaker, attn_prior, audiopaths) = inputs
 
         # print shapes of inputs
         # print("inputs shape: ", inputs.shape)
@@ -262,32 +252,19 @@ class FastPitch(nn.Module):
         # print("pitch_dense shape: ", pitch_dense.shape)
         # print("energy_dense shape: ", energy_dense.shape)
         # print("attn_prior shape: ", attn_prior.shape)
-        # print("Age in forward: ", age)
         # print("\n\n")
 
         mel_max_len = mel_tgt.size(2)
 
-        # Calculate age embedding - ADDED
-        # age is tensor here: tensor([74, 74, 74, 75, 75, 72, 75, 75, 73, 71, 74, 70, 77, 70, 71, 77])
-        age = age.unsqueeze(1)
-        # print(f"Age tensor shape: {age.shape}") [16, 1]
-        age_tensor = age.float().to(inputs.device)
-        age_emb = self.age_embedding(age_tensor).unsqueeze(1)   # need to unsqueeze to concat with spk_emb
-
         # Calculate speaker embedding
         if self.speaker_emb is None:
             spk_emb = 0
-            cond_input = age_emb    # ADDED
         else:
             spk_emb = self.speaker_emb(speaker).unsqueeze(1)
             spk_emb.mul_(self.speaker_emb_weight)
-            cond_input = age_emb + spk_emb  # ADDED
 
-        # Input FFT (cond_input from loop above)
-        enc_out, enc_mask = self.encoder(inputs, conditioning=cond_input)
-        # CHANGED below to above, to condition on both speaker and age info
-        # enc_out, enc_mask = self.encoder(inputs, conditioning=spk_emb)
-        # enc_out, enc_mask = self.encoder(inputs, conditioning=age_emb)   
+        # Input FFT
+        enc_out, enc_mask = self.encoder(inputs, conditioning=spk_emb)
 
         # Alignment
         text_emb = self.encoder.word_emb(inputs)
@@ -350,34 +327,20 @@ class FastPitch(nn.Module):
                 pitch_tgt, energy_pred, energy_tgt, attn_soft, attn_hard,
                 attn_hard_dur, attn_logprob)
 
-    def infer(self, inputs, age, pace=1.0, dur_tgt=None, pitch_tgt=None,
+    def infer(self, inputs, pace=1.0, dur_tgt=None, pitch_tgt=None,
               energy_tgt=None, pitch_transform=None, max_duration=75,
               speaker=0):
-        # ADDED age above
-
-        # Calculate age embeddings - ADDED
-        # inputs.size(0) = batch size
-        age = torch.tensor([age] * inputs.size(0), dtype=torch.float32).unsqueeze(1).to(inputs.device)
-        age_emb = self.age_embedding(age)   # get emb using network defined in init
 
         if self.speaker_emb is None:
             spk_emb = 0
-            # Define cond_input without speaker
-            cond_input = age_emb.unsqueeze(1)   # Added
         else:
             speaker = (torch.ones(inputs.size(0)).long().to(inputs.device)
                        * speaker)
             spk_emb = self.speaker_emb(speaker).unsqueeze(1)
             spk_emb.mul_(self.speaker_emb_weight)
 
-            # Define cond_input with speaker emb - ADDED lines below
-            cond_input = age_emb + spk_emb      # need to do this rather than concat, or size is wrong for transformer
-            cond_input = cond_input.unsqueeze(1)
-        
-        # Input FFT (cond_input defined above)
-        enc_out, enc_mask = self.encoder(inputs, conditioning=cond_input)
-        # CHANGED below to above, to condition on both speaker and age info
-        # enc_out, enc_mask = self.encoder(inputs, conditioning=spk_emb)
+        # Input FFT
+        enc_out, enc_mask = self.encoder(inputs, conditioning=spk_emb)
 
         # Predict durations
         log_dur_pred = self.duration_predictor(enc_out, enc_mask).squeeze(-1)

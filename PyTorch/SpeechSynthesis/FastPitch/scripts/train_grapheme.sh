@@ -5,18 +5,18 @@ export OMP_NUM_THREADS=1
 : ${NUM_GPUS:=1} # changed from 8
 : ${BATCH_SIZE:=16}
 : ${GRAD_ACCUMULATION:=16} # changed from 2
-: ${OUTPUT_DIR:="./reagan_deep_age/output_1"}  # Changed
-: ${DATASET_PATH:=reagan_all}
-: ${TRAIN_FILELIST:=filelists/reagan_all/reagan_audio_pitch_text_train_age_spk.txt}  # Changed 
-: ${VAL_FILELIST:=filelists/reagan_all/reagan_audio_pitch_text_dev_age_spk.txt} # Changed
+: ${OUTPUT_DIR:="./LJ_graphemes/output_1"}  # Changed
+: ${DATASET_PATH:=LJSpeech-1.1} # Changed
+: ${TRAIN_FILELIST:=filelists/ljs_audio_pitch_text_train_v3.txt}  # Changed 
+: ${VAL_FILELIST:=filelists/ljs_audio_pitch_text_val.txt} # Changed
 : ${AMP:=false}
 : ${SEED:=""}
 
 : ${LEARNING_RATE:=0.1}
 
 # Adjust these when the amount of data changes
-: ${EPOCHS:=1000}   # Changed
-: ${EPOCHS_PER_CHECKPOINT:=50}  # Changed from 100
+: ${EPOCHS:=1000} 
+: ${EPOCHS_PER_CHECKPOINT:=100}  # Changed from 100
 : ${WARMUP_STEPS:=1000}
 : ${KL_LOSS_WARMUP:=100}
 
@@ -59,7 +59,7 @@ ARGS+=" --weight-decay 1e-6"
 ARGS+=" --grad-clip-thresh 1000.0"
 ARGS+=" --dur-predictor-loss-scale 0.1"
 ARGS+=" --pitch-predictor-loss-scale 0.1"
-ARGS+=" --project train_deeper_age"
+ARGS+=" --project train_lj_graphemes"
 
 # Autoalign & new features
 ARGS+=" --kl-loss-start-epoch 0"
@@ -70,7 +70,7 @@ ARGS+=" --n-speakers $NSPEAKERS"
 [ "$PROJECT" != "" ]               && ARGS+=" --project \"${PROJECT}\""
 [ "$EXPERIMENT_DESC" != "" ]       && ARGS+=" --experiment-desc \"${EXPERIMENT_DESC}\""
 [ "$AMP" = "true" ]                && ARGS+=" --amp"
-[ "$PHONE" = "true" ]              && ARGS+=" --p-arpabet 1.0"
+[ "$PHONE" = "true" ]              && ARGS+=" --p-arpabet 0.0"
 [ "$ENERGY" = "true" ]             && ARGS+=" --energy-conditioning"
 [ "$SEED" != "" ]                  && ARGS+=" --seed $SEED"
 [ "$LOAD_MEL_FROM_DISK" = true ]   && ARGS+=" --load-mel-from-disk"

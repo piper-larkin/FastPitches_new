@@ -208,14 +208,9 @@ class FastPitch(nn.Module):
             n_mel_channels, 0, symbols_embedding_dim,
             use_query_proj=True, align_query_enc_type='3xconv')
 
-        # NOTE: deeper age embedding, see model copy 3 for linear embedding
-        # self.age_embedding = nn.Linear(1, symbols_embedding_dim)
-        hidden_dim = 256    # TODO: maybe change 
-        self.age_embedding = nn.Sequential(
-            nn.Linear(1, hidden_dim),
-            nn.ReLU(),
-            nn.Linear(hidden_dim, symbols_embedding_dim)
-        )
+        #TODO: need seperate age_emb dim?
+        # NOTE: starting with simple linear layer, will see if it runs?
+        self.age_embedding = nn.Linear(1, symbols_embedding_dim)
         
     def binarize_attention(self, attn, in_lens, out_lens):
         """For training purposes only. Binarizes attention with MAS.
@@ -355,6 +350,7 @@ class FastPitch(nn.Module):
               speaker=0):
         # ADDED age above
 
+        print('here: ', age)
         # Calculate age embeddings - ADDED
         # inputs.size(0) = batch size
         age = torch.tensor([age] * inputs.size(0), dtype=torch.float32).unsqueeze(1).to(inputs.device)
