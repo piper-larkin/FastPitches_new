@@ -371,8 +371,10 @@ class FastPitch(nn.Module):
             spk_emb.mul_(self.speaker_emb_weight)
 
             # Define cond_input with speaker emb - ADDED lines below
-            cond_input = age_emb + spk_emb      # need to do this rather than concat, or size is wrong for transformer
-            cond_input = cond_input.unsqueeze(1)
+            cond_input = age_emb.unsqueeze(1) + spk_emb      # need to do this rather than concat, or size is wrong for transformer
+            # had to unsqueeze age above
+            # cond_input = cond_input.unsqueeze(1)
+
         
         # Input FFT (cond_input defined above)
         enc_out, enc_mask = self.encoder(inputs, conditioning=cond_input)

@@ -39,7 +39,7 @@ def synth_rate(synth_inference_file, age):
             # Get length synth file
             label = columns[1]
             # NOTE: may have to change below depending on how inf output is named
-            wav_file_path = f'/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/reagan_all_3/audio_testset_1to30_80s.tsv_1000_{age}/{label}'
+            wav_file_path = f'/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/reagan_deep_age/audio_testset_1to30_80s.tsv_{age}/{label}'
             y, sr = librosa.load(wav_file_path)
             total_duration_synth += librosa.get_duration(y, sr)
 
@@ -99,7 +99,7 @@ def plot_rates(rate_dict_real, rate_dict_synth):
     plt.ylabel('Speech rate (syllable/second)')
     plt.legend()
     plt.tight_layout()
-    plt.savefig('reagan_all_3/plots/speech_rate.png')
+    plt.savefig('reagan_deep_age/plots/speech_rate1.png')
     plt.show()
 
 

@@ -2,10 +2,10 @@
 
 : ${WAVEGLOW:="pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt"}
 
-: ${FASTPITCH:="./reagan_deep_age/output_1/FastPitch_checkpoint_200.pt"}  # Changed 
+: ${FASTPITCH:="./TC_all/phonemes_out/FastPitch_checkpoint_400.pt"}  # Changed 
 : ${BATCH_SIZE:=32}  # originally 32
 : ${PHRASES:="phrases/testset_1to30_80s.tsv"}    # was "phrases/devset10.tsv" or phrases/devset_1994.tsv or phrases/testset_1to30_80s.tsv
-: ${OUTPUT_DIR:="./reagan_deep_age/audio_$(basename ${PHRASES}_200_80 )"}      # changed dir name
+: ${OUTPUT_DIR:="./TC_all/phonemes_out/audio_$(basename ${PHRASES}_400_g_35)"}      # changed dir name
 : ${LOG_FILE:="$OUTPUT_DIR/nvlog_infer.json"}
 : ${AMP:=false}
 : ${TORCHSCRIPT:=false}
@@ -15,9 +15,9 @@
 : ${WARMUP:=0}
 : ${REPEATS:=1}
 : ${CPU:=false}
-: ${AGE:=80}    # CHANGE
-: ${SPEAKER:=1} 
-: ${NUM_SPEAKERS:=1}
+: ${AGE:=35}    # CHANGE
+: ${SPEAKER:=8} # will have to change
+: ${NUM_SPEAKERS:=17} # will have to change
 
 echo -e "\nAMP=$AMP, batch_size=$BATCH_SIZE\n"
 

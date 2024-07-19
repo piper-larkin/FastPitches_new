@@ -2,15 +2,15 @@
 
 set -e
 
-: ${DATA_DIR:=reagan_all} # CHANGED
+: ${DATA_DIR:=TC_all} # CHANGED
 : ${ARGS="--extract-mels"}
 
 python prepare_dataset.py \
-    --wav-text-filelists filelists/reagan_all/reagan_audio_text_age_spk.txt \
+    --wav-text-filelists TC_all/tc_audio_text_spk_age.txt \
     --n-workers 16 \
     --batch-size 1 \
     --dataset-path $DATA_DIR \
     --extract-pitch \
     --f0-method pyin \
-    --n-speakers 1 \
+    --n-speakers 17 \
     $ARGS

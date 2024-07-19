@@ -1,0 +1,12 @@
+mels/plomley_1958_067.pt|pitch/plomley_1958_067.pt|partled in London and thank you|16|44
+mels/plomley_1985_056.pt|pitch/plomley_1985_056.pt|Oh, lovely.|16|71
+mels/plomley_1978_010.pt|pitch/plomley_1978_010.pt|Perhaps schooled in Eastbourne, then Westminster school, in the days of top hat, what did you do when you left school?|16|64
+mels/plomley_1951_027.pt|pitch/plomley_1951_027.pt|I seem to remember a few years ago you were in the film about the sea.|16|37
+mels/plomley_1968_029.pt|pitch/plomley_1968_029.pt|Do you work certain hours every day?|16|54
+mels/plomley_1985_048.pt|pitch/plomley_1985_048.pt|Eventually you'd absorbed enough experience of different kinds of light entertainment to build your one-woman show.|16|71
+mels/plomley_1968_015.pt|pitch/plomley_1968_015.pt|Now you had written your first novel, so this was the pattern for some time at novels and legal work.|16|54
+mels/plomley_1985_013.pt|pitch/plomley_1985_013.pt|The avatar to Humperdinx, Hansel and Gratel, played by the Berlin Philharmonic Orchestra directed by Herbert von Karian.|16|71
+mels/plomley_1958_017.pt|pitch/plomley_1958_017.pt|yes, why do you choose this?|16|44
+mels/plomley_1978_004.pt|pitch/plomley_1978_004.pt|How long have you been living there?|16|64
+mels/plomley_1985_016.pt|pitch/plomley_1985_016.pt|Edith Setwell, country dance from Fassade.|16|71
+mels/plomley_1951_025.pt|pitch/plomley_1951_025.pt|next you're very keen on boating songs Margaret who then had just left eaten.|16|37

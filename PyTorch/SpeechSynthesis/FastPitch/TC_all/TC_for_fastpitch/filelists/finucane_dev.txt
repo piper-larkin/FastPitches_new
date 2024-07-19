@@ -1,0 +1,4 @@
+mels/finucane_2009-05-09_008.pt|pitch/finucane_2009-05-09_008.pt|Um, and I mean, maybe she would or she wouldn't know.|9|58
+mels/finucane_1999-04-14_019.pt|pitch/finucane_1999-04-14_019.pt|All of the colors so far.|9|48
+mels/finucane_1979-03-14_001.pt|pitch/finucane_1979-03-14_001.pt|but the weight will go.|9|28
+mels/finucane_1989-09-16_011.pt|pitch/finucane_1989-09-16_011.pt|Uh, paper would have found it very hard to believe.|9|39

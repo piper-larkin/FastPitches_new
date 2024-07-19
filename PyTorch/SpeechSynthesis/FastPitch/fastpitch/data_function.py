@@ -227,6 +227,9 @@ class TTSDataset(torch.utils.data.Dataset):
         #     audiopath, *extra, text = self.audiopaths_and_text[index]
         #     speaker = None
         # print("\n audiopaths_and_text: ", self.audiopaths_and_text)
+        for item in self.audiopaths_and_text:
+            if len(item) != 5:
+                print(f"Invalid item length: {item}")
         audiopath, *extra, text, speaker, age = self.audiopaths_and_text[index] # include age
         # print('audiopath from getitem: ', audiopath)
         # print('text:', text)

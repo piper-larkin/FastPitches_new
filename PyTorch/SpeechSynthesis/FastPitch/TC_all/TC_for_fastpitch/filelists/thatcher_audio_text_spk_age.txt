@@ -1,0 +1,335 @@
+wavs/thatcher_2006_001.wav|I'm delighted to send you this message to mark the publication of the Prince.|18|81
+wavs/thatcher_2006_003.wav|His Royal Highness Prince Bander has been at the heart of many of the great world events of the past 30 years.|18|81
+wavs/thatcher_2006_004.wav|I was always pleased to see him when I was Prime Minister, because he brought me extraordinary insights and bold proposals.|18|81
+wavs/thatcher_2006_005.wav|I know how much he has contributed to Saudi Arabia's friendship with the United States.|18|81
+wavs/thatcher_1973_002.wav|Uh, they bear up to it very well and they just get used to any comments that they're here and they're having to defend me which they do very robustly indeed.|18|48
+wavs/thatcher_1973_003.wav|Yes, I do Linda.|18|48
+wavs/thatcher_1973_004.wav|I think we should have more.|18|48
+wavs/thatcher_1973_005.wav|There are a few of them out of six men and women in total and it's just not quite enough.|18|48
+wavs/thatcher_1973_008.wav|Quite a lot of them go into local councils but it stops there.|18|48
+wavs/thatcher_1973_009.wav|So I would like to see a few more.|18|48
+wavs/thatcher_1973_011.wav|It's not holy prejudice.|18|48
+wavs/thatcher_1973_014.wav|I wouldn't say that I was guilty of lack of aggression in Israel and in Ceylon.|18|48
+wavs/thatcher_1973_016.wav|I don't think that anyone would say that either Barbara Castle or myself lacked debating fire.|18|48
+wavs/thatcher_1973_017.wav|I think you might be thinking that well it is a very big responsibility and one's often conscious of it but in education it is shared you know.|18|48
+wavs/thatcher_1973_018.wav|I don't know whether you realize that I have absolutely no control over what is taught in the schools.|18|48
+wavs/thatcher_1973_020.wav|So it's very much a shared responsibility.|18|48
+wavs/thatcher_1973_023.wav|They've got to work as one school.|18|48
+wavs/thatcher_1973_025.wav|Because I don't think that would result in giving the best education to every single young person.|18|48
+wavs/thatcher_1973_027.wav|No, they're not less than the upper stream in the upper forms, in the first and second forms.|18|48
+wavs/thatcher_1973_028.wav|You've had enough experience to make a decision.|18|48
+wavs/thatcher_1973_030.wav|Place is births at universities and polytechnics.|18|48
+wavs/thatcher_1973_031.wav|But I do think we also need to spend more on nursery education and getting better buildings in primary schools.|18|48
+wavs/thatcher_1973_032.wav|And so for the first time we are starting a 10 year program to do that.|18|48
+wavs/thatcher_1973_033.wav|Well I am putting a lot more money into education without being prime minister.|18|48
+wavs/thatcher_1973_035.wav|And one of the main reasons is because there are more pupils in schools because you're staying on longer.|18|48
+wavs/thatcher_1973_036.wav|We're trying to get a bigger proportion of teachers to the pupils and then more of you are wanting to go to college and university.|18|48
+wavs/thatcher_1973_037.wav|So we are all the time putting more in both at the top end in the schools and with the expansion of nursery education as well.|18|48
+wavs/thatcher_1973_038.wav|And you're the chaps we're going to have to pay for it.|18|48
+wavs/thatcher_1973_039.wav|I would not wish to be prime minister today.|18|48
+wavs/thatcher_1973_040.wav|I have not enough experience for that job.|18|48
+wavs/thatcher_1973_041.wav|The only four ministerial position I have held is minister of education and science.|18|48
+wavs/thatcher_1973_042.wav|Before you could even think of being prime minister you would need to have done a good deal more jobs than that.|18|48
+wavs/thatcher_1959_001.wav|Oh, very much so.|18|34
+wavs/thatcher_1959_002.wav|I've done a good deal of other speaking, but speaking in the House of Commons is quite different.|18|34
+wavs/thatcher_1959_003.wav|It's a unique experience.|18|34
+wavs/thatcher_1959_004.wav|I didn't notice that it rarely is because of the quality of one's audience and the fact that most of them have had more experience at doing precisely what you are doing.|18|34
+wavs/thatcher_1959_005.wav|Well, I think we'll just try to be a very good back bench of first.|18|34
+wavs/thatcher_1959_006.wav|Certainly until these two are a little older, I couldn't take on any more political responsibilities.|18|34
+wavs/thatcher_1959_007.wav|These responsibilities are quite enough.|18|34
+wavs/thatcher_1959_008.wav|Well, I mainly do the catering here.|18|34
+wavs/thatcher_1959_009.wav|I like cooking and I do the shopping and always a big batch of cooking at the weekend.|18|34
+wavs/thatcher_1959_010.wav|And of course, there are the parliamentary recesses which coincide with the school holidays.|18|34
+wavs/thatcher_1959_011.wav|So I can see quite a good bit of a children and take them out.|18|34
+wavs/thatcher_1959_012.wav|And at half term, they come up to the House of Commons and have lunch with me.|18|34
+wavs/thatcher_1960_001.wav|so very much so, I've done a good deal of other speaking, but speaking in the House of Commons is quite different, it's a unique experience.|18|35
+wavs/thatcher_1960_002.wav|No, I didn't notice that it rarely is because of the quality of one's audience and the fact that most of them have had more experience at doing precisely what you are doing.|18|35
+wavs/thatcher_1960_003.wav|Well, I think we'll just try to be a very good backbench of first.|18|35
+wavs/thatcher_1960_004.wav|Certainly until these two are a little older, I couldn't take on any more political responsibilities.|18|35
+wavs/thatcher_1960_005.wav|These responsibilities are quite enough.|18|35
+wavs/thatcher_1960_006.wav|Well, I mainly do the catering here.|18|35
+wavs/thatcher_1960_007.wav|I like cooking and I do the shopping and always a big batch of cooking at the weekend.|18|35
+wavs/thatcher_1960_008.wav|And of course, there are the parliamentary recesses which coincide with the school holidays.|18|35
+wavs/thatcher_1960_009.wav|So I can see quite a good bit of a children and take them out and at half term, they come up to the House of Commons and have lunch with me.|18|35
+wavs/thatcher_1989_11_08_001.wav|Iraq's invasion of Kuwait defies every principle for which the United Nations stands.|18|64
+wavs/thatcher_1989_11_08_002.wav|If we let it succeed, no small country can ever feel safe again.|18|64
+wavs/thatcher_1989_11_08_003.wav|The law of the jungle would take over from the rule of law.|18|64
+wavs/thatcher_1989_11_08_004.wav|The United Nations must assert its authority and apply a total economic embargo unless Iraq withdraws without delay.|18|64
+wavs/thatcher_1989_11_21_002.wav|I know when we were in opposition which I'm sure we will never be again.|18|64
+wavs/thatcher_1989_11_21_005.wav|He admitted to say that the way in which pensions are managed and the pension rights in the European community are very different from here.|18|64
+wavs/thatcher_1989_11_21_008.wav|By now some 68 single market directives should have been implemented by the end of June.|18|64
+wavs/thatcher_1989_11_21_010.wav|Businesses can once again get a good return on investment.|18|64
+wavs/thatcher_1975_001.wav|some socialists seem to believe that people should be numbers in a state computer.|18|50
+wavs/thatcher_1975_002.wav|We believe there should be individuals.|18|50
+wavs/thatcher_1975_003.wav|We're all unequal.|18|50
+wavs/thatcher_1975_004.wav|No one's saying heavens is quite like anyone else, however much the socialists may pretend otherwise.|18|50
+wavs/thatcher_1975_005.wav|And we believe that everyone has the right to be unequal, but to us, every human being is equally important.|18|50
+wavs/thatcher_1988_002.wav|But the first thing you know is to get the Vietnamese out, we hope they will go out but it's going to take a time yet.|18|63
+wavs/thatcher_1988_003.wav|And then really the next thing is to ensure that Paul Pot doesn't get back into government because they would all fear him.|18|63
+wavs/thatcher_1988_005.wav|Most people agree that Paul Pot himself could not go back nor his, some of his supporters who have were very active in some of the terrible things that happened.|18|63
+wavs/thatcher_1988_006.wav|So there's quite an agreement about that.|18|63
+wavs/thatcher_1988_007.wav|Some of the Cameroos of course are very different and then there's a much, much more reasonable grouping within that.|18|63
+wavs/thatcher_1988_008.wav|Well that is what I am assured by people who know.|18|63
+wavs/thatcher_1988_009.wav|So you'll find that the more reasonable ones of Cameroos will have to place some part in the future government but only a minority part.|18|63
+wavs/thatcher_1988_010.wav|I share your utter horror that these terrible things went on in Camper chair.|18|63
+wavs/thatcher_1988_011.wav|United Nations couldn't do anything about them.|18|63
+wavs/thatcher_1988_012.wav|None of us could do anything about them.|18|63
+wavs/thatcher_1988_014.wav|You know I went to that refugee camp and we do help a lot both with the running the camps.|18|63
+wavs/thatcher_1988_015.wav|We give something like 13 million to running that particular camp.|18|63
+wavs/thatcher_1988_016.wav|A fantastic number of people there.|18|63
+wavs/thatcher_1988_017.wav|And then when there's a special program for Camper chair, we give some money.|18|63
+wavs/thatcher_1988_018.wav|And now there's going to be another program, special program for mothers and babies in Camper chair and we're going to give a quarter million pounds to that.|18|63
+wavs/thatcher_1988_019.wav|So we don't give directly at the moment to the people in Camper through their government because we don't recognize their government.|18|63
+wavs/thatcher_1988_020.wav|But we give whenever there's a program run by some of the people who we know will make certain the money gets to the people.|18|63
+wavs/thatcher_1988_021.wav|Thirdly together and these days we work much more closely to the United Nations than we used to.|18|63
+wavs/thatcher_1988_022.wav|Now the key people, totally the Pol Pot matter, really are the Chinese.|18|63
+wavs/thatcher_1988_025.wav|It is that it's time to settle some of these very very old problems.|18|63
+wavs/thatcher_1988_027.wav|I think it's marvelous what the children do and I think it's marvelous what the blue Peter children have done.|18|63
+wavs/thatcher_1988_028.wav|You want something a little bit special for the auction.|18|63
+wavs/thatcher_1988_029.wav|Last time I think I was on a children's program was a bad job.|18|63
+wavs/thatcher_1990_002.wav|It's been a tremendous privilege to serve this country as Prime Minister.|18|65
+wavs/thatcher_1990_005.wav|Thank you very much.|18|65
+wavs/thatcher_1985_001.wav|come to Scotland several times a year and you always make me feel at home.|18|60
+wavs/thatcher_1985_002.wav|Indeed, just 10 days after I was elected leader of the Conservative Party, I came to Scotland and I shall never forget the warmth of that reception.|18|60
+wavs/thatcher_1985_003.wav|Overnight I became Maggie.|18|60
+wavs/thatcher_1985_004.wav|Now I really would like to thank you for your foresight and thoughtfulness for arranging this rally.|18|60
+wavs/thatcher_1985_005.wav|It's the best and largest birthday party.|18|60
+wavs/thatcher_1985_007.wav|Conservative and a unionist party and we seek success in every part of Britain.|18|60
+wavs/thatcher_1985_009.wav|Scotland ought to be natural, Tory territory.|18|60
+wavs/thatcher_1985_010.wav|That's the way we want to see it.|18|60
+wavs/thatcher_1985_011.wav|For sitting round that table last week was the nations which fought each other in that devastating war which ended 40 years ago.|18|60
+wavs/thatcher_1985_012.wav|Britain fought then to uphold freedom, democracy and Western civilization itself.|18|60
+wavs/thatcher_1985_013.wav|One of the world's ugliest tyrannies had to be defeated so that we could live in peace and human dignity.|18|60
+wavs/thatcher_1985_014.wav|It was a war of the common man, our own, Russian, French and American.|18|60
+wavs/thatcher_1985_016.wav|Here in Britain under the indomitable leadership at number 10 we lived and made history.|18|60
+wavs/thatcher_1985_017.wav|Some gave their lives, many were at constant risk in London streets, but ancillo in Coventry of Mermansk.|18|60
+wavs/thatcher_1985_020.wav|Each was a vital part of the whole, each one mattered.|18|60
+wavs/thatcher_1985_021.wav|And as it was in winning the war, so it is in winning the peace, each one matters.|18|60
+wavs/thatcher_1985_022.wav|It was a war fought for freedom and justice.|18|60
+wavs/thatcher_1985_023.wav|It is a peace built on freedom and justice.|18|60
+wavs/thatcher_1985_024.wav|For freedom belongs not to a collective, not to this or that class.|18|60
+wavs/thatcher_1985_025.wav|We lost that vision, we looked to the state for too much and to ourselves for too little.|18|60
+wavs/thatcher_1985_027.wav|Now Mr. President, I have never believed in laissez faire.|18|60
+wavs/thatcher_1985_028.wav|I believe that justice each of us has an obligation to make the best of his talents.|18|60
+wavs/thatcher_1985_029.wav|So government has an obligation to create the framework within which those talents can flourish.|18|60
+wavs/thatcher_1985_032.wav|Because class is the whole basis of the Socialist Creed and without it they are lost.|18|60
+wavs/thatcher_1985_033.wav|And they have uttered yawls of rage.|18|60
+wavs/thatcher_1985_034.wav|They want to direct where the pension funds will be invested, not for your benefit but to further the Socialist planning.|18|60
+wavs/thatcher_1985_035.wav|And it's Labour who want to go back to their old levels of income tax.|18|60
+wavs/thatcher_1985_036.wav|Have you forgotten what those were?|18|60
+wavs/thatcher_1985_037.wav|Let me remind you, under socialism on earnings a top rate of 83 pens in the pound.|18|60
+wavs/thatcher_1985_038.wav|That was the income tax and on savings a top rate of 98 pens in the pound.|18|60
+wavs/thatcher_1985_039.wav|What a penalty on success, hardly the way to keep the talent Britain needs.|18|60
+wavs/thatcher_1985_040.wav|And it was their supporters who used the picket line to try and prevent men and women from going peacefully to their place of work.|18|60
+wavs/thatcher_1987_003.wav|That trade movement, then was under the dictator trade union bosses, some of whom are still there.|18|62
+wavs/thatcher_1987_004.wav|They used their power against their members.|18|62
+wavs/thatcher_1987_005.wav|They made them come out on strike when they didn't want to.|18|62
+wavs/thatcher_1987_006.wav|They loved secondary picketing.|18|62
+wavs/thatcher_1987_007.wav|They went and demonstrated outside companies where there was no dispute whatsoever and sometimes closed them down.|18|62
+wavs/thatcher_1987_008.wav|They were acting as they were later in the coal strike before my whole trade union laws were through this government.|18|62
+wavs/thatcher_1987_010.wav|You want division, you want conflict, you want hatred, there it was, it was that, which thaturism if you call it that.|18|62
+wavs/thatcher_1987_012.wav|Now another one, I believe passionately that people have a right by their own efforts to benefit their own families.|18|62
+wavs/thatcher_1987_013.wav|So we've taken down taxation.|18|62
+wavs/thatcher_1987_014.wav|It doesn't matter to me who you are to watch your background is.|18|62
+wavs/thatcher_1987_015.wav|If you want to use your own efforts to work harder, yes I'm with you all the way.|18|62
+wavs/thatcher_1987_016.wav|Whether it's unskilled effort, whether it's skilled, or so we've taken the income tax down and the third thing.|18|62
+wavs/thatcher_1987_017.wav|All my predecessors, yes I read this rarely, yes help McMillan,|18|62
+wavs/thatcher_1987_018.wav|I would say I am right in their tradition.|18|62
+wavs/thatcher_1987_019.wav|It was disraeli one nation.|18|62
+wavs/thatcher_1987_020.wav|We've had an increase of home ownership.|18|62
+wavs/thatcher_1987_021.wav|You went, you asked what I know you called the gut question right.|18|62
+wavs/thatcher_1987_022.wav|It's gone to the gut, it's gone to the jugular.|18|62
+wavs/thatcher_1987_023.wav|Let me finish it.|18|62
+wavs/thatcher_1987_024.wav|More home ownership, far more share ownership, far more savings and building society accounts.|18|62
+wavs/thatcher_1987_025.wav|This is what is building one nation as every owner becomes a shareholder, as more and more people own their homes.|18|62
+wavs/thatcher_1987_026.wav|No, we are getting rid of the divisions.|18|62
+wavs/thatcher_1987_027.wav|We are replacing conflict with cooperation.|18|62
+wavs/thatcher_1979_001.wav|the full weight of Labour's mismanagement at the centre, the inflation, the high interest rates, the fiddling of the rate support grant,|18|54
+wavs/thatcher_1992_001.wav|sound so that the savings put away at the ground suns christening will still buy the same amount of goods when he comes of age?|18|67
+wavs/thatcher_1992_003.wav|Human wants are not satisfied by endless political promises.|18|67
+wavs/thatcher_1992_005.wav|That is the way that the wealth and the well being of a nation is created.|18|67
+wavs/thatcher_1992_009.wav|In politics the unexpected happens.|18|67
+wavs/thatcher_1992_010.wav|We know that from the foreklens.|18|67
+wavs/thatcher_1992_011.wav|We know that the days Adam was saying went into Kuwait.|18|67
+wavs/thatcher_1992_012.wav|The Prime Minister and I were both involved in defeating that tyranny.|18|67
+wavs/thatcher_1992_013.wav|But the important thing is this and it applies to the United States and for us.|18|67
+wavs/thatcher_1992_015.wav|I hear the press talking about a hang parliament.|18|67
+wavs/thatcher_1992_016.wav|A hang parliament would hang the future of our country.|18|67
+wavs/thatcher_1992_017.wav|Strong decisions and Prime Minister may just be able to take strong decisions and show strong leadership because we had a good sound majority behind us.|18|67
+wavs/thatcher_1992_018.wav|Just look at some countries that have had coalition governments.|18|67
+wavs/thatcher_1992_019.wav|You may have read about Belgium in the papers in the last few weeks.|18|67
+wavs/thatcher_1992_020.wav|It took them a hundred days to form a new government.|18|67
+wavs/thatcher_1992_021.wav|What would have happened if anything vital had come up during that time.|18|67
+wavs/thatcher_1992_022.wav|Did it help their main decisions?|18|67
+wavs/thatcher_1992_023.wav|Did it help their deficit to come down?|18|67
+wavs/thatcher_1992_025.wav|They've got one of the worst deficits in Europe.|18|67
+wavs/thatcher_1992_026.wav|Not surprising with the coalition government.|18|67
+wavs/thatcher_1992_027.wav|No one has the guts to stand up and say no to public expenditure.|18|67
+wavs/thatcher_1992_028.wav|This does continue as coalition governments help them to stand up against the tyrant.|18|67
+wavs/thatcher_1992_029.wav|No one wanted to buy munitions they wouldn't sell them to us.|18|67
+wavs/thatcher_1992_030.wav|So do not go for coalition ever.|18|67
+wavs/thatcher_1992_033.wav|Prime Minister, your leadership is proven.|18|67
+wavs/thatcher_1982_001.wav|Mr. President,|18|57
+wavs/thatcher_1982_003.wav|This is the first time that you've met in London since 1974 and I extend warm greetings to you all.|18|57
+wavs/thatcher_1982_004.wav|Your discussions will have special significance.|18|57
+wavs/thatcher_1982_005.wav|You meet at a time when the changes in the leadership of the Soviet Union introduce a period of uncertainty.|18|57
+wavs/thatcher_1982_007.wav|We shall work for the new opportunities, but the alliance must be ready to respond whatever the future holds.|18|57
+wavs/thatcher_1982_010.wav|Our Foreign Secretary Ernest Bevin said, that last democracy is no longer a series of isolated units.|18|57
+wavs/thatcher_1982_011.wav|It has become a cohesive organism determined to fulfill its great purpose.|18|57
+wavs/thatcher_1982_013.wav|These words and the treaty itself had stood the test of time.|18|57
+wavs/thatcher_1982_014.wav|The peace has been kept and freedom upheld for more than three decades.|18|57
+wavs/thatcher_1982_015.wav|And the fundamental principles of the treaty remain our surest protection and guide for the future.|18|57
+wavs/thatcher_1982_017.wav|Founded on the principles of democracy, individual liberty and the rule of law.|18|57
+wavs/thatcher_1982_018.wav|There is no greater cause a none which requires such constant vigilance.|18|57
+wavs/thatcher_1982_019.wav|Passive defensive freedom will not do.|18|57
+wavs/thatcher_1982_020.wav|The struggle for human liberty is unremitting and the threat to it ever present.|18|57
+wavs/thatcher_1982_021.wav|Our commitment to freedom and justice must be equal to the challenge.|18|57
+wavs/thatcher_1983_001.wav|one of the great debates of our time is about how much of your money should be spent by the state and how much you should keep to spend on your family.|18|58
+wavs/thatcher_1983_002.wav|Let us never forget this fundamental truth.|18|58
+wavs/thatcher_1983_003.wav|The state has no source of money other than the money people earn themselves.|18|58
+wavs/thatcher_1983_005.wav|That someone else is you.|18|58
+wavs/thatcher_1983_006.wav|There is no such thing as public money, there is only taxpayers money.|18|58
+wavs/thatcher_1983_008.wav|We have a duty to make sure that every penny piece we raise in taxation is spent wisely and well.|18|58
+wavs/thatcher_1983_009.wav|For it is our party which is dedicated to good housekeeping.|18|58
+wavs/thatcher_1983_011.wav|These are our two great tasks and that demands have to be reconciled.|18|58
+wavs/thatcher_1983_012.wav|Our very pleasant it would be.|18|58
+wavs/thatcher_1983_013.wav|How very popular to say, spend more on this, expand more on that and of course we all have our favourite causes.|18|58
+wavs/thatcher_1983_014.wav|I know I do but someone has to add up the figures.|18|58
+wavs/thatcher_1983_015.wav|Every business has to do it, every housewife has to do it, every government should do it and this one will.|18|58
+wavs/thatcher_1995_003.wav|No, I have not kept it our way.|18|70
+wavs/thatcher_1995_004.wav|Oh yes, yes, that's where I, uh, get some talents with dress making form.|18|70
+wavs/thatcher_1995_006.wav|And both not only the business, but they saved saving was very much a part of your whole approach in those days.|18|70
+wavs/thatcher_1995_007.wav|That was your only possibility of starting in life because you wouldn't inherit anything.|18|70
+wavs/thatcher_1995_009.wav|The next shilling he saved and the next shilling he spent after your bare necessities were met.|18|70
+wavs/thatcher_1995_010.wav|And this was in wartime.|18|70
+wavs/thatcher_1995_012.wav|And my mother was absolutely amazed and my mother was very economical.|18|70
+wavs/thatcher_1995_013.wav|Yes, and my mother backed him up a whole way.|18|70
+wavs/thatcher_1995_014.wav|It really was most marvelous relationship because she was a very good organizer and extremely hard worker.|18|70
+wavs/thatcher_1995_015.wav|So often, you know, I was questioned how in the world did I manage to do so many things and I said, well, you should have known the life.|18|70
+wavs/thatcher_1995_018.wav|It wasn't a half day for my mother.|18|70
+wavs/thatcher_1995_019.wav|That was when she did her other big bake for the week and around Christmas time my mother and for my grandmother before her.|18|70
+wavs/thatcher_1995_020.wav|We made enough Christmas puddings so we could have one every week until Easter.|18|70
+wavs/thatcher_1995_021.wav|So we had a lot of you could go and holiday together because you didn't have enough staff to carry on.|18|70
+wavs/thatcher_1995_022.wav|One of you always had to be there.|18|70
+wavs/thatcher_1995_023.wav|We never had a family holiday.|18|70
+wavs/thatcher_1995_024.wav|And what is more in my young day there was no possibility of my father ever retiring.|18|70
+wavs/thatcher_1995_025.wav|You would never have had resources to retire.|18|70
+wavs/thatcher_1995_026.wav|You would just go on working somehow.|18|70
+wavs/thatcher_1995_027.wav|It was not until the beverage report, it was a result of wartime that there was a basic pension.|18|70
+wavs/thatcher_1995_028.wav|And you could think of retiring.|18|70
+wavs/thatcher_1995_029.wav|Life was work.|18|70
+wavs/thatcher_1995_030.wav|But don't think it was dull.|18|70
+wavs/thatcher_1995_031.wav|It wasn't work as fascinating.|18|70
+wavs/thatcher_1995_032.wav|It's interesting sometimes you're tired.|18|70
+wavs/thatcher_1995_033.wav|But always in when you run a shop.|18|70
+wavs/thatcher_1995_034.wav|There are always people coming in and out and in some ways your shop particularly with my father, local counsellor, a very, very good debater and a very good speaker.|18|70
+wavs/thatcher_1995_035.wav|People came in and they bought something and then they stayed for a chat.|18|70
+wavs/thatcher_1995_036.wav|Don't forget that there were days of great unemployment and unemployment marches.|18|70
+wavs/thatcher_1995_037.wav|And how are we going to get out of that?|18|70
+wavs/thatcher_1995_038.wav|And then there were days when we knew something was going on in Germany.|18|70
+wavs/thatcher_1995_039.wav|When we came in the first day, it looked as if Hitler was organising things and then gradually this terrible dictatorship came out and then he banned Rotary.|18|70
+wavs/thatcher_1995_040.wav|I can remember my father saying it was a great compliment to Rotary that Hitler banned it.|18|70
+wavs/thatcher_1995_042.wav|And if he could manage to get Edith out of Vienna, could we take her?|18|70
+wavs/thatcher_1995_043.wav|It was urgent because people being made to scrub the streets and all sorts of terrible things happening.|18|70
+wavs/thatcher_1995_044.wav|And my father said, well we can't possibly do this alone.|18|70
+wavs/thatcher_1995_047.wav|It didn't occur to him that he could refuse but he had to find a way to make it possible.|18|70
+wavs/thatcher_1995_048.wav|And sometimes when I've been sitting in cabinet and I've heard politicians say, oh the people in the country won't understand that.|18|70
+wavs/thatcher_1995_049.wav|All my experiences made me say, they will you know, they will.|18|70
+wavs/thatcher_1995_051.wav|You could just sit round a table and you should talk everything through and therefore there are people who said no, we will not go and fight for our fucking country again.|18|70
+wavs/thatcher_1995_052.wav|And then everyone should know that we'll have to solve things by peaceful methods and the League of Nations who are dead.|18|70
+wavs/thatcher_1995_053.wav|Well, evil is always with us and evil people will not be asswaged by good people.|18|70
+wavs/thatcher_1995_054.wav|You have to defend everything you're believing.|18|70
+wavs/thatcher_1995_055.wav|So that of course is a justification for war.|18|70
+wavs/thatcher_1995_057.wav|No, my father was very, very realistic.|18|70
+wavs/thatcher_1995_059.wav|He of course felt particularly strongly about it.|18|70
+wavs/thatcher_1995_061.wav|His younger brother had been killed in World War One.|18|70
+wavs/thatcher_1995_062.wav|He had tried to join up six times, but each and every time being refused.|18|70
+wavs/thatcher_1995_063.wav|I don't I'm afraid I haven't got a piano and I perhaps one day will take it up again.|18|70
+wavs/thatcher_1995_064.wav|But I loved it.|18|70
+wavs/thatcher_1995_066.wav|We did one of the great oratorios each year.|18|70
+wavs/thatcher_1995_067.wav|We couldn't take obviously the main singing parts so we always were able to get someone to come down from London.|18|70
+wavs/thatcher_1995_068.wav|We paid them obviously.|18|70
+wavs/thatcher_1995_069.wav|Oh, just marvellous.|18|70
+wavs/thatcher_1995_070.wav|I remember talking to one of my friends who my knurna-dox was quite high church and who then become agnostic.|18|70
+wavs/thatcher_1995_071.wav|And he came to see me and he actually was very, very ill and not long to live.|18|70
+wavs/thatcher_1995_073.wav|And he said no and I thought I'm surprised.|18|70
+wavs/thatcher_1995_074.wav|But he said sometimes when I listen to the great choruses and audio, it's a great choral music.|18|70
+wavs/thatcher_1995_075.wav|It's such inspiration that that would be the most likely thing.|18|70
+wavs/thatcher_1995_077.wav|I'd had a cousin who had gone to London.|18|70
+wavs/thatcher_1995_078.wav|But I was the first officer to go to Oxford but we were very much aware that we were privileged to be there.|18|70
+wavs/thatcher_1995_079.wav|I was taking a science degree and I went just at 17.|18|70
+wavs/thatcher_1995_080.wav|I was doing 18 but we could get them three years in before we were called out.|18|70
+wavs/thatcher_1995_081.wav|But obviously when the landings came, the Normandy landings came, we were very much aware that we were in Oxford and all the dangers that were going on elsewhere.|18|70
+wavs/thatcher_1995_082.wav|But we had to do some, I was called war work.|18|70
+wavs/thatcher_1995_083.wav|I used to serve in a canteen in some of the evenings.|18|70
+wavs/thatcher_1995_084.wav|And it got its hard work but it was interesting.|18|70
+wavs/thatcher_1995_085.wav|You're constantly then in touch with life as it was at that time.|18|70
+wavs/thatcher_1995_086.wav|All of a sudden, the 1945 election, the end of the election came and Quinton Hogg was our candidate and I was still at the end of term.|18|70
+wavs/thatcher_1995_087.wav|I was there for part of the campaign and went conversing in the streets and went round to some of the big election meetings.|18|70
+wavs/thatcher_1995_088.wav|Quinton was a marvellous orator, the meetings in Yorkshire Town Hall were terrific.|18|70
+wavs/thatcher_1995_090.wav|And I remember saying at one meeting where I was the speaker, until the main speaker arrived, we had to keep going until your candidate arrived.|18|70
+wavs/thatcher_1995_091.wav|That time, if we didn't win, we shouldn't have Winston Churchill.|18|70
+wavs/thatcher_1995_092.wav|And I was amazed when someone got up from the orders and very nice man got up and the view point he put was, look why shouldn't we have Mr. Atley?|18|70
+wavs/thatcher_1995_093.wav|Who has been looking after the country when Winston Churchill has been away?|18|70
+wavs/thatcher_1995_094.wav|It's been term and atley.|18|70
+wavs/thatcher_1995_095.wav|And all of a sudden I realised it wasn't going to be a walk over.|18|70
+wavs/thatcher_1995_096.wav|And there were people who felt very strong knew as a need for change and they had very great faith in Mr. Atley which we all had when we saw how he handled things.|18|70
+wavs/thatcher_1995_097.wav|And then I went home with the other part and again was going round a totally different campaign in a country seat, Grandtaman's sleaford.|18|70
+wavs/thatcher_1995_098.wav|And sometimes you would have to go to six meetings in a night as you went from one village to another because the candidate had to appear in every village.|18|70
+wavs/thatcher_1995_099.wav|And so we opened the thing up for questions.|18|70
+wavs/thatcher_1995_101.wav|And he said just because I've got a little bit of money it's not fair.|18|70
+wavs/thatcher_1995_102.wav|I saved and I don't get it.|18|70
+wavs/thatcher_1995_104.wav|And I went back to have some supper with some staunch workers and they knew my husband, the new Dennis Hattivey, when he was there.|18|70
+wavs/thatcher_1995_105.wav|Things that you could never forecast.|18|70
+wavs/thatcher_1995_106.wav|Things that appeared to be by chance.|18|70
+wavs/thatcher_1995_107.wav|I mean, it was extraordinary strange and I forgot about it for years.|18|70
+wavs/thatcher_1995_109.wav|Oh, she said, this is interesting.|18|70
+wavs/thatcher_1995_110.wav|She said, you will be great like Winston Churchill.|18|70
+wavs/thatcher_1995_111.wav|I said, oh that's absolutely absurd.|18|70
+wavs/thatcher_1995_112.wav|Are you all being great?|18|70
+wavs/thatcher_1995_113.wav|And eventually I left the tent, I thought no more of it after all it was a fortune teller.|18|70
+wavs/thatcher_1995_114.wav|I think I wore the pearls a little bit more regularly.|18|70
+wavs/thatcher_1995_115.wav|Yes, after I, this is after I'd come later the party.|18|70
+wavs/thatcher_1995_118.wav|And then it, your voice comes all right.|18|70
+wavs/thatcher_1995_119.wav|She was a fascinating lady.|18|70
+wavs/thatcher_1995_120.wav|A character, I was speaking my own lines and therefore I knew what message I wanted to get across.|18|70
+wavs/thatcher_1995_121.wav|It might not have been the most perfect English but I had to see whether it was going across and sometimes you're speaking from a stage and they put all of the floodlights on you.|18|70
+wavs/thatcher_1995_122.wav|I say, look, I can't stand that.|18|70
+wavs/thatcher_1995_123.wav|Please take those floodlights down.|18|70
+wavs/thatcher_1995_124.wav|I must see the audience.|18|70
+wavs/thatcher_1995_125.wav|I must be able to look around and see if the message is getting across and then I was told, but an actor, if he looked up and saw the audience, he would forget his lines.|18|70
+wavs/thatcher_1995_131.wav|He picked up the point.|18|70
+wavs/thatcher_1995_132.wav|He said, you're gazed to the audience.|18|70
+wavs/thatcher_1995_133.wav|It's really quite good.|18|70
+wavs/thatcher_1995_134.wav|So he knew that we had to be a little bit different.|18|70
+wavs/thatcher_1995_135.wav|He had a lovely voice.|18|70
+wavs/thatcher_1995_136.wav|They gave Britain confidence in herself once again.|18|70
+wavs/thatcher_1995_137.wav|And we once again live up to our great history.|18|70
+wavs/thatcher_1995_139.wav|We should always be different.|18|70
+wavs/thatcher_1995_141.wav|This is because we weren't born in the heart of Europe, born in offshore island.|18|70
+wavs/thatcher_1995_142.wav|We built up a great colonial empire and then a great commonwealth.|18|70
+wavs/thatcher_1995_143.wav|These talents that are British that's alone in Europe stood out against Hitler.|18|70
+wavs/thatcher_1995_144.wav|These talents are there to be encouraged, to be re-vivified, to be renewed and still to play their part in the world of the future.|18|70
+wavs/thatcher_1980_001.wav|if I could press a button and genuinely solve the unemployment problem, do you think that I would not press that button this instant?|18|55
+wavs/thatcher_1980_002.wav|does anyone imagine that there is the smallest political gain in letting this level of unemployment continue?|18|55
+wavs/thatcher_1980_003.wav|or that there is some obscure economic religion which demands this level of unemployment as part of its grizzly ritual?|18|55
+wavs/thatcher_2009_003.wav|they began as communities of learning.|18|84
+wavs/thatcher_2009_004.wav|they prospered under inspiring teachers.|18|84
+wavs/thatcher_2009_005.wav|they attracted young people eager for knowledge.|18|84
+wavs/thatcher_2009_006.wav|the scholarship which made them renowned still flourishes and brings with it renewed opportunities.|18|84
+wavs/thatcher_2009_007.wav|today, new centres of learning complement the old.|18|84
+wavs/thatcher_2009_009.wav|and that is the future the people of Poland deserve.|18|84
+wavs/thatcher_2009_010.wav|for the history of your country has too often been marked by conflict and suffering.|18|84
+wavs/thatcher_2009_012.wav|during those dark years, Poland experienced oppression and atrocity but you never ceased to have hope.|18|84
+wavs/thatcher_2009_013.wav|nor did liberation bring with it the relief for which your people craved.|18|84
+wavs/thatcher_2009_015.wav|the bleakness and despair of all those years might have overwhelmed less nations.|18|84
+wavs/thatcher_2009_016.wav|but a spirit of the poorest people drawing on a noble and heroic history could not be broken.|18|84
+wavs/thatcher_2009_018.wav|it is partly why the poorest people have a very special place in our affection.|18|84
+wavs/thatcher_2009_021.wav|Poland would soon be free.|18|84
+wavs/thatcher_2009_022.wav|Freedom is not always an easy part to follow.|18|84
+wavs/thatcher_2009_023.wav|there are setbacks but freedom allows our hopes to soar above all the disappointments.|18|84
+wavs/thatcher_2009_024.wav|it inspires us to create a better future, one greater than we could have imagined in our younger days.|18|84
+wavs/thatcher_2009_025.wav|so that is our challenge.|18|84
+wavs/thatcher_2009_026.wav|It is a challenge for this university, the challenge for your ever going city and the challenge for your country.|18|84
+wavs/thatcher_2009_027.wav|and as you keep to the course I shall hold the people of Poland forever in my thoughts and prayers.|18|84
+wavs/thatcher_2009_028.wav|thank you.|18|84

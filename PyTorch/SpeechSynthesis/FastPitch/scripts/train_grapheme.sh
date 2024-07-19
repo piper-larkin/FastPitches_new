@@ -5,10 +5,10 @@ export OMP_NUM_THREADS=1
 : ${NUM_GPUS:=1} # changed from 8
 : ${BATCH_SIZE:=16}
 : ${GRAD_ACCUMULATION:=16} # changed from 2
-: ${OUTPUT_DIR:="./LJ_graphemes/output_1"}  # Changed
-: ${DATASET_PATH:=LJSpeech-1.1} # Changed
-: ${TRAIN_FILELIST:=filelists/ljs_audio_pitch_text_train_v3.txt}  # Changed 
-: ${VAL_FILELIST:=filelists/ljs_audio_pitch_text_val.txt} # Changed
+: ${OUTPUT_DIR:="./TC_all/graphemes_out"}  # Changed
+: ${DATASET_PATH:=TC_all}
+: ${TRAIN_FILELIST:=TC_all/tc_audio_pitch_text_spk_age_train.txt}  # Changed 
+: ${VAL_FILELIST:=TC_all/tc_audio_pitch_text_spk_age_dev.txt} # Changed
 : ${AMP:=false}
 : ${SEED:=""}
 
@@ -32,7 +32,7 @@ export OMP_NUM_THREADS=1
 : ${LOAD_MEL_FROM_DISK:=true}
 
 # For multispeaker models, add speaker ID = {0, 1, ...} as the last filelist column
-: ${NSPEAKERS:=1} 
+: ${NSPEAKERS:=17} 
 : ${SAMPLING_RATE:=22050}
 
 # Adjust env variables to maintain the global batch size: NUM_GPUS x BATCH_SIZE x GRAD_ACCUMULATION = 256.
@@ -59,7 +59,7 @@ ARGS+=" --weight-decay 1e-6"
 ARGS+=" --grad-clip-thresh 1000.0"
 ARGS+=" --dur-predictor-loss-scale 0.1"
 ARGS+=" --pitch-predictor-loss-scale 0.1"
-ARGS+=" --project train_lj_graphemes"
+ARGS+=" --project TC_phoneme"
 
 # Autoalign & new features
 ARGS+=" --kl-loss-start-epoch 0"

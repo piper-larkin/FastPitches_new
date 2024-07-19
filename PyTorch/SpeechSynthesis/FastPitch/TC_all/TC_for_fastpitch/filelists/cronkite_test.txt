@@ -1,0 +1,12 @@
+mels/cronkite_2001_039.pt|pitch/cronkite_2001_039.pt|And here was the story and a tempered assassination of the president of the United States.|6|85
+mels/cronkite_2007_009.pt|pitch/cronkite_2007_009.pt|In the current war, our case was not at all clear to others.|6|91
+mels/cronkite_1963_015.pt|pitch/cronkite_1963_015.pt|There is still no official confirmation of this, however, it's a report from our correspondent Dan, rather, in Dallas, Texas.|6|47
+mels/cronkite_1990_045.pt|pitch/cronkite_1990_045.pt|And I think we're getting in much deeper than, uh, then, good, prudent operation demands.|6|74
+mels/cronkite_1979_006.pt|pitch/cronkite_1979_006.pt|Plant officials predicted radiation will continue to leak at least five more days.|6|63
+mels/cronkite_1986_005.pt|pitch/cronkite_1986_005.pt|And, of course, their engineers will have to look very carefully at what happened today to make sure that it doesn't happen again.|6|70
+mels/cronkite_1995_003.pt|pitch/cronkite_1995_003.pt|For every kilogram of drugs intercepted at our borders, it's estimated that at least nine kilograms get through.|6|79
+mels/cronkite_1990_034.pt|pitch/cronkite_1990_034.pt|And it's kind of hard to, to let, let go of that.|6|74
+mels/cronkite_1990_025.pt|pitch/cronkite_1990_025.pt|So I worked my way up to retirement.|6|74
+mels/cronkite_2007_003.pt|pitch/cronkite_2007_003.pt|Today, surely, they know to plan for the aftermath of any military action they undertake.|6|91
+mels/cronkite_2001_021.pt|pitch/cronkite_2001_021.pt|It's the only time I really didn't caught up and thought I was going to lose it and did for a brief second managed to come back.|6|85
+mels/cronkite_1986_009.pt|pitch/cronkite_1986_009.pt|We have come a long way in space and there's still so much to be done out there.|6|70

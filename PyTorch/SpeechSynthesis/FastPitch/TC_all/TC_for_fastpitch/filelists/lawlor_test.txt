@@ -1,0 +1,5 @@
+mels/lawlor_2005-10-06_027.pt|pitch/lawlor_2005-10-06_027.pt|Just coming up to 18 minutes to 9.|11|44
+mels/lawlor_1995-10-18_013.pt|pitch/lawlor_1995-10-18_013.pt|Jimmy Power took a local hotel to court because they barred him simply for being a traveler.|11|34
+mels/lawlor_1985-10-10_009.pt|pitch/lawlor_1985-10-10_009.pt|And is there anything else about pensions that annoys you as well?|11|24
+mels/lawlor_2005-10-06_040.pt|pitch/lawlor_2005-10-06_040.pt|The thornish just says it's time to put patients first.|11|44
+mels/lawlor_2005-10-06_012.pt|pitch/lawlor_2005-10-06_012.pt|It's not unique to the Irish health service.|11|44

@@ -143,7 +143,7 @@ def main():
             tik = time.time()
 
             _, input_lens, mels, mel_lens, _, pitch, _, _, attn_prior, fpaths, age = batch
-            print("Loaded age from batch in prepare_dataset.py: ", age) # now like tensor([75])
+            # print("Loaded age from batch in prepare_dataset.py: ", age) # now like tensor([75])
             # ADDED ABOVE: age to batch + print statement 
 
             # NOTE: added below from data_function.py for reference
