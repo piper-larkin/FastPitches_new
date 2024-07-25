@@ -3,7 +3,7 @@
 : ${WAVEGLOW:="pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt"}
 
 : ${BATCH_SIZE:=32}     # No difference if 1 or 32 
-: ${OUTPUT_DIR:="reagan_all/vocoded2"}      # changed dir name
+: ${OUTPUT_DIR:="TC_all/vocoded_mos_more"}      # changed dir name
 : ${LOG_FILE:="$OUTPUT_DIR/nvlog_infer.json"}
 : ${AMP:=false}
 : ${TORCHSCRIPT:=false}
@@ -14,13 +14,13 @@
 : ${REPEATS:=1}
 : ${CPU:=false}
 
-: ${SPEAKER:=0}
-: ${NUM_SPEAKERS:=1}
+: ${SPEAKER:=3}
+: ${NUM_SPEAKERS:=17}
 
 echo -e "\nAMP=$AMP, batch_size=$BATCH_SIZE\n"
 
 ARGS=""
-ARGS+=" -i phrases/reagan_all_check.tsv"   # Change
+ARGS+=" -i phrases/vocode_mos_more.tsv"   # Change
 ARGS+=" -o $OUTPUT_DIR"
 ARGS+=" --log-file $LOG_FILE"
 ARGS+=" --fastpitch SKIP"
@@ -32,11 +32,11 @@ ARGS+=" --repeats $REPEATS"
 ARGS+=" --warmup-steps $WARMUP"
 ARGS+=" --speaker $SPEAKER"
 ARGS+=" --n-speakers $NUM_SPEAKERS"
-ARGS+=" --dataset-path reagan_all/" # Change
+ARGS+=" --dataset-path TC_all/" # Change
 [ "$CPU" = false ]          && ARGS+=" --cuda"
 [ "$CPU" = false ]          && ARGS+=" --cudnn-benchmark"
 [ "$AMP" = true ]           && ARGS+=" --amp"
-[ "$PHONE" = "true" ]       && ARGS+=" --p-arpabet 1.0"
+[ "$PHONE" = "true" ]       && ARGS+=" --p-arpabet 0.0"
 [ "$TORCHSCRIPT" = "true" ] && ARGS+=" --torchscript"
 
 mkdir -p "$OUTPUT_DIR"
