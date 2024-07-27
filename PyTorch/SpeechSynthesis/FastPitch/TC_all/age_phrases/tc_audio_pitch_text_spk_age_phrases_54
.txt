@@ -1,0 +1,2 @@
+mel	output	text
+mels/plomley_1968_015.pt	plomley_1968_015wav	Now you had written your first novel, so this was the pattern for some time at novels and legal work.

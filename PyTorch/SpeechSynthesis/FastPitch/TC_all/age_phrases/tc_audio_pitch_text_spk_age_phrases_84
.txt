@@ -1,0 +1,6 @@
+mel	output	text
+mels/thatcher_2009_025.pt	thatcher_2009_025wav	so that is our challenge.
+mels/cooke_1993-03-19_008.pt	cooke_1993-03-19_008wav	in the end the whole row went to the courts
+mels/cooke_1992-12-04_034.pt	cooke_1992-12-04_034wav	The continental wide recession made wider still by the lapse in German prosperity.
+mels/cooke_1992-12-04_052.pt	cooke_1992-12-04_052wav	Only as long as the patient could get on his feet and instead of moaning over his lost job, get trained for a new one.
+mels/queen_2010_014.pt	queen_2010_014wav	In the knowledge that progress is something which must be sustained and shared by all.

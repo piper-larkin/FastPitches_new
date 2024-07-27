@@ -1,0 +1,4 @@
+mel	output	text
+mels/cooke_2004-02-13_061.pt	cooke_2004-02-13_061wav	You had tuberculosis or lung cancer, just take a good nip of the lung tonic and ah, that's better.
+mels/cooke_2004-02-13_046.pt	cooke_2004-02-13_046wav	Spiky hair, goggly glasses, clothes like an unmade bed, high nervous enthusiasm.
+mels/cooke_2004-02-13_026.pt	cooke_2004-02-13_026wav	Ruffage was the word for at least a quarter of a century, till it was redefined as brand, a brand product.

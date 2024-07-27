@@ -1,0 +1,3 @@
+mel	output	text
+mels/queen_1959_004.pt	queen_1959_004wav	All of us at Sandlingham wish you a very happy Christmas.
+mels/odulaing_1966-07-15_008.pt	odulaing_1966-07-15_008wav	But nonetheless, and this becomes apparent if one meets many Brory people, the locals found much to admire in the young lad from Notmore, here Paddy Kelly.

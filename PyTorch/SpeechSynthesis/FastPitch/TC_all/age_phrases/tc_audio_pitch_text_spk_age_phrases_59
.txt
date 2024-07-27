@@ -1,0 +1,3 @@
+mel	output	text
+mels/odulaing_1992_009.pt	odulaing_1992_009wav	Which of your own songs is your favorite?
+mels/queen_1985_067.pt	queen_1985_067wav	Christmas is a time of good news.

@@ -2,8 +2,8 @@
 
 : ${WAVEGLOW:="pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt"}
 
-: ${BATCH_SIZE:=32}     # No difference if 1 or 32 
-: ${OUTPUT_DIR:="TC_all/vocoded_mos_more"}      # changed dir name
+: ${BATCH_SIZE:=16}     # chnaged from 32 to fix cuda error 
+: ${OUTPUT_DIR:="TC_all/testset_true_vocoded"}      # changed dir name
 : ${LOG_FILE:="$OUTPUT_DIR/nvlog_infer.json"}
 : ${AMP:=false}
 : ${TORCHSCRIPT:=false}
@@ -13,14 +13,13 @@
 : ${WARMUP:=0}
 : ${REPEATS:=1}
 : ${CPU:=false}
-
-: ${SPEAKER:=3}
+: ${SPEAKER:=16} # doesn't matter 
 : ${NUM_SPEAKERS:=17}
 
 echo -e "\nAMP=$AMP, batch_size=$BATCH_SIZE\n"
 
 ARGS=""
-ARGS+=" -i phrases/vocode_mos_more.tsv"   # Change
+ARGS+=" -i TC_all/tc_audio_pitch_text_spk_age_phrases.tsv"   # Change
 ARGS+=" -o $OUTPUT_DIR"
 ARGS+=" --log-file $LOG_FILE"
 ARGS+=" --fastpitch SKIP"

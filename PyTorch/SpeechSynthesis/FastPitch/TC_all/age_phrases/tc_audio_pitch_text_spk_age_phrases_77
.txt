@@ -1,0 +1,18 @@
+mel	output	text
+mels/reagan_1988_31_5_172.pt	reagan_1988_31_5_172wav	Peace between nations must be an enduring goal, not a tactical stage in a continuing conflict.
+mels/reagan_1988_25_1_043.pt	reagan_1988_25_1_043wav	Yes, we Americans like the future and like making the most of it.
+mels/reagan_1988_25_1_042.pt	reagan_1988_25_1_042wav	Where others seek to throw up barriers, we seek to bring them down, where others take counsel of their fears, we follow our hopes.
+mels/reagan_1988_31_5_196.pt	reagan_1988_31_5_196wav	Goggle asks what will be its destination.
+mels/reagan_1988_25_1_034.pt	reagan_1988_25_1_034wav	Our third objective tonight is global, continuing the exciting economic and democratic revolutions we've seen around the world.
+mels/reagan_1988_31_5_149.pt	reagan_1988_31_5_149wav	Such freedom will always be looking over its shoulder, a bird on a tether, no matter how long the rope can always be pulled back.
+mels/reagan_1988_25_1_064.pt	reagan_1988_25_1_064wav	Last year of the 13 appropriations bills due by October 1st, none of them made it.
+mels/reagan_1988_25_1_082.pt	reagan_1988_25_1_082wav	By acting and approving this plan you have the opportunity to override a congressional process that is out of control.
+mels/reagan_1988_31_5_012.pt	reagan_1988_31_5_012wav	I want to talk not just of the realities of today, but of the possibilities of tomorrow.
+mels/reagan_1988_31_5_022.pt	reagan_1988_31_5_022wav	They even design better and faster computers.
+mels/reagan_1988_25_1_078.pt	reagan_1988_25_1_078wav	I won't even touch that.
+mels/reagan_1988_31_5_125.pt	reagan_1988_31_5_125wav	But this is just the point.
+mels/reagan_1988_16_12_006.pt	reagan_1988_16_12_006wav	And I think the familiarity of that term is justified.
+mels/reagan_1988_31_5_141.pt	reagan_1988_31_5_141wav	In case you didn't see the movie.
+mels/reagan_1988_16_12_092.pt	reagan_1988_16_12_092wav	And this helped hasten an end to the Gulf War.
+mels/reagan_1988_31_5_046.pt	reagan_1988_31_5_046wav	What of all the entrepreneurs that fail?
+mels/reagan_1988_16_12_207.pt	reagan_1988_16_12_207wav	Thank you, God bless you.

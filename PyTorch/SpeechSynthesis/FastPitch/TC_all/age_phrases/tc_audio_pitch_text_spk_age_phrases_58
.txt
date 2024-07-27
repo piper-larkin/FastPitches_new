@@ -1,0 +1,4 @@
+mel	output	text
+mels/thatcher_1983_003.pt	thatcher_1983_003wav	The state has no source of money other than the money people earn themselves.
+mels/nibhriain_2010-06-22_027.pt	nibhriain_2010-06-22_027wav	I had to take out the dictionary twice, but I was delighted.
+mels/finucane_2009-05-09_009.pt	finucane_2009-05-09_009wav	But anyway, I said that's a very important story for that particular family.

@@ -1,0 +1,8 @@
+mel	output	text
+mels/thatcher_1960_004.pt	thatcher_1960_004wav	Certainly until these two are a little older, I couldn't take on any more political responsibilities.
+mels/lockwood_1951_053.pt	lockwood_1951_053wav	I'm the world-worst sailor.
+mels/lockwood_1951_052.pt	lockwood_1951_052wav	Nothing at all to do with any fondness of mine for Boats.
+mels/lockwood_1951_074.pt	lockwood_1951_074wav	And I've been very fond of it ever since.
+mels/queen_1961_002.pt	queen_1961_002wav	It is traditionally the time for family reunions, present giving, and children's parties.
+mels/lockwood_1951_021.pt	lockwood_1951_021wav	It was with Peter Graves.
+mels/lockwood_1951_073.pt	lockwood_1951_073wav	I heard it first on the radio and I went out and bought a copy.

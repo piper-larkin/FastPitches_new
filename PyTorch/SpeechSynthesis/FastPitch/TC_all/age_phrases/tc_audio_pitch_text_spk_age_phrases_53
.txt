@@ -1,0 +1,12 @@
+mel	output	text
+mels/odulaing_1986-06-04_007.pt	odulaing_1986-06-04_007wav	and did you have brothers and sisters and were you the youngest?
+mels/reagan_1964_068.pt	reagan_1964_068wav	Senator Humphrey last week charged that Barry Goldwater as president would seek to eliminate farmers.
+mels/reagan_1964_058.pt	reagan_1964_058wav	They knew that governments don't control things.
+mels/reagan_1964_079.pt	reagan_1964_079wav	The fruit farmers voted against a wheat program.
+mels/magee_1988-06-09_009.pt	magee_1988-06-09_009wav	Harry Thurley with whom I worked a lot.
+mels/odulaing_1986-06-05_009.pt	odulaing_1986-06-05_009wav	Tony Gainer recalling the horror of childhood in another horror there in Dacca in Bangladesh.
+mels/reagan_1964_013.pt	reagan_1964_013wav	We haven't balanced our budget 28 out of the last 34 years.
+mels/reagan_1964_085.pt	reagan_1964_085wav	The president tells us he's now going to start building public housing units in the thousands where here to four we've only built them in the hundreds.
+mels/reagan_1964_022.pt	reagan_1964_022wav	Do they mean peace or do they mean we just want to be left in peace?
+mels/magee_1988-06-09_003.pt	magee_1988-06-09_003wav	I thought I mean years and years went by and there was no official chart in this country.
+mels/reagan_1964_044.pt	reagan_1964_044wav	But they've been a little more explicit in the past.

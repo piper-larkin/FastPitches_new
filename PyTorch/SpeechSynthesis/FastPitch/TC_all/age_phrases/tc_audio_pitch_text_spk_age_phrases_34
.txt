@@ -1,0 +1,4 @@
+mel	output	text
+mels/lawlor_1995-10-18_006.pt	lawlor_1995-10-18_006wav	Michael MacDonna is a traveler and community worker who's involved with the Navin Traveler Group.
+mels/thatcher_1959_005.pt	thatcher_1959_005wav	Well, I think we'll just try to be a very good back bench of first.
+mels/queen_1960_011.pt	queen_1960_011wav	Although the causes are beyond the control of individuals, we can at least influence the future via everyday behaviour.

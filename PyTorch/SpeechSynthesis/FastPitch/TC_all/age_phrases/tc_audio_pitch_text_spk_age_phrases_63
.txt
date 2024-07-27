@@ -1,0 +1,9 @@
+mel	output	text
+mels/bowman_2006-06-14_013.pt	bowman_2006-06-14_013wav	It was the end of an era, and the beginning of another quite different era, the LeMasse era.
+mels/magee_1998-02-03_040.pt	magee_1998-02-03_040wav	But the biggest one of all was this one in court and that was a victory on points, but he doesn't mind.
+mels/cronkite_1979_010.pt	cronkite_1979_010wav	Mass care centers were set up in Hershey and York, both about 15 miles from Harrisburg.
+mels/odulaing_1997-02-07_014.pt	odulaing_1997-02-07_014wav	A voice, indeed, for time and eternity, a man of many names, my friend,
+mels/reagan_1974_038.pt	reagan_1974_038wav	We did brief the trip down.
+mels/thatcher_1988_020.pt	thatcher_1988_020wav	But we give whenever there's a program run by some of the people who we know will make certain the money gets to the people.
+mels/reagan_1974_026.pt	reagan_1974_026wav	Yes, we all of us have been asked and not just the public.
+mels/magee_1998-02-03_032.pt	magee_1998-02-03_032wav	He went off to America.

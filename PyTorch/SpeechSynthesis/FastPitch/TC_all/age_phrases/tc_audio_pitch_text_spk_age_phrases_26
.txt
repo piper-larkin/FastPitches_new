@@ -1,0 +1,2 @@
+mel	output	text
+mels/queen_1952_038.pt	queen_1952_038wav	you will be keeping it as a holiday.

@@ -1,0 +1,2 @@
+mel	output	text
+mels/queen_2006_037.pt	queen_2006_037wav	It will continue to work to find a lasting settlement between Israel and the Palestinians.

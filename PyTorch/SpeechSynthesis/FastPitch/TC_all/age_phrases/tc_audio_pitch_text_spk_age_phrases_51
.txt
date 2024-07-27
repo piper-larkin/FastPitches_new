@@ -1,0 +1,2 @@
+mel	output	text
+mels/dunne_2009-06-05_024.pt	dunne_2009-06-05_024wav	Some sunny breaks in the west in the morning but rain in the east will spread westwards during the day.

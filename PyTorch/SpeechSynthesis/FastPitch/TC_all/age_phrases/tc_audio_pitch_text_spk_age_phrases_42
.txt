@@ -1,0 +1,6 @@
+mel	output	text
+mels/cooke_1951-11-01_017.pt	cooke_1951-11-01_017wav	He turns to a great empty map of America, empty that is except for the mountain ranges likely sketched in.
+mels/cooke_1951-11-01_072.pt	cooke_1951-11-01_072wav	For instance, mediocrity practically doesn't exist to a child.
+mels/magee_1977-05-06_025.pt	magee_1977-05-06_025wav	They threatened to kill the hostages unless their demands were met.
+mels/cooke_1951-11-01_025.pt	cooke_1951-11-01_025wav	He says, it's across the Great Plains today and it'll be here in Iowa and Illinois and Wisconsin tomorrow.
+mels/queen_1968_007.pt	queen_1968_007wav	I'm glad that my daughter's wedding gave such pleasure to so many people, just at a time when the world was facing very serious problems.

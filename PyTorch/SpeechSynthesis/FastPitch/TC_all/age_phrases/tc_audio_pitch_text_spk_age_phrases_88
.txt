@@ -1,0 +1,2 @@
+mel	output	text
+mels/cooke_1997-03-28_003.pt	cooke_1997-03-28_003wav	only half ingest he replied, I'm not allowed to say.

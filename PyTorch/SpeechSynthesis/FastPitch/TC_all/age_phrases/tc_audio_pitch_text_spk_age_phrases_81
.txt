@@ -1,0 +1,4 @@
+mel	output	text
+mels/queen_2007_015.pt	queen_2007_015wav	It is all too easy to turn a blind eye, to pass by on the other side and leave it to experts and professionals.
+mels/thatcher_2006_004.pt	thatcher_2006_004wav	I was always pleased to see him when I was Prime Minister, because he brought me extraordinary insights and bold proposals.
+mels/cooke_1990-05-17_028.pt	cooke_1990-05-17_028wav	Where were they now?

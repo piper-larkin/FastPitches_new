@@ -1,0 +1,5 @@
+mel	output	text
+mels/cronkite_2007_003.pt	cronkite_2007_003wav	Today, surely, they know to plan for the aftermath of any military action they undertake.
+mels/cronkite_2007_033.pt	cronkite_2007_033wav	Now we learn that the Iranians stopped developing nuclear weapons in 2003.
+mels/cooke_2000-03-17_017.pt	cooke_2000-03-17_017wav	He sat down and looked over the menu and looked over the town-tale.
+mels/cooke_2000-03-17_077.pt	cooke_2000-03-17_077wav	The cardinal of New York issued a dispensation for Manhattan, the Bronx and Staten Island.

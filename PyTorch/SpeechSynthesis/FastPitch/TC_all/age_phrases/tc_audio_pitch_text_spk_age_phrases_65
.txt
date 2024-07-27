@@ -1,0 +1,3 @@
+mel	output	text
+mels/gogan_1999-12-21_001.pt	gogan_1999-12-21_001wav	well, I, I, I, one of the, uh, poems in the book is something I know, a pint of plain is only man from flano brine.
+mels/gogan_1999-12-21_010.pt	gogan_1999-12-21_010wav	When food is scarce and your larder bear and oh rushers grease your palm,

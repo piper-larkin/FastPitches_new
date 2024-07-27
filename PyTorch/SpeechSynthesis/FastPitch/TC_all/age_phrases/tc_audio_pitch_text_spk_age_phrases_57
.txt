@@ -1,0 +1,5 @@
+mel	output	text
+mels/queen_1983_040.pt	queen_1983_040wav	computers cannot generate compassion.
+mels/thatcher_1982_014.pt	thatcher_1982_014wav	The peace has been kept and freedom upheld for more than three decades.
+mels/doyle_2009-12-09_006.pt	doyle_2009-12-09_006wav	the theshek prime kowen has told the doil any further funding for recapitalization of banks will not be incorporated in any figures that appear in today's budget.
+mels/queen_1983_041.pt	queen_1983_041wav	satellites cannot transmit tolerance.

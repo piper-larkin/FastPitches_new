@@ -1,0 +1,4 @@
+mel	output	text
+mels/thatcher_1985_033.pt	thatcher_1985_033wav	And they have uttered yawls of rage.
+mels/byrne_1995-04-14_010.pt	byrne_1995-04-14_010wav	My mother said she was Australian by birth but that her mother came from Tipperary and the family name was Dalton.
+mels/byrne_1995-04-14_020.pt	byrne_1995-04-14_020wav	When they were strong enough Richard Dalton arranged for them to be taken to their relatives in America.
