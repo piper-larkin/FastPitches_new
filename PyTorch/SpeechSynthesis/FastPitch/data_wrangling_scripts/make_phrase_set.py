@@ -1,8 +1,8 @@
 from collections import defaultdict
 import os
 
-testset_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/tc_audio_pitch_text_spk_age_test.txt'
-phrases_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/tc_audio_pitch_text_spk_age_phrases.txt'
+testset_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/filelists/reagan_all/reagan_audio_pitch_text_test_age_spk.txt'
+phrases_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/phrases/reagan_all_phrases.txt'
 
 lines_by_age = defaultdict(list)
 
@@ -27,7 +27,7 @@ for age in all_ages:
             line_spk = split_line[-2].strip()
             if line_age == age:
                 line_age = split_line[-1].strip()
-                phrases_file = f'/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/tc_audio_pitch_text_spk_age_phrases_{line_spk}_{line_age}.tsv'
+                phrases_file = f'/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/phrases/reagan_phrases_{line_spk}_{line_age}.tsv'
                 
                 if os.path.exists(phrases_file):
                     with open(phrases_file, 'a') as phrase_file:

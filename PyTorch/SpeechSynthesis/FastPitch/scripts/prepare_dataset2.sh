@@ -2,7 +2,7 @@
 
 set -e
 
-: ${DATA_DIR:=TC_all/testset_true_vocoded} # CHANGED
+: ${DATA_DIR:=TC_all/testset_TC_inf/} # CHANGED
 : ${ARGS="--extract-mels"}
 
 python prepare_dataset.py \

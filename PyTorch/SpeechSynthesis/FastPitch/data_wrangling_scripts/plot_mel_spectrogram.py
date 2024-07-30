@@ -8,11 +8,11 @@ import numpy as np
 # mels_path = 'LJSpeech-1.1/mels/LJ001-0002.pt'
 # mels_path = 'audio/mels/1948_last_sentence_edit.pt'
 # mels_path = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/test_LJ_reagan/mels/LJ001-0001.pt'
-mels_path = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/reagan_all/mels/reagan_1948_002.pt'
+mels_path = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/testset_TC_inf/mels/cooke_2002-11-08_041.pt'
 # Load the spectrogram from the .pt file
 mel_spectrogram = torch.load(mels_path)
 S = mel_spectrogram.numpy()
-print(S)
+# print(S)
 # S_dB = librosa.power_to_db(S, ref=np.max) 
 # print(S_dB)
 
@@ -36,7 +36,7 @@ print(S)
 plt.figure(figsize=(10, 4))
 librosa.display.specshow(S, sr=22050, hop_length=256, x_axis='time', y_axis='mel', fmax=8000, win_length=1024, n_fft=1024)
 plt.colorbar(format='%+2.0f dB')
-plt.title('Mel spectrogram reagan 1948 002')
+plt.title('Mel spectrogram cooke_2002-11-08_041')
 plt.tight_layout()
-plt.savefig('reagan_all/plots/1948_002.png')
+plt.savefig('figures/cooke_2002-11-08_041_mels_true.png')
 plt.show()

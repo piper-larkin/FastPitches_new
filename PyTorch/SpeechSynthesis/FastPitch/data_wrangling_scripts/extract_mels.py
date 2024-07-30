@@ -8,7 +8,9 @@ import torch
 
 
 # Path to your audio file
-audio_path = 'audio/wavs/1994_first_sentence_edit.wav'
+# audio_path = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/testset_TC_inf/wavs/cooke_1999-11-19_052.wav'
+
+audio_path = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/wavs/cooke_1999-11-19_052.wav'
 # audio_path = 'audio/wavs/1974_sub_sentence.wav'
 
 # Load the audio file
@@ -29,11 +31,11 @@ S_dB_tensor = torch.tensor(S_dB * 0.1)      # ** Need to multiply by 0.1 for ten
 # print(S_dB_tensor)
 
 
-# Save the tensor as a .pt file
-output_tensor_path = 'audio/mels/1994_first_sentence_edit.pt'
-torch.save(S_dB_tensor, output_tensor_path)
+# # Save the tensor as a .pt file
+# output_tensor_path = 'audio/mels/1994_first_sentence_edit.pt'
+# torch.save(S_dB_tensor, output_tensor_path)
 
-print(f"Mel spectrogram saved to {output_tensor_path}")
+# print(f"Mel spectrogram saved to {output_tensor_path}")
 
 # Plot the Mel spectrogram
 plt.figure(figsize=(10, 4))
@@ -41,5 +43,5 @@ librosa.display.specshow(S_dB, sr=22050, hop_length=256, x_axis='time', y_axis='
 plt.colorbar(format='%+2.0f dB')
 plt.title('Mel spectrogram')
 plt.tight_layout()
-plt.savefig('mels_plots/mel_spectrogram_1994_11.png')
+plt.savefig('figures/cooke_1999-11-19_052_true_other.png')
 plt.show()

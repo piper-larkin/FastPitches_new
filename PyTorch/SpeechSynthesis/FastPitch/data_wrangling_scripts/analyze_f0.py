@@ -161,6 +161,37 @@ def load_f0_values_age(directory, names=None):
     
     return age_f0_values
 
+def load_f0_values_age_specify(directory, test_dir, names=None):
+    '''
+    names: list of speaker names want to consider
+
+    returns age_f0_values: dict containing list of f0 values by age, where each element is np.array
+
+    '''
+    age_pt_dict = defaultdict(list)
+    age_f0_values = defaultdict(list)
+
+    pt_files = []
+    f0_values = []
+
+    for file in os.listdir(test_dir):
+        if names is not None:
+            for name in names:
+                if name in file:
+                    age = calculate_age(file)
+                    age_pt_dict[age].append(os.path.join(directory, file))
+                    break  # If a name is found, no need to check other names
+        else:
+            age = calculate_age(file)
+            age_pt_dict[age].append(os.path.join(directory, file))
+
+    for age, pt_files in age_pt_dict.items():
+        for pt_file in pt_files:
+            f0_tensor = torch.load(pt_file)
+            age_f0_values[age].append(f0_tensor.numpy())
+    
+    return age_f0_values
+
 
 def avg_f0_values_age(age_f0_values):
     '''
@@ -200,20 +231,22 @@ def plot_avg_f0s_multi(avg_f0_dicts, labels):
         ages = sorted(avg_f0_values.keys())
         # avg_f0s = [avg_f0_values.get(age, np.nan) for age in ages]
         avg_f0s = [avg_f0_values[age] for age in ages]
-        plt.plot(ages, avg_f0s, marker='o', linestyle='-', label=label)
+        # plt.plot(ages, avg_f0s, marker='o', linestyle='-', label=label)   # for lines
+        plt.scatter(ages, avg_f0s, label=label)
 
     plt.xlabel('Age')
     plt.ylabel('Average f0')
     plt.ylim(0, 401)
     plt.xlim(10, 101)
-    plt.title('Average f0 for true speech by age')
+    plt.title('Average f0 for speech by age')   # Change
     plt.legend()
-    plt.savefig('/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/figures/f0_plot_true')
+    plt.savefig('/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/figures/f0_plot_all_spk2') # Change
     print('Figure saved')
     plt.show()
 
-
 vocoded_dir = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/testset_true_vocoded/pitch'
+
+synth_dir = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/testset_TC_inf/pitch'
 # avg_f0_dicts = []
 # age_f0_values = load_f0_values_age(vocoded_dir)
 # # print(group, age_f0_values.keys())
@@ -231,21 +264,38 @@ group1_names = ['bowman']
 group2_dir = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/pitch'
 group2_names = ['bowman_2006']
 
-groups = ['cooke', 'queen', 'reagan']   
-labels = ['cooke', 'queen', 'reagan'] # labels for plotting, may differ if have groups like real/synth or m/f
+speakers = ['bowman', 'byrne', 'cooke', 'cronkite', 'doyle', 'dunne', 'finucane', 'gogan', 'lawlor', 'lockwood', 'magee', 'nibhriain', 'odulaing', 'plomley', 'queen', 'thatcher', 'reagan']
+
+# groups = ['cooke', 'queen', 'reagan']   
+# labels = ['cooke', 'queen', 'reagan'] # labels for plotting, may differ if have groups like real/synth or m/f
 # groups = ['bowman']
 avg_f0_dicts = []  # for plotting
-for group in groups:
-    print(group)
-    age_f0_values = load_f0_values_age(group1_dir, [group])
-    # print(group, age_f0_values.keys())
-    # print((sorted(age_f0_values.keys())))
-    avg_f0s_age = avg_f0_values_age(age_f0_values)
-    # print(group, avg_f0s_age)
-    avg_f0_dicts.append(avg_f0s_age)
-    # print(avg_f0s_age)
-plot_avg_f0s_multi(avg_f0_dicts, labels)
+# for group in groups:
+#     print(group)
+#     age_f0_values = load_f0_values_age(vocoded_dir, [group])
+#     # age_f0_values = load_f0_values_age_specify(group1_dir, synth_dir, [group])
+#     # print(group, age_f0_values.keys())
+#     # print((sorted(age_f0_values.keys())))
+#     avg_f0s_age = avg_f0_values_age(age_f0_values)
+#     # print(group, avg_f0s_age)
+#     avg_f0_dicts.append(avg_f0s_age)
+#     # print(avg_f0s_age)
+# plot_avg_f0s_multi(avg_f0_dicts, labels)
 
+
+labels = ['true', 'vocoded', 'synthetic']
+age_f0_values = load_f0_values_age_specify(group1_dir, synth_dir)
+avg_f0s_age = avg_f0_values_age(age_f0_values)
+avg_f0_dicts.append(avg_f0s_age)
+
+age_f0_values = load_f0_values_age(vocoded_dir)
+avg_f0s_age = avg_f0_values_age(age_f0_values)
+avg_f0_dicts.append(avg_f0s_age)
+
+age_f0_values = load_f0_values_age(synth_dir)
+avg_f0s_age = avg_f0_values_age(age_f0_values)
+avg_f0_dicts.append(avg_f0s_age)
+plot_avg_f0s_multi(avg_f0_dicts, labels)
 
 
 
@@ -256,6 +306,3 @@ plot_avg_f0s_multi(avg_f0_dicts, labels)
 # group1_avg_f0, group2_avg_f0 = compare_groups(group1_dir, group2_dir, group1_names, group2_names)
 # print(group1_avg_f0, group2_avg_f0)
 
-
-
-#NOTE: not sure why this is not working, dicts seem to be populating with all ages rather than just the ages present for the speaker???

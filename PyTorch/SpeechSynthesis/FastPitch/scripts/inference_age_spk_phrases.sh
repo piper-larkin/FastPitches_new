@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 : ${WAVEGLOW:="pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt"}
-: ${FASTPITCH:="./TC_all/graphemes_out/FastPitch_checkpoint_1000.pt"}
+: ${FASTPITCH:="./TC_all/graphemes_out/FastPitch_checkpoint_1000.pt"}   # changed
 : ${BATCH_SIZE:=32}
-: ${OUTPUT_DIR:="./TC_all/testset_inf"}
+: ${OUTPUT_DIR:="./TC_all/graphemes_out_reagan_phrases/"}
 : ${LOG_FILE:="$OUTPUT_DIR/nvlog_infer"}
 : ${AMP:=false}
 : ${TORCHSCRIPT:=false}
@@ -18,15 +18,19 @@
 echo -e "\nAMP=$AMP, batch_size=$BATCH_SIZE\n"
 
 # Define the directory containing your inference files
-INFERENCE_DIR="./TC_all/age_spk_phrases"
+INFERENCE_DIR="./phrases/reagan_phrase_age"
 
 for file in "$INFERENCE_DIR"/*; do
     # Extract the base file name without the path
     filename=$(basename -- "$file")
     
     # Extract speaker and age from the file name assuming format: tc_audio_pitch_text_spk_age_phrases_3_72.txt
-    speaker=$(echo "$filename" | awk -F'_' '{print $8}')
-    age=$(echo "$filename" | awk -F'_' '{print $9}' | awk -F'.' '{print $1}')
+    # speaker=$(echo "$filename" | awk -F'_' '{print $8}')
+    # speaker=$(echo "$filename" | awk -F'_' '{print $3}')
+    speaker=0
+    # age=$(echo "$filename" | awk -F'_' '{print $9}' | awk -F'.' '{print $1}')
+    age=$(echo "$filename" | awk -F'_' '{print $4}' | awk -F'.' '{print $1}')
+
 
      # Verify extracted values
     echo "Filename: $filename"

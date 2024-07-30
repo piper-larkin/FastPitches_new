@@ -16,7 +16,7 @@ export OMP_NUM_THREADS=1
 
 # Adjust these when the amount of data changes
 : ${EPOCHS:=1000} 
-: ${EPOCHS_PER_CHECKPOINT:=100}  # Changed from 100
+: ${EPOCHS_PER_CHECKPOINT:=50}  # Changed from 100
 : ${WARMUP_STEPS:=1000}
 : ${KL_LOSS_WARMUP:=100}
 
