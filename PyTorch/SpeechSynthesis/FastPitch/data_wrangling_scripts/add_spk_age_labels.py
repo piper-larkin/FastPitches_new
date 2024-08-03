@@ -1,11 +1,11 @@
 # to read in LJ train_v3 and val files (audio_pitch versions)
 # and create new file which has |17|45 at end of each line 
 
-train_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/filelists/ljs_audio_pitch_text_train_v3.txt'
-dev_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/filelists/ljs_audio_pitch_text_val.txt'
+train_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/ljs_audio_pitch_text_train_smaller.txt'
+dev_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/ljs_audio_pitch_text_val_smaller.txt'
 
-train_new = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/filelists/ljs_audio_pitch_text_spk_age_train.txt'
-dev_new = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/filelists/ljs_audio_pitch_text_spk_age_val.txt'
+train_new = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/ljs_audio_pitch_text_train_smaller_use.txt'
+dev_new = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/ljs_audio_pitch_text_val_smaller_use.txt'
 
 
 def add_spk_age(orig_file, new_file):

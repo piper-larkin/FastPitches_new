@@ -2,10 +2,10 @@
 
 : ${WAVEGLOW:="pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt"}
 
-: ${FASTPITCH:="./TC_all/phonemes_out/FastPitch_checkpoint_400.pt"}  # Changed 
-: ${BATCH_SIZE:=32}  # originally 32
-: ${PHRASES:="phrases/testset_1to30_80s.tsv"}    # was "phrases/devset10.tsv" or phrases/devset_1994.tsv or phrases/testset_1to30_80s.tsv
-: ${OUTPUT_DIR:="./TC_all/phonemes_out/audio_$(basename ${PHRASES}_400_g_35)"}      # changed dir name
+: ${FASTPITCH:="./TC_all/graphemes_out/FastPitch_checkpoint_1000.pt"}  # Changed 
+: ${BATCH_SIZE:=16}  # originally 32
+: ${PHRASES:="phrases/rainbow_passage_etc_phrases.tsv"}    # was "phrases/devset10.tsv" or phrases/devset_1994.tsv 
+: ${OUTPUT_DIR:="./TC_all/listening_test_2_phoneme/$(basename ${PHRASES})_9_40"}      # changed dir name
 : ${LOG_FILE:="$OUTPUT_DIR/nvlog_infer.json"}
 : ${AMP:=false}
 : ${TORCHSCRIPT:=false}
@@ -15,8 +15,8 @@
 : ${WARMUP:=0}
 : ${REPEATS:=1}
 : ${CPU:=false}
-: ${AGE:=35}    # CHANGE
-: ${SPEAKER:=8} # will have to change
+: ${AGE:=40}    # CHANGE
+: ${SPEAKER:=9} # will have to change
 : ${NUM_SPEAKERS:=17} # will have to change
 
 echo -e "\nAMP=$AMP, batch_size=$BATCH_SIZE\n"

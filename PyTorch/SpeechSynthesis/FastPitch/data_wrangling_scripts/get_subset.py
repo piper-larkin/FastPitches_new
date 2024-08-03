@@ -3,12 +3,16 @@ import os
 
 file_list_path = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/filelists/ljs_audio_pitch_text_train_v3.txt'
 # new_train_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/filelists/ljs_audio_pitch_text_train_v3_small.txt'
-new_train_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/filelists/ljs_audio_pitch_text_val_small.txt'
+# new_train_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/filelists/ljs_audio_pitch_text_val_small.txt'
+new_train_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/ljs_audio_pitch_text_val_smaller.txt'
+# new_train_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/ljs_audio_pitch_text_train_smaller.txt'
 
 total_duration = 0.0
 # reagan_train_dur = 16121.245714285695   # seconds
-reagan_dev_dur = 1082.9761904761908
+# reagan_dev_dur = 1082.9761904761908
 
+# max_dur = 3600  # 1 hour
+max_dur = 200   # dev`
 
 with open(file_list_path, 'r') as file, open(new_train_file, 'a') as out_file:
     for line in file:
@@ -24,7 +28,7 @@ with open(file_list_path, 'r') as file, open(new_train_file, 'a') as out_file:
         duration = librosa.get_duration(y, sr)
 
         # Write line to a shorter training file list
-        if total_duration + duration <= reagan_dev_dur:        # CHANGE MAX DURATION HERE
+        if total_duration + duration <= max_dur:        # CHANGE MAX DURATION HERE
             out_file.write(line)
             total_duration += duration
             print(total_duration)

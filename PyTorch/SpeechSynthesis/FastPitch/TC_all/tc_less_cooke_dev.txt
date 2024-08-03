@@ -1,32 +1,3 @@
-mels/LJ050-0234.pt|pitch/LJ050-0234.pt|It has used other Treasury law enforcement agents on special experiments in building and route surveys in places to which the President frequently travels.|17|45
-mels/LJ019-0373.pt|pitch/LJ019-0373.pt|to avail himself of his powers, as it was difficult to bring home the derelictions of duties and evasion of the acts. Too much was left to the inspectors.|17|45
-mels/LJ050-0207.pt|pitch/LJ050-0207.pt|Although Chief Rowley does not complain about the pay scale for Secret Service agents,|17|45
-mels/LJ048-0203.pt|pitch/LJ048-0203.pt|The three officers confirm that their primary concern was crowd and traffic control,|17|45
-mels/LJ003-0182.pt|pitch/LJ003-0182.pt|The tried and the untried, young and old, were herded together|17|45
-mels/LJ044-0166.pt|pitch/LJ044-0166.pt|According to Marina Oswald, he thought that would help him when he got to Cuba.|17|45
-mels/LJ019-0208.pt|pitch/LJ019-0208.pt|The proposal made was to purchase some fifty thousand square feet between Newgate, Warwick Lane, and the Sessions House,|17|45
-mels/LJ021-0146.pt|pitch/LJ021-0146.pt|I shall seek assurances of the making and maintenance of agreements, which can be mutually relied upon,|17|45
-mels/LJ013-0214.pt|pitch/LJ013-0214.pt|who took a carving-knife from the sideboard in the dining-room, went upstairs to Lord William's bedroom, and drew the knife across his throat.|17|45
-mels/LJ011-0256.pt|pitch/LJ011-0256.pt|By this time the neighbors were aroused, and several people came to the scene of the affray.|17|45
-mels/LJ014-0083.pt|pitch/LJ014-0083.pt|which, having possessed herself of the murdered man's keys, she rifled from end to end.|17|45
-mels/LJ035-0121.pt|pitch/LJ035-0121.pt|This is the period during which Oswald would have descended the stairs. In all likelihood|17|45
-mels/LJ049-0118.pt|pitch/LJ049-0118.pt|Enactment of this statute would mean that the investigation of any of the acts covered and of the possibility of a further attempt|17|45
-mels/LJ006-0132.pt|pitch/LJ006-0132.pt|All the wardsmen alike were more or less irresponsible.|17|45
-mels/LJ049-0084.pt|pitch/LJ049-0084.pt|Murder of the President has never been covered by Federal law, however, so that once it became reasonably clear that the killing was the act of a single person,|17|45
-mels/LJ012-0052.pt|pitch/LJ012-0052.pt|He claimed to be admitted to bail, and was taken from Newgate on a writ of habeas before one of the judges sitting at Westminster.|17|45
-mels/LJ011-0203.pt|pitch/LJ011-0203.pt|Monsieur le Maire was appealed to, and decided to leave it to the young lady, who at once abandoned Wakefield.|17|45
-mels/LJ019-0141.pt|pitch/LJ019-0141.pt|The old wards, day rooms and sleeping rooms combined, of which the reader has already heard so much,|17|45
-mels/LJ003-0322.pt|pitch/LJ003-0322.pt|except for the use of the debtors, or as medical comforts for the infirmary.|17|45
-mels/LJ027-0028.pt|pitch/LJ027-0028.pt|Such structures or organs are most often found internally.|17|45
-mels/LJ047-0068.pt|pitch/LJ047-0068.pt|and his recommendation was accepted. He decided, however, not to interview Marina Oswald at that time, and merely determined|17|45
-mels/LJ036-0053.pt|pitch/LJ036-0053.pt|End quote. As Mrs. Bledsoe said these words, she pointed to her right elbow.|17|45
-mels/LJ007-0046.pt|pitch/LJ007-0046.pt|laughing and uproarious, utterly unmindful of the companionship of men upon whom lay the shadow of an impending shameful death.|17|45
-mels/LJ033-0149.pt|pitch/LJ033-0149.pt|the FBI Laboratory developed a latent palmprint and latent fingerprint on the bag.|17|45
-mels/LJ018-0334.pt|pitch/LJ018-0334.pt|Webster, it may be mentioned here, was one of the worst prisoners ever remembered in Newgate|17|45
-mels/LJ043-0073.pt|pitch/LJ043-0073.pt|On October nine, nineteen sixty-two he went to the Dallas office of the Texas Employment Commission|17|45
-mels/LJ028-0169.pt|pitch/LJ028-0169.pt|a square enclosure two furlongs each way, with gates of solid brass; which was also remaining in my time.|17|45
-mels/LJ032-0052.pt|pitch/LJ032-0052.pt|According to Klein's shipping order form, one Italian carbine six point five x four x scope,|17|45
-mels/LJ015-0030.pt|pitch/LJ015-0030.pt|The bank had been conducted on false principles;|17|45
 mels/queen_1996_014.pt|pitch/queen_1996_014.pt|Then in October I opened Parliament.|15|70
 mels/reagan_1981_20_1_107.pt|pitch/reagan_1981_20_1_107.pt|Standing here, one faces a magnificent vista opening up on this city's special beauty and history.|0|70
 mels/reagan_1964_053.pt|pitch/reagan_1964_053.pt|He must be freed so that he can do for us what he knows is best.|0|53
@@ -51,7 +22,6 @@ mels/reagan_1987_21_7_085.pt|pitch/reagan_1987_21_7_085.pt|The American people d
 mels/cronkite_1986_004.pt|pitch/cronkite_1986_004.pt|They'll now add the question of safety to their arguments.|4|70
 mels/reagan_1987_21_7_028.pt|pitch/reagan_1987_21_7_028.pt|I took a risk with regard to our action in Iran.|0|76
 mels/reagan_1982_26_1_126.pt|pitch/reagan_1982_26_1_126.pt|13 programs for energy.|0|71
-mels/cooke_1953-11-05_047.pt|pitch/cooke_1953-11-05_047.pt|Fashion is a stimulating and hardy annual here, and the rewards of chic can be fabulous.|3|44
 mels/cooke_1999-01-22_075.pt|pitch/cooke_1999-01-22_075.pt|Being murdered has something to do with the hollowing of a good man, of presidents especially, the halo drops on them.|3|90
 mels/finucane_1979-03-14_015.pt|pitch/finucane_1979-03-14_015.pt|Others just come there to get away from it all.|7|28
 mels/reagan_1984_7_10_138.pt|pitch/reagan_1984_7_10_138.pt|Here's her right to kill someone because of whatever fault they think justifies that.|0|73
@@ -72,7 +42,6 @@ mels/reagan_1982_26_1_108.pt|pitch/reagan_1982_26_1_108.pt|Some new but others l
 mels/doyle_1998-06-25_036.pt|pitch/doyle_1998-06-25_036.pt|The attack has been blamed on the separatist group Eta.|5|46
 mels/reagan_1982_8_6_137.pt|pitch/reagan_1982_8_6_137.pt|We cannot ignore the fact that even without our encouragement, there has been and will continue to be repeated explosions against repression and dictatorships.|0|71
 mels/cooke_1981-04-03_016.pt|pitch/cooke_1981-04-03_016.pt|Fortunately, for the country, the anxious hours were blessedly few.|3|72
-mels/cooke_1951-11-01_003.pt|pitch/cooke_1951-11-01_003.pt|Now, they start at nine in the morning with a program called Morning Chapel and the news and then end at midnight with the news.|3|42
 mels/queen_1999_026.pt|pitch/queen_1999_026.pt|Up and down the country, people like those farming, nurses and ambulance men I met are working tirelessly to help others.|15|73
 mels/queen_1970_015.pt|pitch/queen_1970_015.pt|Later in the year representatives from 42 different parts of the world gathered to attend the Commonwealth Games.|15|44
 mels/byrne_1995-04-14_023.pt|pitch/byrne_1995-04-14_023.pt|It's hard, you know, all of you can never prophesy what way people are going to react to conversations.|2|60
@@ -84,7 +53,6 @@ mels/reagan_1986_4_2_008.pt|pitch/reagan_1986_4_2_008.pt|I have come to review w
 mels/magee_1977-05-06_023.pt|pitch/magee_1977-05-06_023.pt|But apartheid was only one of the political issues that affected sport.|11|42
 mels/reagan_1984_21_10_121.pt|pitch/reagan_1984_21_10_121.pt|Well, the red light went on.|0|73
 mels/lockwood_1980_020.pt|pitch/lockwood_1980_020.pt|So we were thoroughly spoiled, you know, and, um, the dressing rooms themselves were very roomy, and lovely, devanned, lie down on.|10|64
-mels/cooke_1951-11-01_059.pt|pitch/cooke_1951-11-01_059.pt|They meant nothing to us six months ago.|3|42
 mels/queen_2010_002.pt|pitch/queen_2010_002.pt|Experimentation, research and innovation mean that more opportunities for improving people's lives exist today than ever before.|15|84
 mels/reagan_1981_20_1_055.pt|pitch/reagan_1981_20_1_055.pt|It is time for us to realize that we are too great a nation to limit ourselves to small dreams.|0|70
 mels/thatcher_1990_002.pt|pitch/thatcher_1990_002.pt|It's been a tremendous privilege to serve this country as Prime Minister.|16|65
@@ -116,7 +84,6 @@ mels/reagan_1964_019.pt|pitch/reagan_1964_019.pt|And we've just had an ounce tha
 mels/reagan_1984_6_6_011.pt|pitch/reagan_1984_6_6_011.pt|The Allies had been told that some of the mightiest of these guns were here and they would be trained on the beaches to stop the Allied advance.|0|73
 mels/plomley_1985_025.pt|pitch/plomley_1985_025.pt|The London Symphony Orchestra conducted by the composer.|14|71
 mels/thatcher_1989_11_21_005.pt|pitch/thatcher_1989_11_21_005.pt|He admitted to say that the way in which pensions are managed and the pension rights in the European community are very different from here.|16|64
-mels/plomley_1951_028.pt|pitch/plomley_1951_028.pt|yes I think that was it.|14|37
 mels/cooke_1992-12-04_054.pt|pitch/cooke_1992-12-04_054.pt|That accolade now doubt offered a powerful incentive to run for the presidency.|3|84
 mels/reagan_1992_17_8_019.pt|pitch/reagan_1992_17_8_019.pt|Who among us would trade America's future for that of any other country in the world?|0|81
 mels/queen_1952_040.pt|pitch/queen_1952_040.pt|to pray that God may give me wisdom and strength to carry out the solemn promises I shall be making,|15|26
@@ -157,7 +124,6 @@ mels/reagan_1988_31_5_188.pt|pitch/reagan_1988_31_5_188.pt|But now the Federal R
 mels/reagan_1983_23_3_225.pt|pitch/reagan_1983_23_3_225.pt|And as we proceed, we must remain constant in preserving the nuclear deterrent and maintaining a solid capability for flexible response.|0|72
 mels/odulaing_1992_019.pt|pitch/odulaing_1992_019.pt|And now that you're retired, what, what are you?|13|59
 mels/reagan_1988_11_11_001.pt|pitch/reagan_1988_11_11_001.pt|those who live today remember those who do not and those who know freedom|0|77
-mels/queen_1960_020.pt|pitch/queen_1960_020.pt|Although the contribution which any one person can make is small, it is real and important.|15|34
 mels/doyle_1998-06-25_038.pt|pitch/doyle_1998-06-25_038.pt|In the weather forecast, heavy showers, possibly with thunder, becoming widespread throughout the country during the afternoon.|5|46
 mels/reagan_1988_31_5_007.pt|pitch/reagan_1988_31_5_007.pt|As you know, I've come to Moscow to meet with one of your most distinguished graduates.|0|77
 mels/bowman_1963-09-01_003.pt|pitch/bowman_1963-09-01_003.pt|Well, we talked a lot there about the laughter of children, but you also make a lot of adults laugh.|1|21
@@ -195,7 +161,6 @@ mels/reagan_1986_4_2_027.pt|pitch/reagan_1986_4_2_027.pt|Tonight freedom is on t
 mels/cooke_1970-08-08_052.pt|pitch/cooke_1970-08-08_052.pt|Could it be, said Mr. S, looking up to the bay to the north of them?|3|61
 mels/reagan_1981_23_12_049.pt|pitch/reagan_1981_23_12_049.pt|Ten million of Poland's 36 million citizens are members of solidarity taken together with their families.|0|70
 mels/cooke_1990-05-17_063.pt|pitch/cooke_1990-05-17_063.pt|He developed in 24 hours a rare and powerful form of pneumonia and was dead the day after he entered the hospital.|3|81
-mels/thatcher_1960_003.pt|pitch/thatcher_1960_003.pt|Well, I think we'll just try to be a very good backbench of first.|16|35
 mels/reagan_1982_20_9_054.pt|pitch/reagan_1982_20_9_054.pt|they must rely solely on Lebanese armed forces who are willing and able to bring security to their country.|0|71
 mels/plomley_1978_014.pt|pitch/plomley_1978_014.pt|How did you start sticking pictures onto mounts and then what sort of photography was it mainly?|14|64
 mels/reagan_1987_4_3_062.pt|pitch/reagan_1987_4_3_062.pt|I just can't say specifically when.|0|76
@@ -217,7 +182,6 @@ mels/cooke_1997-03-28_069.pt|pitch/cooke_1997-03-28_069.pt|Alan, when you grow u
 mels/reagan_1982_26_1_017.pt|pitch/reagan_1982_26_1_017.pt|Inflation remained in double digits, and government spending increased at an annual rate of 17%.|0|71
 mels/thatcher_1980_003.pt|pitch/thatcher_1980_003.pt|or that there is some obscure economic religion which demands this level of unemployment as part of its grizzly ritual?|16|55
 mels/reagan_1964_039.pt|pitch/reagan_1964_039.pt|Well, I'd like to suggest there is no such thing as a left or right.|0|53
-mels/cooke_1953-11-05_071.pt|pitch/cooke_1953-11-05_071.pt|He said that the city orchestras of places in the Midwest and West could match the metropolitan orchestras of Europe and the two of the Eastern ones stood alone.|3|44
 mels/reagan_1985_6_2_137.pt|pitch/reagan_1985_6_2_137.pt|But now they have gone up two of the last three years.|0|74
 mels/reagan_1983_25_1_154.pt|pitch/reagan_1983_25_1_154.pt|We will also implement recommendations of our task force on victims of crime which will report to me this week.|0|72
 mels/reagan_1988_16_12_141.pt|pitch/reagan_1988_16_12_141.pt|Now this is changing.|0|77
@@ -281,7 +245,6 @@ mels/thatcher_1989_11_08_003.pt|pitch/thatcher_1989_11_08_003.pt|The law of the 
 mels/cooke_1982-01-01_037.pt|pitch/cooke_1982-01-01_037.pt|Ever since Poland has been as we all know, a Russian satellite.|3|73
 mels/reagan_1982_8_6_101.pt|pitch/reagan_1982_8_6_101.pt|Cuban backed guerrillas who want power for themselves and their backers, not democracy for the people.|0|71
 mels/doyle_2009-12-09_028.pt|pitch/doyle_2009-12-09_028.pt|the auxiliary bishop of Dublin Aiman Walch who was named in the Murphy report said he had done no wrong regarding child protection in the Dublin Arts diocese.|5|57
-mels/lockwood_1951_076.pt|pitch/lockwood_1951_076.pt|And it's sung by Delia Murphy.|10|35
 mels/cooke_1982-01-01_077.pt|pitch/cooke_1982-01-01_077.pt|So I wish you most a healthy and active and restless and inquisitive new year.|3|73
 mels/byrne_1974-10-28_007.pt|pitch/byrne_1974-10-28_007.pt|Take the four top-time rating shows, that is to say the shows which kept viewers tuned in right to the very end, it's a rather strange mix of shows.|2|40
 mels/cooke_2000-11-24_038.pt|pitch/cooke_2000-11-24_038.pt|I'd better say at once that cranberry source is, to me, one of those things you must be born to, like peanut butter and drum majorets.|3|92
@@ -308,7 +271,6 @@ mels/reagan_1989_11_11_038.pt|pitch/reagan_1989_11_11_038.pt|The way I see it, t
 mels/reagan_1982_17_6_028.pt|pitch/reagan_1982_17_6_028.pt|That commitment is as strong today as it ever was.|0|71
 mels/cooke_2004-02-13_009.pt|pitch/cooke_2004-02-13_009.pt|It almost happened.|3|95
 mels/cooke_1974-12-23_071.pt|pitch/cooke_1974-12-23_071.pt|Mysterious this why I asked young Jones.|3|66
-mels/plomley_1951_006.pt|pitch/plomley_1951_006.pt|well I mean cooking yes but lighting a fire first.|14|37
 mels/reagan_1984_21_10_062.pt|pitch/reagan_1984_21_10_062.pt|But obviously there are a number of areas in the world that are of importance to us.|0|73
 mels/cooke_2001-12-21_061.pt|pitch/cooke_2001-12-21_061.pt|One more solemn item has just come in from a very double-dome publication.|3|93
 mels/reagan_1961_086.pt|pitch/reagan_1961_086.pt|So right, it's as simple as finding just the name of your congressman or your senator.|0|50
@@ -334,18 +296,15 @@ mels/reagan_1986_4_2_172.pt|pitch/reagan_1986_4_2_172.pt|He also directs the cho
 mels/reagan_1983_23_3_118.pt|pitch/reagan_1983_23_3_118.pt|The rapid buildup of Grenade's military potential is unrelated to any conceivable threat to this island country of under 110,000 people.|0|72
 mels/thatcher_1982_007.pt|pitch/thatcher_1982_007.pt|We shall work for the new opportunities, but the alliance must be ready to respond whatever the future holds.|16|57
 mels/reagan_1961_044.pt|pitch/reagan_1961_044.pt|It is a frank recognition of the medical need or problem of a senior citizens that I have mentioned.|0|50
-mels/cooke_1951-11-01_055.pt|pitch/cooke_1951-11-01_055.pt|Though two or three of those big evening shows are incomparable.|3|42
 mels/queen_1966_006.pt|pitch/queen_1966_006.pt|Mankind has many blemishes, but deep down in every human soul, there is a store of goodwill waiting to be called upon.|15|40
 mels/reagan_1985_21_11_106.pt|pitch/reagan_1985_21_11_106.pt|As I flew back this evening, I had many thoughts.|0|74
 mels/queen_1958_010.pt|pitch/queen_1958_010.pt|I hope very much that it proves to be a year of progress and happiness for us all.|15|32
 mels/cooke_1971-06-12_032.pt|pitch/cooke_1971-06-12_032.pt|But Bydebeck died 40 years ago and never achieved the New York Times.|3|62
 mels/cooke_1974-12-23_090.pt|pitch/cooke_1974-12-23_090.pt|The British or American open champion will be a Russian.|3|66
-mels/cooke_1951-11-01_070.pt|pitch/cooke_1951-11-01_070.pt|The great question, what will it do to our children, rocked around the nation last year?|3|42
 mels/reagan_1983_8_3_002.pt|pitch/reagan_1983_8_3_002.pt|I can't tell you how you have warmed my heart with your welcome, I'm delighted to be here today.|0|72
 mels/thatcher_1985_037.pt|pitch/thatcher_1985_037.pt|Let me remind you, under socialism on earnings a top rate of 83 pens in the pound.|16|60
 mels/reagan_1983_23_3_224.pt|pitch/reagan_1983_23_3_224.pt|There will be failures and setbacks, just as there will be successes and breakthroughs.|0|72
 mels/reagan_1964_009.pt|pitch/reagan_1964_009.pt|But I have an uncomfortable feeling that this prosperity isn't something on which we can base our hopes for the future.|0|53
-mels/lockwood_1951_004.pt|pitch/lockwood_1951_004.pt|I was drummed out of the brownies in my first fortnight.|10|35
 mels/reagan_1987_12_6_078.pt|pitch/reagan_1987_12_6_078.pt|A revolution marked by rapid dramatic advances in computers and telecommunications.|0|76
 mels/cronkite_1990_077.pt|pitch/cronkite_1990_077.pt|I, of course, sail them.|4|74
 mels/reagan_1964_059.pt|pitch/reagan_1964_059.pt|A government can't control the economy without controlling people.|0|53
@@ -363,10 +322,8 @@ mels/cronkite_2007_021.pt|pitch/cronkite_2007_021.pt|It passed with a large majo
 mels/bowman_1964-01-08_003.pt|pitch/bowman_1964-01-08_003.pt|We are not playing the music tonight, but here is the entire interview as I recorded it in the Green Room at the Gathe Theatre.|1|21
 mels/cooke_1981-04-03_072.pt|pitch/cooke_1981-04-03_072.pt|Inevitably, old arguments have been brought up and old morals have been drawn.|3|72
 mels/reagan_1984_7_10_055.pt|pitch/reagan_1984_7_10_055.pt|We are today subsidizing housing for more than 10 million people.|0|73
-mels/cooke_1947-01-12_006.pt|pitch/cooke_1947-01-12_006.pt|Even a man who couldn't read could have learned something this week from the rash of cartoons in the newspapers.|3|38
 mels/queen_1985_071.pt|pitch/queen_1985_071.pt|We should try to follow Christ's clear instruction at the end of that story.|15|59
 mels/reagan_1987_4_3_057.pt|pitch/reagan_1987_4_3_057.pt|Well, I can tell you they are good and dedicated government employees who put in long hours for the nation's benefit.|0|76
-mels/cooke_1953-11-05_019.pt|pitch/cooke_1953-11-05_019.pt|It was a shock at such times to hear dinner quietly announced.|3|44
 mels/cooke_1990-05-17_035.pt|pitch/cooke_1990-05-17_035.pt|Her films could not be taken seriously.|3|81
 mels/reagan_1982_8_6_067.pt|pitch/reagan_1982_8_6_067.pt|Must civilization perish in a hail of fiery atoms?|0|71
 mels/queen_1961_025.pt|pitch/queen_1961_025.pt|A very happy Christmas to you all.|15|35
@@ -415,7 +372,6 @@ mels/finucane_2009-05-09_036.pt|pitch/finucane_2009-05-09_036.pt|And I just didn
 mels/byrne_1984-12-05_018.pt|pitch/byrne_1984-12-05_018.pt|You, you reckon not, Kiran, interesting you should say that now that you mentioned it, because a lot of people have this impression that everybody should be on and doing their thing and so on.|2|50
 mels/cooke_2001-02-23_015.pt|pitch/cooke_2001-02-23_015.pt|He knew he would lose.|3|92
 mels/reagan_1982_26_1_059.pt|pitch/reagan_1982_26_1_059.pt|They are the inheritance of decades of tax and tax and spend and spend.|0|71
-mels/cooke_1953-11-05_024.pt|pitch/cooke_1953-11-05_024.pt|An hour or more later we'd troop upstairs again, he'd be still at it.|3|44
 mels/thatcher_1975_004.pt|pitch/thatcher_1975_004.pt|No one's saying heavens is quite like anyone else, however much the socialists may pretend otherwise.|16|50
 mels/queen_1972_013.pt|pitch/queen_1972_013.pt|Voluntary workers, both in the night of uniform, have struggled to keep humanity and common sense alive.|15|46
 mels/reagan_1981_20_1_091.pt|pitch/reagan_1981_20_1_091.pt|We will match loyalty with loyalty.|0|70

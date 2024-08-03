@@ -42,13 +42,20 @@ def avg_f0_values(f0_values):
     all_f0_values = np.concatenate(flattened_f0_values, axis=0)
 
     # Filter out zero values 
-    # NOTE: confirm this is ok
     voiced_f0_values = all_f0_values[all_f0_values > 0]
 
     if len(voiced_f0_values) == 0:
         raise ValueError("No voiced frames found for averaging")
     
-    average_f0 = np.mean(voiced_f0_values)
+    # Remove outliers, based on IQR
+    Q1 = np.percentile(voiced_f0_values, 25)
+    Q3 = np.percentile(voiced_f0_values, 75)
+    IQR = Q3 - Q1
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR
+    filtered_f0s = voiced_f0_values[(voiced_f0_values >= lower_bound) & (voiced_f0_values <= upper_bound)]
+        
+    average_f0 = np.mean(filtered_f0s)
     return average_f0
 
 def compare_groups(group1_dir, group2_dir, group1_names=None, group2_names=None):
@@ -214,7 +221,15 @@ def avg_f0_values_age(age_f0_values):
         if len(voiced_f0_values) == 0:
             raise ValueError("No voiced frames found for averaging")
         
-        avg_f0s_age[age] = np.mean(voiced_f0_values)
+        # Remove outliers, based on IQR
+        Q1 = np.percentile(voiced_f0_values, 25)
+        Q3 = np.percentile(voiced_f0_values, 75)
+        IQR = Q3 - Q1
+        lower_bound = Q1 - 1.5 * IQR
+        upper_bound = Q3 + 1.5 * IQR
+        filtered_f0s = voiced_f0_values[(voiced_f0_values >= lower_bound) & (voiced_f0_values <= upper_bound)]
+        
+        avg_f0s_age[age] = np.mean(filtered_f0s)
     
     sorted_avg_f0s_age = dict(sorted(avg_f0s_age.items()))
     return sorted_avg_f0s_age
@@ -240,7 +255,7 @@ def plot_avg_f0s_multi(avg_f0_dicts, labels):
     plt.xlim(10, 101)
     plt.title('Average f0 for speech by age')   # Change
     plt.legend()
-    plt.savefig('/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/figures/f0_plot_all_spk2') # Change
+    plt.savefig('/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/figures/f0_plot_true_testset_check') # Change
     print('Figure saved')
     plt.show()
 
@@ -266,14 +281,14 @@ group2_names = ['bowman_2006']
 
 speakers = ['bowman', 'byrne', 'cooke', 'cronkite', 'doyle', 'dunne', 'finucane', 'gogan', 'lawlor', 'lockwood', 'magee', 'nibhriain', 'odulaing', 'plomley', 'queen', 'thatcher', 'reagan']
 
-# groups = ['cooke', 'queen', 'reagan']   
-# labels = ['cooke', 'queen', 'reagan'] # labels for plotting, may differ if have groups like real/synth or m/f
+groups = ['cooke', 'queen', 'reagan']   
+labels = ['cooke', 'queen', 'reagan'] # labels for plotting, may differ if have groups like real/synth or m/f
 # groups = ['bowman']
 avg_f0_dicts = []  # for plotting
 # for group in groups:
 #     print(group)
-#     age_f0_values = load_f0_values_age(vocoded_dir, [group])
-#     # age_f0_values = load_f0_values_age_specify(group1_dir, synth_dir, [group])
+#     # age_f0_values = load_f0_values_age(vocoded_dir, [group])
+#     age_f0_values = load_f0_values_age_specify(group1_dir, synth_dir, [group])
 #     # print(group, age_f0_values.keys())
 #     # print((sorted(age_f0_values.keys())))
 #     avg_f0s_age = avg_f0_values_age(age_f0_values)
@@ -283,19 +298,19 @@ avg_f0_dicts = []  # for plotting
 # plot_avg_f0s_multi(avg_f0_dicts, labels)
 
 
-labels = ['true', 'vocoded', 'synthetic']
-age_f0_values = load_f0_values_age_specify(group1_dir, synth_dir)
-avg_f0s_age = avg_f0_values_age(age_f0_values)
-avg_f0_dicts.append(avg_f0s_age)
+# labels = ['true', 'vocoded', 'synthetic']
+# age_f0_values = load_f0_values_age_specify(group1_dir, synth_dir)
+# avg_f0s_age = avg_f0_values_age(age_f0_values)
+# avg_f0_dicts.append(avg_f0s_age)
 
-age_f0_values = load_f0_values_age(vocoded_dir)
-avg_f0s_age = avg_f0_values_age(age_f0_values)
-avg_f0_dicts.append(avg_f0s_age)
+# age_f0_values = load_f0_values_age(vocoded_dir)
+# avg_f0s_age = avg_f0_values_age(age_f0_values)
+# avg_f0_dicts.append(avg_f0s_age)
 
-age_f0_values = load_f0_values_age(synth_dir)
-avg_f0s_age = avg_f0_values_age(age_f0_values)
-avg_f0_dicts.append(avg_f0s_age)
-plot_avg_f0s_multi(avg_f0_dicts, labels)
+# age_f0_values = load_f0_values_age(synth_dir)
+# avg_f0s_age = avg_f0_values_age(age_f0_values)
+# avg_f0_dicts.append(avg_f0s_age)
+# plot_avg_f0s_multi(avg_f0_dicts, labels)
 
 
 
@@ -305,4 +320,83 @@ plot_avg_f0s_multi(avg_f0_dicts, labels)
 # print(avg_f0)
 # group1_avg_f0, group2_avg_f0 = compare_groups(group1_dir, group2_dir, group1_names, group2_names)
 # print(group1_avg_f0, group2_avg_f0)
+
+queen_f0_age_r = load_f0_values_age_specify(group1_dir, vocoded_dir, ['cooke'])
+queen_f0_age_v = load_f0_values_age(vocoded_dir, ['cooke'])
+queen_f0_age_s = load_f0_values_age(synth_dir, ['cooke'])
+
+dicts = [queen_f0_age_r, queen_f0_age_v, queen_f0_age_s]
+labels = ['True \n', 'Vocoded \n', 'Synthesized \n']
+# sorted_queen_f0_age = dict(sorted(queen_f0_age.items()))
+min_colors = ['skyblue', 'limegreen', 'red']
+max_colors = ['blue', 'forestgreen', 'brown']
+
+# Create custom legend handles
+legend_handles = []
+legend_labels = []
+
+i = 0
+for f0_dict in dicts:
+    sorted_f0_dict = dict(sorted(f0_dict.items()))
+
+    for age, f0s in sorted_f0_dict.items():
+        # Initialize min and max with extreme values
+        overall_min = float('inf')
+        overall_max = float('-inf')
+
+        # Find min/max of all f0s at that age
+        # filter out 0s first
+        for f0_array in f0s:
+            filtered_array = f0_array[f0_array != 0]
+            if filtered_array.size > 0: 
+                min_value = np.min(filtered_array)
+                max_value = np.max(filtered_array)
+                overall_min = min(overall_min, min_value)
+                overall_max = max(overall_max, max_value)
+        plt.scatter(age, overall_min, color=min_colors[i])
+        plt.scatter(age, overall_max, color=max_colors[i])
+     # Add custom legend entries only once per label
+    legend_handles.append(plt.Line2D([0], [0], marker='o', color='w', label=labels[i] + ' min', markerfacecolor=min_colors[i], markersize=10))
+    legend_handles.append(plt.Line2D([0], [0], marker='o', color='w', label=labels[i] + ' max', markerfacecolor=max_colors[i], markersize=10))
+
+    
+    i += 1
+
+plt.xlabel('Age')
+plt.ylabel('f0 (Hz)')
+plt.ylim(0, 2251)
+plt.xlim(10, 101)
+plt.title('Cooke: min & max f0 for speech by age')   # Change
+plt.legend(handles=legend_handles, loc='upper right', bbox_to_anchor=(1.33, 1))
+plt.tight_layout(rect=[0, 0, 0.6, 1])
+# Manually adjust the subplot parameters to make room for the legend
+plt.subplots_adjust(right=0.8)  # Adjust the right margin
+# plt.legend()  # need to figure out how to only add once
+plt.savefig('/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/figures/f0_range_cooke') # Change
+
+print('Figure saved')
+
+
+
+
+
+# for age, f0s in sorted_queen_f0_age.items():
+#     # Initialize min and max with extreme values
+#     overall_min = float('inf')
+#     overall_max = float('-inf')
+
+#     # Find min/max of all f0s at that age
+#     # filter out 0s first
+#     for f0_array in f0s:
+#         filtered_array = f0_array[f0_array != 0]
+#         if filtered_array.size > 0: 
+#             min_value = np.min(filtered_array)
+#             max_value = np.max(filtered_array)
+#             overall_min = min(overall_min, min_value)
+#             overall_max = max(overall_max, max_value)
+#         else:
+#             print('only 0s at array for: ', age)
+#     print(f"Age: {age}, Min f0: {min_value.item()}, Max f0: {max_value.item()}")
+
+
 

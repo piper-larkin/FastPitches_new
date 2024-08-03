@@ -10,6 +10,9 @@ from collections import defaultdict
 import matplotlib.pyplot as plt
 import numpy as np
 
+## for groups of files labeled with _age_spk at end
+# like phrases30_35_3
+
 # Path to all files
 test_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/tc_audio_pitch_text_spk_age_test.txt'
 # test_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/filelists/reagan_all/reagan_audio_pitch_text_test_age_spk.txt'

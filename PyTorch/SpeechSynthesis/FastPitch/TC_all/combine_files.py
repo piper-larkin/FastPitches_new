@@ -10,5 +10,5 @@ with open('TC_all/all_lines.txt', 'r') as f:
 random.shuffle(lines)
 
 # Write the shuffled lines to the output file
-with open('TC_all/tc_LJ_spk_age_train.txt', 'w') as f:
+with open('TC_all/tc_LJ_spk_age_dev_smaller.txt', 'w') as f:
     f.writelines(lines)
