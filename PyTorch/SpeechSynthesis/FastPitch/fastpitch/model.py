@@ -249,45 +249,26 @@ class FastPitch(nn.Module):
         return torch.from_numpy(attn_out).to(attn.get_device())
 
     def forward(self, inputs, use_gt_pitch=True, pace=1.0, max_duration=75):
-
-        # ADDED age to inputs below
         (inputs, input_lens, mel_tgt, mel_lens, pitch_dense, energy_dense,
          speaker, attn_prior, audiopaths, age) = inputs
-
-        # print shapes of inputs
-        # print("inputs shape: ", inputs.shape)
-        # print("input_lens shape: ", input_lens.shape)
-        # print("mel_tgt shape: ", mel_tgt.shape)
-        # print("mel_lens shape: ", mel_lens.shape)
-        # print("pitch_dense shape: ", pitch_dense.shape)
-        # print("energy_dense shape: ", energy_dense.shape)
-        # print("attn_prior shape: ", attn_prior.shape)
-        # print("Age in forward: ", age)
-        # print("\n\n")
-
         mel_max_len = mel_tgt.size(2)
 
-        # Calculate age embedding - ADDED
-        # age is tensor here: tensor([74, 74, 74, 75, 75, 72, 75, 75, 73, 71, 74, 70, 77, 70, 71, 77])
+        # Calculate age embedding 
         age = age.unsqueeze(1)
-        # print(f"Age tensor shape: {age.shape}") [16, 1]
         age_tensor = age.float().to(inputs.device)
-        age_emb = self.age_embedding(age_tensor).unsqueeze(1)   # need to unsqueeze to concat with spk_emb
+        age_emb = self.age_embedding(age_tensor).unsqueeze(1)   # unsqueeze to concat with spk_emb
 
         # Calculate speaker embedding
         if self.speaker_emb is None:
             spk_emb = 0
-            cond_input = age_emb    # ADDED
+            cond_input = age_emb   
         else:
             spk_emb = self.speaker_emb(speaker).unsqueeze(1)
             spk_emb.mul_(self.speaker_emb_weight)
-            cond_input = age_emb + spk_emb  # ADDED
+            cond_input = age_emb + spk_emb  
 
         # Input FFT (cond_input from loop above)
         enc_out, enc_mask = self.encoder(inputs, conditioning=cond_input)
-        # CHANGED below to above, to condition on both speaker and age info
-        # enc_out, enc_mask = self.encoder(inputs, conditioning=spk_emb)
-        # enc_out, enc_mask = self.encoder(inputs, conditioning=age_emb)   
 
         # Alignment
         text_emb = self.encoder.word_emb(inputs)
@@ -353,34 +334,27 @@ class FastPitch(nn.Module):
     def infer(self, inputs, age, pace=1.0, dur_tgt=None, pitch_tgt=None,
               energy_tgt=None, pitch_transform=None, max_duration=75,
               speaker=0):
-        # ADDED age above
 
-        # Calculate age embeddings - ADDED
-        # inputs.size(0) = batch size
+        # Calculate age embeddings 
         age = torch.tensor([age] * inputs.size(0), dtype=torch.float32).unsqueeze(1).to(inputs.device)
-        age_emb = self.age_embedding(age)   # get emb using network defined in init
+        age_emb = self.age_embedding(age)   
 
         if self.speaker_emb is None:
             spk_emb = 0
             # Define cond_input without speaker
-            cond_input = age_emb.unsqueeze(1)   # Added
+            cond_input = age_emb.unsqueeze(1)  
         else:
             speaker = (torch.ones(inputs.size(0)).long().to(inputs.device)
                        * speaker)
             spk_emb = self.speaker_emb(speaker).unsqueeze(1)
             spk_emb.mul_(self.speaker_emb_weight)
 
-            # Define cond_input with speaker emb - ADDED lines below
-            cond_input = age_emb.unsqueeze(1) + spk_emb      # need to do this rather than concat, or size is wrong for transformer
-            # had to unsqueeze age above
-            # cond_input = cond_input.unsqueeze(1)
-
+            # Define cond_input with speaker emb 
+            cond_input = age_emb.unsqueeze(1) + spk_emb  
         
         # Input FFT (cond_input defined above)
         enc_out, enc_mask = self.encoder(inputs, conditioning=cond_input)
-        # CHANGED below to above, to condition on both speaker and age info
-        # enc_out, enc_mask = self.encoder(inputs, conditioning=spk_emb)
-
+       
         # Predict durations
         log_dur_pred = self.duration_predictor(enc_out, enc_mask).squeeze(-1)
         dur_pred = torch.clamp(torch.exp(log_dur_pred) - 1, 0, max_duration)
@@ -422,6 +396,5 @@ class FastPitch(nn.Module):
 
         dec_out, dec_mask = self.decoder(len_regulated, dec_lens)
         mel_out = self.proj(dec_out)
-        # mel_lens = dec_mask.squeeze(2).sum(axis=1).long()
         mel_out = mel_out.permute(0, 2, 1)  # For inference.py
         return mel_out, dec_lens, dur_pred, pitch_pred, energy_pred

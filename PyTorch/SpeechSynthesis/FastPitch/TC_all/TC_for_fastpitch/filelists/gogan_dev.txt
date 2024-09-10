@@ -1,4 +1,0 @@
-mels/gogan_2009-03-08_004.pt|pitch/gogan_2009-03-08_004.pt|So I think it's something.|10|74
-mels/gogan_1965-01-01_043.pt|pitch/gogan_1965-01-01_043.pt|Thank you very much for coming along.|10|30
-mels/gogan_1999-12-21_001.pt|pitch/gogan_1999-12-21_001.pt|well, I, I, I, one of the, uh, poems in the book is something I know, a pint of plain is only man from flano brine.|10|65
-mels/gogan_2009-03-08_034.pt|pitch/gogan_2009-03-08_034.pt|Thanks very much, you did Larry for talking, I know you're very busy and you're very good to come in and talk, thanks a lot.|10|74

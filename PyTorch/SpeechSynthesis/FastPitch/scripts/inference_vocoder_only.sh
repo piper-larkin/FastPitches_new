@@ -2,8 +2,8 @@
 
 : ${WAVEGLOW:="pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt"}
 
-: ${BATCH_SIZE:=16}     # chnaged from 32 to fix cuda error 
-: ${OUTPUT_DIR:="TC_all/testset_true_vocoded"}      # changed dir name
+: ${BATCH_SIZE:=16}     # was 32 
+: ${OUTPUT_DIR:="./reference_lawlor/reference"}      # changed dir name
 : ${LOG_FILE:="$OUTPUT_DIR/nvlog_infer.json"}
 : ${AMP:=false}
 : ${TORCHSCRIPT:=false}
@@ -19,7 +19,7 @@
 echo -e "\nAMP=$AMP, batch_size=$BATCH_SIZE\n"
 
 ARGS=""
-ARGS+=" -i TC_all/tc_audio_pitch_text_spk_age_phrases.tsv"   # Change
+ARGS+=" -i phrases/rainbow_passage_etc_phrases_reference.tsv"   # Change
 ARGS+=" -o $OUTPUT_DIR"
 ARGS+=" --log-file $LOG_FILE"
 ARGS+=" --fastpitch SKIP"
@@ -31,7 +31,7 @@ ARGS+=" --repeats $REPEATS"
 ARGS+=" --warmup-steps $WARMUP"
 ARGS+=" --speaker $SPEAKER"
 ARGS+=" --n-speakers $NUM_SPEAKERS"
-ARGS+=" --dataset-path TC_all/" # Change
+ARGS+=" --dataset-path reference_lawlor/" # Change
 [ "$CPU" = false ]          && ARGS+=" --cuda"
 [ "$CPU" = false ]          && ARGS+=" --cudnn-benchmark"
 [ "$AMP" = true ]           && ARGS+=" --amp"

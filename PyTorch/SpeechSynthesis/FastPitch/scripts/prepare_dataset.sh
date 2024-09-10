@@ -2,7 +2,7 @@
 
 set -e
 
-: ${DATA_DIR:=LJSpeech-1.1}
+: ${DATA_DIR:=LJSpeech-1.1} # Change
 : ${ARGS="--extract-mels"}
 
 python prepare_dataset.py \

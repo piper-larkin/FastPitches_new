@@ -4,16 +4,21 @@ import numpy as np
 import re
 from collections import defaultdict
 import matplotlib.pyplot as plt
+from scipy.stats import linregress
 
-## loads pitch files from some dir and gets avg f0
-##TODO add functionality to specify speaker(s)
-##TODO add funtionality to plot
+'''
+Overview:
+Loads pitch files some directory and gets average f0
+Get age information to compare f0s by age
+Plot avg f0s
+'''
+
+
 
 def load_f0_values(directory, names=None):
     '''
     names: list of speaker names want to consider
     returns list of f0 values, where each element is np.array
-
     '''
     pt_files = []
     f0_values = []
@@ -22,7 +27,7 @@ def load_f0_values(directory, names=None):
             for name in names:
                 if name in file:
                     pt_files.append(os.path.join(directory, file))
-                    break  # If a name is found, no need to check other names
+                    break  
         else:
             pt_files.append(os.path.join(directory, file))
 
@@ -33,6 +38,10 @@ def load_f0_values(directory, names=None):
     return f0_values
 
 def avg_f0_values(f0_values):
+    '''
+    f0_values: all values from load_f0_values function
+    returns average f0 value
+    '''
 
     # Flatten the list of f0 values (from numpy arrays)
     flattened_f0_values = []
@@ -59,6 +68,15 @@ def avg_f0_values(f0_values):
     return average_f0
 
 def compare_groups(group1_dir, group2_dir, group1_names=None, group2_names=None):
+    '''
+    group1_dir: directory path for pitch files of group 1
+    group1_names: list of names to use for group 1, or None
+    group2_dir: directory path for pitch files of group 2
+    group2_names: list of names to use for group 2, or None
+
+    Returns f0 values for 2 groups
+    '''
+
     group1_f0_values = load_f0_values(group1_dir, group1_names)
     group2_f0_values = load_f0_values(group2_dir, group2_names)
     
@@ -94,19 +112,20 @@ def calculate_age(file):
 
     date_pattern = r'\d{4}-\d{2}-\d{2}|\d{4}_\d{2}_\d{2}|\d{4}'
 
-    # will call this for each file 
     # split file just to get first part, which will be dict key
-    parts = file.split('_')
-    speaker = parts[0]
-    (r_year, r_month, r_day, spk_id) = speaker_dict[speaker]
-    # spk_id = str(spk_id)
+    if 'LJ' not in file:
+        parts = file.split('_')
+        speaker = parts[0]
+        (r_year, r_month, r_day, spk_id) = speaker_dict[speaker]
 
     # then match date in whole file name
     date_match = re.search(date_pattern, file)
     date = date_match.group()
 
+    if 'LJ' in file:
+        age = 45
         
-    if '_' in date:
+    elif '_' in date:
         year, month, day = date.split('_')
         year = int(year)
         month = int(month)
@@ -141,9 +160,7 @@ def calculate_age(file):
 def load_f0_values_age(directory, names=None):
     '''
     names: list of speaker names want to consider
-
     returns age_f0_values: dict containing list of f0 values by age, where each element is np.array
-
     '''
     age_pt_dict = defaultdict(list)
     age_f0_values = defaultdict(list)
@@ -156,7 +173,7 @@ def load_f0_values_age(directory, names=None):
                 if name in file:
                     age = calculate_age(file)
                     age_pt_dict[age].append(os.path.join(directory, file))
-                    break  # If a name is found, no need to check other names
+                    break 
         else:
             age = calculate_age(file)
             age_pt_dict[age].append(os.path.join(directory, file))
@@ -171,9 +188,7 @@ def load_f0_values_age(directory, names=None):
 def load_f0_values_age_specify(directory, test_dir, names=None):
     '''
     names: list of speaker names want to consider
-
     returns age_f0_values: dict containing list of f0 values by age, where each element is np.array
-
     '''
     age_pt_dict = defaultdict(list)
     age_f0_values = defaultdict(list)
@@ -187,7 +202,7 @@ def load_f0_values_age_specify(directory, test_dir, names=None):
                 if name in file:
                     age = calculate_age(file)
                     age_pt_dict[age].append(os.path.join(directory, file))
-                    break  # If a name is found, no need to check other names
+                    break 
         else:
             age = calculate_age(file)
             age_pt_dict[age].append(os.path.join(directory, file))
@@ -202,9 +217,9 @@ def load_f0_values_age_specify(directory, test_dir, names=None):
 
 def avg_f0_values_age(age_f0_values):
     '''
-    return dict, with avg per age
+    age_f0_values: dict of all f0 values by age
+    returns dict, with avg per age
     '''
-
     avg_f0s_age = defaultdict(float)
 
     for age, f0_values in age_f0_values.items():
@@ -239,164 +254,66 @@ def plot_avg_f0s_multi(avg_f0_dicts, labels):
     '''
     avg_f0_dicts: list of dicts by age, one per group 
     labels: list of labels for plotting, label is by group
+    
+    Creates plot
     '''
-    # ages = range(20, 101)
 
     for avg_f0_values, label in zip(avg_f0_dicts, labels):
+        if 'female' in label:
+            color = 'gold'
+        else:
+            color = 'green'
         ages = sorted(avg_f0_values.keys())
         # avg_f0s = [avg_f0_values.get(age, np.nan) for age in ages]
         avg_f0s = [avg_f0_values[age] for age in ages]
         # plt.plot(ages, avg_f0s, marker='o', linestyle='-', label=label)   # for lines
-        plt.scatter(ages, avg_f0s, label=label)
+        plt.scatter(ages, avg_f0s, label=label, color=color)
 
-    plt.xlabel('Age')
-    plt.ylabel('Average f0')
-    plt.ylim(0, 401)
+        # Calculate the trend line using linear regression
+        slope, intercept, r_value, p_value, std_err = linregress(ages, avg_f0s)
+        trend_line = slope * np.array(ages) + intercept
+        
+        # Plot the trend line
+        plt.plot(ages, trend_line, linestyle='-', color=color)
+
+    plt.xlabel('Chronological age (years)')
+    plt.ylabel('Average F0 (Hz)')
+    plt.ylim(0, 350)
     plt.xlim(10, 101)
-    plt.title('Average f0 for speech by age')   # Change
+    # plt.title('Average f0 for speech by age')   # Change
     plt.legend()
-    plt.savefig('/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/figures/f0_plot_true_testset_check') # Change
-    print('Figure saved')
+    # plt.savefig('/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/figures/f0_male_vs_female_line') # Change
+    # print('Figure saved')
     plt.show()
 
+
 vocoded_dir = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/testset_true_vocoded/pitch'
-
 synth_dir = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/testset_TC_inf/pitch'
-# avg_f0_dicts = []
-# age_f0_values = load_f0_values_age(vocoded_dir)
-# # print(group, age_f0_values.keys())
-# # print((sorted(age_f0_values.keys())))
-# avg_f0s_age = avg_f0_values_age(age_f0_values)
-# # print(group, avg_f0s_age)
-# avg_f0_dicts.append(avg_f0s_age)
-# print(avg_f0s_age)
-# labels = ['all']
-# plot_avg_f0s_multi(avg_f0_dicts, labels)
+data_dir = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/pitch'
 
 
-group1_dir = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/pitch'
-group1_names = ['bowman']
-group2_dir = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/pitch'
-group2_names = ['bowman_2006']
+# # Sample use comparing avg F0 of male and female speakers
+# male_speakers = ['bowman', 'byrne', 'cooke', 'cronkite', 'gogan', 'magee', 'odulaing', 'plomley', 'reagan']
+# female_speakers = ['doyle', 'dunne', 'finucane', 'lawlor', 'lockwood', 'nibhriain', 'thatcher', 'queen']
 
-speakers = ['bowman', 'byrne', 'cooke', 'cronkite', 'doyle', 'dunne', 'finucane', 'gogan', 'lawlor', 'lockwood', 'magee', 'nibhriain', 'odulaing', 'plomley', 'queen', 'thatcher', 'reagan']
-
-groups = ['cooke', 'queen', 'reagan']   
-labels = ['cooke', 'queen', 'reagan'] # labels for plotting, may differ if have groups like real/synth or m/f
-# groups = ['bowman']
-avg_f0_dicts = []  # for plotting
-# for group in groups:
-#     print(group)
-#     # age_f0_values = load_f0_values_age(vocoded_dir, [group])
-#     age_f0_values = load_f0_values_age_specify(group1_dir, synth_dir, [group])
-#     # print(group, age_f0_values.keys())
-#     # print((sorted(age_f0_values.keys())))
-#     avg_f0s_age = avg_f0_values_age(age_f0_values)
-#     # print(group, avg_f0s_age)
-#     avg_f0_dicts.append(avg_f0s_age)
-#     # print(avg_f0s_age)
-# plot_avg_f0s_multi(avg_f0_dicts, labels)
+# male_dict = load_f0_values_age(data_dir, male_speakers)
+# male_dict_avg = avg_f0_values_age(male_dict)
+# female_dict = load_f0_values_age(data_dir, female_speakers)
+# female_dict_avg = avg_f0_values_age(female_dict)
+# plot_avg_f0s_multi([male_dict_avg, female_dict_avg], ['male speech', 'female speech'])
 
 
-# labels = ['true', 'vocoded', 'synthetic']
-# age_f0_values = load_f0_values_age_specify(group1_dir, synth_dir)
-# avg_f0s_age = avg_f0_values_age(age_f0_values)
-# avg_f0_dicts.append(avg_f0s_age)
+# Sample use comparing true, vocoded, and synthetic speech 
+labels = ['true', 'vocoded', 'synthetic']
+age_f0_values = load_f0_values_age_specify(data_dir, synth_dir)
+avg_f0s_age = avg_f0_values_age(age_f0_values)
+avg_f0_dicts.append(avg_f0s_age)
 
-# age_f0_values = load_f0_values_age(vocoded_dir)
-# avg_f0s_age = avg_f0_values_age(age_f0_values)
-# avg_f0_dicts.append(avg_f0s_age)
+age_f0_values = load_f0_values_age(vocoded_dir)
+avg_f0s_age = avg_f0_values_age(age_f0_values)
+avg_f0_dicts.append(avg_f0s_age)
 
-# age_f0_values = load_f0_values_age(synth_dir)
-# avg_f0s_age = avg_f0_values_age(age_f0_values)
-# avg_f0_dicts.append(avg_f0s_age)
-# plot_avg_f0s_multi(avg_f0_dicts, labels)
-
-
-
-# f0_values = load_f0_values_age(group1_dir, group1_names)
-# print(f0_values)
-# avg_f0 = avg_f0_values_age(f0_values)
-# print(avg_f0)
-# group1_avg_f0, group2_avg_f0 = compare_groups(group1_dir, group2_dir, group1_names, group2_names)
-# print(group1_avg_f0, group2_avg_f0)
-
-queen_f0_age_r = load_f0_values_age_specify(group1_dir, vocoded_dir, ['cooke'])
-queen_f0_age_v = load_f0_values_age(vocoded_dir, ['cooke'])
-queen_f0_age_s = load_f0_values_age(synth_dir, ['cooke'])
-
-dicts = [queen_f0_age_r, queen_f0_age_v, queen_f0_age_s]
-labels = ['True \n', 'Vocoded \n', 'Synthesized \n']
-# sorted_queen_f0_age = dict(sorted(queen_f0_age.items()))
-min_colors = ['skyblue', 'limegreen', 'red']
-max_colors = ['blue', 'forestgreen', 'brown']
-
-# Create custom legend handles
-legend_handles = []
-legend_labels = []
-
-i = 0
-for f0_dict in dicts:
-    sorted_f0_dict = dict(sorted(f0_dict.items()))
-
-    for age, f0s in sorted_f0_dict.items():
-        # Initialize min and max with extreme values
-        overall_min = float('inf')
-        overall_max = float('-inf')
-
-        # Find min/max of all f0s at that age
-        # filter out 0s first
-        for f0_array in f0s:
-            filtered_array = f0_array[f0_array != 0]
-            if filtered_array.size > 0: 
-                min_value = np.min(filtered_array)
-                max_value = np.max(filtered_array)
-                overall_min = min(overall_min, min_value)
-                overall_max = max(overall_max, max_value)
-        plt.scatter(age, overall_min, color=min_colors[i])
-        plt.scatter(age, overall_max, color=max_colors[i])
-     # Add custom legend entries only once per label
-    legend_handles.append(plt.Line2D([0], [0], marker='o', color='w', label=labels[i] + ' min', markerfacecolor=min_colors[i], markersize=10))
-    legend_handles.append(plt.Line2D([0], [0], marker='o', color='w', label=labels[i] + ' max', markerfacecolor=max_colors[i], markersize=10))
-
-    
-    i += 1
-
-plt.xlabel('Age')
-plt.ylabel('f0 (Hz)')
-plt.ylim(0, 2251)
-plt.xlim(10, 101)
-plt.title('Cooke: min & max f0 for speech by age')   # Change
-plt.legend(handles=legend_handles, loc='upper right', bbox_to_anchor=(1.33, 1))
-plt.tight_layout(rect=[0, 0, 0.6, 1])
-# Manually adjust the subplot parameters to make room for the legend
-plt.subplots_adjust(right=0.8)  # Adjust the right margin
-# plt.legend()  # need to figure out how to only add once
-plt.savefig('/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/figures/f0_range_cooke') # Change
-
-print('Figure saved')
-
-
-
-
-
-# for age, f0s in sorted_queen_f0_age.items():
-#     # Initialize min and max with extreme values
-#     overall_min = float('inf')
-#     overall_max = float('-inf')
-
-#     # Find min/max of all f0s at that age
-#     # filter out 0s first
-#     for f0_array in f0s:
-#         filtered_array = f0_array[f0_array != 0]
-#         if filtered_array.size > 0: 
-#             min_value = np.min(filtered_array)
-#             max_value = np.max(filtered_array)
-#             overall_min = min(overall_min, min_value)
-#             overall_max = max(overall_max, max_value)
-#         else:
-#             print('only 0s at array for: ', age)
-#     print(f"Age: {age}, Min f0: {min_value.item()}, Max f0: {max_value.item()}")
-
-
-
+age_f0_values = load_f0_values_age(synth_dir)
+avg_f0s_age = avg_f0_values_age(age_f0_values)
+avg_f0_dicts.append(avg_f0s_age)
+plot_avg_f0s_multi(avg_f0_dicts, labels)

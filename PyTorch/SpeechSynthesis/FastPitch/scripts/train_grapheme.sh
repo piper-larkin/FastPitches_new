@@ -32,7 +32,7 @@ export OMP_NUM_THREADS=1
 : ${LOAD_MEL_FROM_DISK:=true}
 
 # For multispeaker models, add speaker ID = {0, 1, ...} as the last filelist column
-: ${NSPEAKERS:=18}  # changed from 1 and from 17
+: ${NSPEAKERS:=18}  # Changed
 : ${SAMPLING_RATE:=22050}
 
 # Adjust env variables to maintain the global batch size: NUM_GPUS x BATCH_SIZE x GRAD_ACCUMULATION = 256.
@@ -94,8 +94,5 @@ elif [ "$SAMPLING_RATE" != "22050" ]; then
 fi
 
 mkdir -p "$OUTPUT_DIR"
-
-# : ${DISTRIBUTED:="-m torch.distributed.launch --nproc_per_node $NUM_GPUS"}
-# python $DISTRIBUTED train.py $ARGS "$@"
 
 python train.py $ARGS "$@"

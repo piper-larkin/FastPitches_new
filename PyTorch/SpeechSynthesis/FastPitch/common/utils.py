@@ -72,7 +72,7 @@ def load_filepaths_and_text(fnames, dataset_path=None, has_speakers=False,
     def split_line(line, root=None):
         parts = line.strip().split(split)
         if has_speakers:
-            paths, non_paths = parts[:-3], parts[-3:]   # CHANGED from -2 to -3 because added column beyond speaker
+            paths, non_paths = parts[:-3], parts[-3:]   # CHANGED from -2 to -3 
         else:
             paths, non_paths = parts[:-1], parts[-1:]
         if root:
@@ -84,7 +84,6 @@ def load_filepaths_and_text(fnames, dataset_path=None, has_speakers=False,
     for fname in fnames:
         with open(fname, encoding='utf-8') as f:
             fpaths_and_text += [split_line(line, dataset_path) for line in f]
-            # print('fpaths_and_text from utils: ', fpaths_and_text)  #ADDED
     return fpaths_and_text
 
 

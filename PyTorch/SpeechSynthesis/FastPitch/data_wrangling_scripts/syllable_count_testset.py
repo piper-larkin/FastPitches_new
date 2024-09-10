@@ -9,7 +9,7 @@ import re
 from collections import defaultdict
 import matplotlib.pyplot as plt
 import numpy as np
-
+from scipy.stats import linregress
 ## for groups of files labeled with _age_spk at end
 # like phrases30_35_3
 
@@ -110,17 +110,24 @@ def plot_rates(rate_dict_real, rate_dict_synth):
     synth_x = list(rate_dict_synth.keys())
     synth_y = list(rate_dict_synth.values())
 
-    # Plot
     plt.figure(figsize=(10, 5))
-    plt.plot(real_x, real_y, marker='o', label='True speech')
-    plt.plot(synth_x, synth_y, marker='s', label='Synthesized speech')
+    plt.ylim(2.1, 5.9)
+    plt.plot(real_x, real_y, marker='*', color = '#9467BD', label='Queen: True speech')
+    plt.plot(synth_x, synth_y, marker='.', color = 'red', label='Queen: Synthesized speech')
+
+    # Fit a linear trend line to the real data
+    z = np.polyfit(real_x, real_y, 2)  # 1 is the degree of the polynomial (linear)
+    p = np.poly1d(z)  # Create a polynomial function from the coefficients
+    plt.plot(real_x, p(real_x), color='grey', linestyle='--', label='Trend in true speaking rate')
+
+
 
     # plt.title('Syllables per second of real vs synthetic speech by age')   # CHANGE
-    plt.xlabel('Age (years)')
+    plt.xlabel('Chronological Age (years)')
     plt.ylabel('Speech rate (syllable/second)')
     plt.legend()
     plt.tight_layout()
-    plt.savefig('figures/real_vs_inf_reagan_deep_rate.png')
+    plt.savefig('figures/sr_queen_real_vs_synth2.png')
     plt.show()
 
 def plot_rates_3(rate_dict_real, rate_dict_synth1, rate_dict_synth2):
@@ -140,9 +147,13 @@ def plot_rates_3(rate_dict_real, rate_dict_synth1, rate_dict_synth2):
 
     # Plot
     plt.figure(figsize=(10, 5))
-    plt.plot(real_x, real_y, marker='s', label='Cooke: synthesized speech')
-    plt.plot(synth_x1, synth_y1, marker='o', label='Queen: synthesized speech')  # CHANGED ORDER
-    plt.plot(synth_x2, synth_y2, marker='*', label='Reagan: synthesized speech')
+    # plt.plot(real_x, real_y, marker='s', label='Cooke: synthesized speech')
+    # plt.plot(synth_x1, synth_y1, marker='o', label='Queen: synthesized speech')  # CHANGED ORDER
+    # plt.plot(synth_x2, synth_y2, marker='*', label='Reagan: synthesized speech')
+
+    plt.plot(real_x, real_y, marker='s', label='reagan')
+    plt.plot(synth_x1, synth_y1, marker='o', label='cooke')  # CHANGED ORDER
+    plt.plot(synth_x2, synth_y2, marker='*', label='bowman')
 
     # plt.title('Syllables per second of real vs synthetic speech by age')   # CHANGE
     plt.xlabel('Age (years)')
@@ -154,7 +165,7 @@ def plot_rates_3(rate_dict_real, rate_dict_synth1, rate_dict_synth2):
     plt.ylabel('Speech rate (syllable/second)')
     plt.legend()
     plt.tight_layout()
-    plt.savefig('figures/rate_qcr_18to100.png')
+    plt.savefig('figures/rates_examine_5.png')
     plt.show()
 
 
@@ -172,7 +183,9 @@ def synth_rate_range(synth_inference_file, age, speaker):
             # Get length synth file
             label = columns[1]
             # NOTE: may have to change below depending on how inf output is named
-            wav_file_path = f'/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/graphemes_out_all/phrases30_{age}_{speaker}/{label}'
+            wav_file_path = f'/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/graphemes_out_all/phrases30_{age}_{speaker}/wavs/{label}'
+            # wav_file_path = f'/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/lj_rainbow/rainbow_{age}_{speaker}/wavs/{label}'
+
             y, sr = librosa.load(wav_file_path)
             total_duration_synth += librosa.get_duration(y, sr)
 
@@ -202,25 +215,25 @@ def synth_rate_range(synth_inference_file, age, speaker):
 # plot_rates_3(queen_dict, cooke_dict, reagan_dict)
 
 # Add rates to synth dict
-rate_dict_synth_cooke = defaultdict(int)
-ages = range(18, 101)   
-for age in ages:
-    synth_v_rate = synth_rate_range(synth_inference_file, age, 3)
-    rate_dict_synth_cooke[age] += synth_v_rate
+# rate_dict_synth_cooke = defaultdict(int)
+# ages = range(18, 101)   
+# for age in ages:
+#     synth_v_rate = synth_rate_range(synth_inference_file, age, 3)
+#     rate_dict_synth_cooke[age] += synth_v_rate
 
-rate_dict_synth_queen = defaultdict(int)
-ages = range(18, 101)     
-for age in ages:
-    synth_v_rate = synth_rate_range(synth_inference_file, age, 15)
-    rate_dict_synth_queen[age] += synth_v_rate
+# rate_dict_synth_queen = defaultdict(int)
+# ages = range(18, 101)     
+# for age in ages:
+#     synth_v_rate = synth_rate_range(synth_inference_file, age, 15)
+#     rate_dict_synth_queen[age] += synth_v_rate
 
-rate_dict_synth_reagan = defaultdict(int)
-ages = range(18, 101)     
-for age in ages:
-    synth_v_rate = synth_rate_range(synth_inference_file, age, 0)
-    rate_dict_synth_reagan[age] += synth_v_rate
+# rate_dict_synth_reagan = defaultdict(int)
+# ages = range(18, 101)     
+# for age in ages:
+#     synth_v_rate = synth_rate_range(synth_inference_file, age, 0)
+#     rate_dict_synth_reagan[age] += synth_v_rate
 
-plot_rates_3(rate_dict_synth_cooke, rate_dict_synth_queen, rate_dict_synth_reagan)
+# plot_rates_3(rate_dict_synth_cooke, rate_dict_synth_queen, rate_dict_synth_reagan)
 
 # print('cooke dict 18 to 100: ', rate_dict_synth_cooke)
 # print('queen dict 18 to 100: ', rate_dict_synth_queen)
@@ -228,3 +241,25 @@ plot_rates_3(rate_dict_synth_cooke, rate_dict_synth_queen, rate_dict_synth_reaga
 # From reagan:
 # {37: 6.518922738693466, 69: 5.087316176470589, 83: 4.418295379509279}
 # {'75': 4.8454584892181565, '77': 4.545497972020187, '71': 4.817487303455395, '72': 5.00361976196841, '70': 4.846913947965634, '76': 4.639965769630594, '74': 4.7571079537746135, '81': 3.8630265640765193, '73': 4.783589315832243, '78': 4.7136182442273205, '83': 4.453456282249981, '53': 5.287050963151505, '37': 5.476623787289584, '63': 5.151984619147958, '50': 5.458152525416166, '43': 5.781272581245099}
+
+
+
+# get_rates_spk(file_list_path, wav_dir_path, speaker)
+
+# dict1 = get_rates_spk(test_file, wav_dir_path_real, 'reagan')
+# dict2 = get_rates_spk(test_file, wav_dir_path_real, 'cooke')
+# dict3 = get_rates_spk(test_file, wav_dir_path_real, 'bowman')
+
+# plot_rates_3(dict1, dict2, dict3)
+
+# synth_inference_file = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/phrases/rainbow_passage_etc_phrases.tsv'
+
+rate_queen_synth = defaultdict(int)
+ages = range(20, 101, 5)     
+for age in ages:
+    synth_v_rate = synth_rate_range(synth_inference_file, age, 15)
+    rate_queen_synth[age] += synth_v_rate
+
+queen_real = get_rates_spk(test_file, wav_dir_path_real, 'queen')
+
+plot_rates(queen_real, rate_queen_synth)

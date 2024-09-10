@@ -4,7 +4,7 @@
 
 : ${FASTPITCH:="./TC_all/graphemes_out/FastPitch_checkpoint_1000.pt"}  # Changed 
 : ${BATCH_SIZE:=16}  # originally 32
-: ${PHRASES:="phrases/rainbow_passage_etc_phrases.tsv"}    # was "phrases/devset10.tsv" or phrases/devset_1994.tsv 
+: ${PHRASES:="phrases/rainbow_passage_etc_phrases.tsv"}    # was "phrases/devset10.tsv"
 : ${OUTPUT_DIR:="./TC_all/listening_test_2_phoneme/$(basename ${PHRASES})_9_40"}      # changed dir name
 : ${LOG_FILE:="$OUTPUT_DIR/nvlog_infer.json"}
 : ${AMP:=false}
@@ -16,8 +16,8 @@
 : ${REPEATS:=1}
 : ${CPU:=false}
 : ${AGE:=40}    # CHANGE
-: ${SPEAKER:=9} # will have to change
-: ${NUM_SPEAKERS:=17} # will have to change
+: ${SPEAKER:=9} # CHANGE
+: ${NUM_SPEAKERS:=17} 
 
 echo -e "\nAMP=$AMP, batch_size=$BATCH_SIZE\n"
 
@@ -44,5 +44,4 @@ ARGS+=" --n-speakers $NUM_SPEAKERS"
 
 mkdir -p "$OUTPUT_DIR"
 
-# CUDA_LAUNCH_BLOCKING=1 
-python inference.py $ARGS "$@" # ADDED for debugging
+python inference.py $ARGS "$@" 

@@ -143,12 +143,6 @@ def main():
             tik = time.time()
 
             _, input_lens, mels, mel_lens, _, pitch, _, _, attn_prior, fpaths, age = batch
-            # print("Loaded age from batch in prepare_dataset.py: ", age) # now like tensor([75])
-            # ADDED ABOVE: age to batch + print statement 
-
-            # NOTE: added below from data_function.py for reference
-            # (text_padded, input_lengths, mel_padded, output_lengths, len_x,
-    #  pitch_padded, energy_padded, speaker, attn_prior, audiopaths, age) = batch
 
             # Ensure filenames are unique
             for p in fpaths:
@@ -162,8 +156,6 @@ def main():
                     fname = Path(fpaths[j]).with_suffix('.pt').name
                     fpath = Path(args.dataset_path, 'mels', fname)
                     torch.save(mel[:, :mel_lens[j]], fpath)
-                    # print(mel[:, :mel_lens[j]].shape)
-                    # raise
 
             if args.extract_pitch:
                 for j, p in enumerate(pitch):

@@ -4,7 +4,7 @@
 
 : ${FASTPITCH:="./output2_baseline_LJ/FastPitch_checkpoint_1000.pt"}  # Changed 
 : ${BATCH_SIZE:=32}  
-: ${PHRASES:="phrases/testset_1to30_80s.tsv"}    # was "phrases/devset10.tsv" or phrases/devset_1994.tsv or phrases/testset_1to30_80s.tsv
+: ${PHRASES:="phrases/testset_1to30_80s.tsv"}    # was "phrases/devset10.tsv" 
 : ${OUTPUT_DIR:="./output2_baseline_LJ/audio_$(basename ${PHRASES} .tsv)"}      # changed dir name
 : ${LOG_FILE:="$OUTPUT_DIR/nvlog_infer.json"}
 : ${AMP:=false}

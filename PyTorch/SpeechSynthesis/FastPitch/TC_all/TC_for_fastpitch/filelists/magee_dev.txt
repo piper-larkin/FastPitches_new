@@ -1,4 +1,0 @@
-mels/magee_1988-06-09_006.pt|pitch/magee_1988-06-09_006.pt|The one is Pressley.|13|53
-mels/magee_1998-02-03_013.pt|pitch/magee_1998-02-03_013.pt|It was a bit like that.|13|63
-mels/magee_1977-05-06_006.pt|pitch/magee_1977-05-06_006.pt|But as the television audiences increase, the attendances have dropped dramatically at the events themselves.|13|42
-mels/magee_1988-06-09_010.pt|pitch/magee_1988-06-09_010.pt|In fact, Harry used to do 185 sponsored programs a week, but he had this.|13|53

@@ -2,9 +2,9 @@
 
 : ${WAVEGLOW:="pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt"}
 
-: ${FASTPITCH:="./TC_all/TC_LJ_smaller_out/FastPitch_checkpoint_950.pt"}  # Changed 
+: ${FASTPITCH:="./TC_all/graphemes_out/FastPitch_checkpoint_1000.pt"}  # Changed 
 : ${BATCH_SIZE:=16}     # changed from 32
-: ${PHRASES:="./TC_all/tc_audio_pitch_text_spk_age_phrases_30.tsv"}    # was "phrases/devset10.tsv" or phrases/devset_1994.tsv or phrases/testset_1to30_80s.tsv
+: ${PHRASES:="./phrases/rainbow_passage_etc_phrases.tsv"}    # was "phrases/devset10.tsv" 
 : ${AMP:=false}
 : ${TORCHSCRIPT:=false}
 : ${PHONE:=true}
@@ -13,16 +13,14 @@
 : ${WARMUP:=0}
 : ${REPEATS:=1}
 : ${CPU:=false}
-: ${NUM_SPEAKERS:=18} # changed for LJ
+: ${NUM_SPEAKERS:=17} 
 
 echo -e "\nAMP=$AMP, batch_size=$BATCH_SIZE\n"
 
-# for AGE in 18 45 73 100; do
-for AGE in 20 45 85; do
-# for AGE in $(seq 80 100); do
-    # for SPEAKER in 0 3 15; do
-    for SPEAKER in 17; do
-        OUTPUT_DIR="./TC_all/TC_LJ_smaller_out/phrases30_${AGE}_${SPEAKER}_950"  # changed dir name
+
+for AGE in $(seq 80 100); do
+    for SPEAKER in 0 7; do
+        OUTPUT_DIR="./TC_all/distractor_rainbow/rainbow_${AGE}_${SPEAKER}"  # changed dir name
         LOG_FILE="$OUTPUT_DIR/nvlog_infer.json"
 
         ARGS=""

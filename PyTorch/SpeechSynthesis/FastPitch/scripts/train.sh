@@ -2,20 +2,20 @@
 
 export OMP_NUM_THREADS=1
 
-: ${NUM_GPUS:=1} # changed from 8
-: ${BATCH_SIZE:=16} # from 16
-: ${GRAD_ACCUMULATION:=16} # changed from 2
-: ${OUTPUT_DIR:="./TC_all/phonemes_out"}  # Changed
+: ${NUM_GPUS:=1} # Changed from 8
+: ${BATCH_SIZE:=16} 
+: ${GRAD_ACCUMULATION:=16} # Changed from 2
+: ${OUTPUT_DIR:="./TC_all/phonemes_out"}  
 : ${DATASET_PATH:=TC_all}
-: ${TRAIN_FILELIST:=TC_all/tc_audio_pitch_text_spk_age_train.txt}  # Changed 
-: ${VAL_FILELIST:=TC_all/tc_audio_pitch_text_spk_age_dev.txt} # Changed
+: ${TRAIN_FILELIST:=TC_all/tc_audio_pitch_text_spk_age_train.txt}  
+: ${VAL_FILELIST:=TC_all/tc_audio_pitch_text_spk_age_dev.txt} 
 : ${AMP:=false}
 : ${SEED:=""}
 
 : ${LEARNING_RATE:=0.1}
 
 # Adjust these when the amount of data changes
-: ${EPOCHS:=1000}   # Changed
+: ${EPOCHS:=1000} 
 : ${EPOCHS_PER_CHECKPOINT:=50}  # Changed from 100
 : ${WARMUP_STEPS:=1000}
 : ${KL_LOSS_WARMUP:=100}
@@ -32,7 +32,7 @@ export OMP_NUM_THREADS=1
 : ${LOAD_MEL_FROM_DISK:=true}
 
 # For multispeaker models, add speaker ID = {0, 1, ...} as the last filelist column
-: ${NSPEAKERS:=17} # changed 
+: ${NSPEAKERS:=17} # Changed 
 : ${SAMPLING_RATE:=22050}
 
 # Adjust env variables to maintain the global batch size: NUM_GPUS x BATCH_SIZE x GRAD_ACCUMULATION = 256.
@@ -94,8 +94,5 @@ elif [ "$SAMPLING_RATE" != "22050" ]; then
 fi
 
 mkdir -p "$OUTPUT_DIR"
-
-# : ${DISTRIBUTED:="-m torch.distributed.launch --nproc_per_node $NUM_GPUS"}
-# python $DISTRIBUTED train.py $ARGS "$@"
 
 python train.py $ARGS "$@"
