@@ -1,0 +1,4 @@
+mels/dunne_2009-06-05_026.pt|pitch/dunne_2009-06-05_026.pt|Highest temperatures tomorrow 11 to 15 degrees.|8|51
+mels/dunne_1990-01-17_015.pt|pitch/dunne_1990-01-17_015.pt|The OUC said the device had been left in a car in a multi-story car park at the Victoria Centre in Chichester Street, not far from Belfast City Hall.|8|31
+mels/dunne_1981-01-08_006.pt|pitch/dunne_1981-01-08_006.pt|It is written as the title implies for double choir and though both groups are used in the outer sections of the Quirier, only one is used in the Christé Elaison.|8|22
+mels/dunne_1999-06-21_003.pt|pitch/dunne_1999-06-21_003.pt|President Clinton was speaking after meeting European leaders in Bonn to discuss the cost of the reconstruction of Kosovo.|8|41

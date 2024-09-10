@@ -10,3 +10,5 @@ PyTorch/SpeechSynthesis/FastPitch/LJSpeech-1.1/
 *.wav
 *.zip
 *FastPitch_0
+PyTorch/SpeechSynthesis/FastPitch/data_wrangling_scripts/
+PyTorch/SpeechSynthesis/FastPitch/TC_all/TC_for_fastpitch
