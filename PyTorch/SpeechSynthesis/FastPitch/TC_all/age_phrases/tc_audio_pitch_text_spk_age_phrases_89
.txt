@@ -1,0 +1,4 @@
+mel	output	text
+mels/cooke_1998-02-16_024.pt	cooke_1998-02-16_024wav	We're still getting used to the truth of Japan seeing as a rather desperately weak economy.
+mels/cooke_1998-02-16_034.pt	cooke_1998-02-16_034wav	That it constitutes foreign interference in a nation's internal affairs.
+mels/cooke_1998-02-16_068.pt	cooke_1998-02-16_068wav	And republics include the small simple drawing of a fish.

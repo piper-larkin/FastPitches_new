@@ -1,0 +1,121 @@
+mels/doyle_2009-12-09_024.pt|pitch/doyle_2009-12-09_024.pt|have arrested a man this brings to five|7|57
+mels/doyle_1989-07-25_014.pt|pitch/doyle_1989-07-25_014.pt|The Minister for the Environment, Mr. Flynn, says he believes the resignation of Waterford TD Jackie Fahy from the Fienafoil Parliamentary Party is an isolated case and won't damage the government.|7|37
+mels/doyle_1998-06-25_009.pt|pitch/doyle_1998-06-25_009.pt|However, the judge has declared a mistrial on two further charges of murder due to prejudicial coverage in British newspapers this morning.|7|46
+mels/doyle_1980-07-03_018.pt|pitch/doyle_1980-07-03_018.pt|From Belfast here is Liam Cahill of our industrial staff.|7|28
+mels/doyle_1998-06-25_039.pt|pitch/doyle_1998-06-25_039.pt|Highest temperatures, 17-20 degrees.|7|46
+mels/doyle_1989-07-25_001.pt|pitch/doyle_1989-07-25_001.pt|good evening,|7|37
+mels/doyle_1989-07-25_025.pt|pitch/doyle_1989-07-25_025.pt|R.G. Data, the organisation which represents 7,000 small grossers, has written to industry and commerce minister, Mr. Amali, asking him to press for an easy law which would impose stiff penalties on anyone who contaminated food or who made false claims about contamination.|7|37
+mels/doyle_1998-06-25_024.pt|pitch/doyle_1998-06-25_024.pt|The company's executive said the station's output will be aimed primarily at the 15-44 age group, a media correspondent Conconley.|7|46
+mels/doyle_1980-07-03_002.pt|pitch/doyle_1980-07-03_002.pt|a policeman was injured today when a booby-trap bomb went off under his car and in bellfast|7|28
+mels/doyle_1989-07-25_021.pt|pitch/doyle_1989-07-25_021.pt|He was elected last month on the National Front List of Jean-Marie Le Pen, from Strasbourg or European correspondent, Emanueleau.|7|37
+mels/doyle_1980-07-03_008.pt|pitch/doyle_1980-07-03_008.pt|The Erlingas craftsmen strike is over at a general meeting this afternoon the men decided to accept the offer which emerged from last Tuesday's talks.|7|28
+mels/doyle_2009-12-09_016.pt|pitch/doyle_2009-12-09_016.pt|the government is defending the action and the weather forecast.|7|57
+mels/doyle_1989-07-25_011.pt|pitch/doyle_1989-07-25_011.pt|Garthier is still trying to find out what caused the smourning's fire at a house in Glendorcan and Dublin in which two children died.|7|37
+mels/doyle_1989-07-25_032.pt|pitch/doyle_1989-07-25_032.pt|It won't now leave Dublin until 7 o'clock tomorrow evening.|7|37
+mels/doyle_1980-07-03_027.pt|pitch/doyle_1980-07-03_027.pt|It's understood that so far the paper has cost its investors about a quarter of a million pounds and it was felt that further finance was necessary.|7|28
+mels/doyle_1989-07-25_005.pt|pitch/doyle_1989-07-25_005.pt|IFA President Tom Clinton won't face charges arising from an alleged shotgun incident, and an agreement signed today could bring 4,000 tons of nuclear fuel from West Germany to Selefield.|7|37
+mels/doyle_2009-12-09_011.pt|pitch/doyle_2009-12-09_011.pt|he said they would be issuing a statement expressing their sorrow at what had happened.|7|57
+mels/doyle_1980-07-03_007.pt|pitch/doyle_1980-07-03_007.pt|The weather there's a warning of westerly gales rain and drizzle will clear tonight to fresh weather with showers becoming windy especially in the west and north west.|7|28
+mels/doyle_1989-07-25_010.pt|pitch/doyle_1989-07-25_010.pt|The airline also says it has been discussing joint venture agreements with a number of foreign airlines, a business correspondent, Brian Dobson.|7|37
+mels/doyle_1998-06-25_028.pt|pitch/doyle_1998-06-25_028.pt|The Southern Health Board has confirmed another suspected case of meningitis, bringing to three the number of suspected cases in the court area overnight.|7|46
+mels/doyle_1989-07-25_009.pt|pitch/doyle_1989-07-25_009.pt|Erlinger's has announced profits of more than 41 million pounds, although its main business air transport suffered a decline in profitability.|7|37
+mels/doyle_1998-06-25_004.pt|pitch/doyle_1998-06-25_004.pt|Michael Fisher of our Northern staff.|7|46
+mels/doyle_1998-06-25_020.pt|pitch/doyle_1998-06-25_020.pt|The case was taken to the court by a number of European airlines that are in competition with Air France.|7|46
+mels/doyle_1980-07-03_031.pt|pitch/doyle_1980-07-03_031.pt|According to the NUJ statement negotiations are still going on with prospective investors who the NUJ say have expressed an interest in taking over the financing of the paper.|7|28
+mels/doyle_1998-06-25_003.pt|pitch/doyle_1998-06-25_003.pt|Turn out so far has been much lower than for the referendum on the agreement, but the bowling stations will remain open until 10 o'clock tonight.|7|46
+mels/doyle_2009-12-09_022.pt|pitch/doyle_2009-12-09_022.pt|a political correspondent David McCullough.|7|57
+mels/doyle_1989-07-25_026.pt|pitch/doyle_1989-07-25_026.pt|Mr. Michael Campbell, head of R.G. Data, explained why they were taking this action.|7|37
+mels/doyle_1998-06-25_010.pt|pitch/doyle_1998-06-25_010.pt|Rhinoconal reports.|7|46
+mels/doyle_2009-12-09_018.pt|pitch/doyle_2009-12-09_018.pt|sunny spells two highest temperatures eight to eleven degrees dry and most areas tomorrow with sunny spells highest temperatures seven to ten degrees.|7|57
+mels/doyle_2009-12-09_021.pt|pitch/doyle_2009-12-09_021.pt|the Selena Hans budget proposes cuts in public sector pay and social welfare rates the part from pensions as well as one billion euro cut from spending programs to encourage economic activity VAT is being reduced by half a percent while ex-sized duty on alcohol is being reduced.|7|57
+mels/doyle_1989-07-25_024.pt|pitch/doyle_1989-07-25_024.pt|He said he wouldn't stop solidarity leaders accepting posts in a communist-led government on their own account without committing the movement to a formal coalition.|7|37
+mels/doyle_1980-07-03_010.pt|pitch/doyle_1980-07-03_010.pt|Erlingas say they won't be in a position to resume normal services immediately it'll be next Tuesday evening at the earliest but he said that there'll be an increase in the number of flights under the company's emergency flight program.|7|28
+mels/doyle_2009-12-09_007.pt|pitch/doyle_2009-12-09_007.pt|meanwhile the independent td michael larry today confirmed that he will be supporting the budget following discussions with government officials|7|57
+mels/doyle_1998-06-25_023.pt|pitch/doyle_1998-06-25_023.pt|The new Independent Television Channel TV3 has announced its general programming plans ahead of its start-up on 21 September.|7|46
+mels/doyle_1998-06-25_031.pt|pitch/doyle_1998-06-25_031.pt|He's the first American leader to visit the country since the 10th and square massacre in 1989.|7|46
+mels/doyle_2009-12-09_010.pt|pitch/doyle_2009-12-09_010.pt|carlchorn bradie has described the mood of today's bishops conference and manuth is very serious as they address the issues raised in the Murphy report on clerical child abuse and the Dublin art diocese.|7|57
+mels/doyle_2009-12-09_028.pt|pitch/doyle_2009-12-09_028.pt|the auxiliary bishop of Dublin Aiman Walch who was named in the Murphy report said he had done no wrong regarding child protection in the Dublin Arts diocese.|7|57
+mels/doyle_1980-07-03_015.pt|pitch/doyle_1980-07-03_015.pt|At the annual conference in Belfast delegates were urged by the vice president of the ITGWU Mr. John Carroll to oppose the building of a nuclear power plant anywhere in Ireland.|7|28
+mels/doyle_2009-12-09_027.pt|pitch/doyle_2009-12-09_027.pt|Cardinal Sean Brady has described the mood today's bishops conference in manuth is very serious as they discuss the Murphy report and clerical child abuse in the Dublin Arts diocese.|7|57
+mels/doyle_2009-12-09_029.pt|pitch/doyle_2009-12-09_029.pt|he acknowledged that if the perception continued that he was complicit in covering up abuse it would be a barrier to his continuing as a minister.|7|57
+mels/doyle_1989-07-25_004.pt|pitch/doyle_1989-07-25_004.pt|Erlinger's announces profits of more than 40 million pounds, the Environment Minister says the resignation of Jackie Fahy won't damage the government.|7|37
+mels/doyle_1998-06-25_001.pt|pitch/doyle_1998-06-25_001.pt|that the shak has expressed his hope that today's pole for the northern assembly will be an endorsement of the stormant agreement.|7|46
+mels/doyle_1989-07-25_006.pt|pitch/doyle_1989-07-25_006.pt|The new Secretary of State for the North, Mr. Peter Brook, arrived at Stormant this evening for a meeting with his new officials and staff, our Northern Editor Jim Dugel.|7|37
+mels/doyle_1980-07-03_025.pt|pitch/doyle_1980-07-03_025.pt|Staff at the Sunday journal said this evening they had been given 24 hours notice and the company would be applying to the high court for a liquidator.|7|28
+mels/doyle_2009-12-09_003.pt|pitch/doyle_2009-12-09_003.pt|it's expected to include cuts to public service pay, social welfare, children's allowance and capital spending.|7|57
+mels/doyle_1998-06-25_038.pt|pitch/doyle_1998-06-25_038.pt|In the weather forecast, heavy showers, possibly with thunder, becoming widespread throughout the country during the afternoon.|7|46
+mels/doyle_1980-07-03_012.pt|pitch/doyle_1980-07-03_012.pt|Three gunmen armed with rifle and revolvers got away with 20,000 pounds from the Bank of Ireland branch in Winneville County Carlo today.|7|28
+mels/doyle_2009-12-09_001.pt|pitch/doyle_2009-12-09_001.pt|the minister of finance by lenanhen is preparing to present the budget for 2010 to the oil within the hour.|7|57
+mels/doyle_2009-12-09_013.pt|pitch/doyle_2009-12-09_013.pt|the auxiliary bishops of Dublin aemon waltz who was named in the Murphy report said he had done no wrong regarding child protection in the Dublin art diocese.|7|57
+mels/doyle_1989-07-25_007.pt|pitch/doyle_1989-07-25_007.pt|Dublin County Council has voted to ban gaming machines by 39 votes to 14 with two abstentions.|7|37
+mels/doyle_1989-07-25_033.pt|pitch/doyle_1989-07-25_033.pt|Passengers are requested to be at the ferry port at normal check-in times.|7|37
+mels/doyle_1989-07-25_029.pt|pitch/doyle_1989-07-25_029.pt|Following moves in the high court by two shanard candidates on POSP has announced that all ballot papers held in sorting offices because of the current overtime ban will be delivered by Friday.|7|37
+mels/doyle_1989-07-25_019.pt|pitch/doyle_1989-07-25_019.pt|Members of the European Parliament staged a mass war-out at today's opening session.|7|37
+mels/doyle_1998-06-25_019.pt|pitch/doyle_1998-06-25_019.pt|The Court in Luxembourg has now ruled that decision was incompatible with EU competition rules.|7|46
+mels/doyle_2009-12-09_019.pt|pitch/doyle_2009-12-09_019.pt|delivering his budget for two thousand ten to the oil the Minister for Finance Brian Lennon said the worst of the economic recession was over and we could now see the first signs of a recovery both here and abroad.|7|57
+mels/doyle_1980-07-03_030.pt|pitch/doyle_1980-07-03_030.pt|A statement from the NUJ chapel in the paper tonight said the journalists had an absolute conviction that the paper would succeed commercially if allowed to develop as first envisaged.|7|28
+mels/doyle_1980-07-03_022.pt|pitch/doyle_1980-07-03_022.pt|Pope John Paul is today in São Paulo, Brazil's biggest industrial centre which has a population of nearly 15 million.|7|28
+mels/doyle_1980-07-03_016.pt|pitch/doyle_1980-07-03_016.pt|Instead Congress was asked to support an energy policy based on conservation and greater use of native energy sources including Pete and natural gas.|7|28
+mels/doyle_1998-06-25_030.pt|pitch/doyle_1998-06-25_030.pt|President Clinton has begun a nine-day state visit to China.|7|46
+mels/doyle_1998-06-25_017.pt|pitch/doyle_1998-06-25_017.pt|The European Court of Justice has overturned a decision by the European Commission approving £2 billion worth of French government aid to the state airline Air France.|7|46
+mels/doyle_1998-06-25_013.pt|pitch/doyle_1998-06-25_013.pt|The review is due to be presented to the government soon.|7|46
+mels/doyle_2009-12-09_005.pt|pitch/doyle_2009-12-09_005.pt|the minister is also expected to announce some economic stimulus measures, including a cut in excise on alcohol and investments in energy efficiency.|7|57
+mels/doyle_1989-07-25_030.pt|pitch/doyle_1989-07-25_030.pt|Carmenseeta Headamann, a candidate for the Trinity panel and John McGilligan, who is contesting the NUI election, went to the high court when it emerged that ballot papers hadn't been delivered to constituents in Dublin 4, Dublin 6, Dublin 13 and Dublin 16.|7|37
+mels/doyle_1989-07-25_022.pt|pitch/doyle_1989-07-25_022.pt|In Poland, solidarity leader Lec Fahy's today urged President Yorzylsky to take what he called the only wise decision and authorize the formation of a solidarity government.|7|37
+mels/doyle_1998-06-25_025.pt|pitch/doyle_1998-06-25_025.pt|The High Court has begun a hearing to determine how more than 100 employees and former employees of National Irish Bank can be interviewed by the inspectors appointed to investigate certain needs.|7|46
+mels/doyle_1980-07-03_004.pt|pitch/doyle_1980-07-03_004.pt|three gunmen got away with about 20,000 pounds from the bank of Ireland in Winneville, Monte Carlo today at the congress of trade unions conference in bellfast a decision forer against nuclear energy has been postponed the question is to be considered by the incoming executive.|7|28
+mels/doyle_2009-12-09_004.pt|pitch/doyle_2009-12-09_004.pt|the budget will also introduce a new carbon tax on fossil fuels.|7|57
+mels/doyle_1980-07-03_020.pt|pitch/doyle_1980-07-03_020.pt|Mr. William Lynch, General Secretary of the Civil and Public Services Union, said they shouldn't have had the unholy spectacle that the Congress was seen to be dragged along by a populist campaign.|7|28
+mels/doyle_1998-06-25_005.pt|pitch/doyle_1998-06-25_005.pt|Cross McLean|7|46
+mels/doyle_1989-07-25_013.pt|pitch/doyle_1989-07-25_013.pt|The two other children, Alan aged six and 18-month-old Karen escaped injury along with her mother Jenny.|7|37
+mels/doyle_2009-12-09_002.pt|pitch/doyle_2009-12-09_002.pt|earlier mr lenanhen said the budget would reduce expenditure by 4 billion euro.|7|57
+mels/doyle_1998-06-25_035.pt|pitch/doyle_1998-06-25_035.pt|Another Spanish politician has been killed in the Basque region in the north of the country.|7|46
+mels/doyle_1998-06-25_034.pt|pitch/doyle_1998-06-25_034.pt|Relations began to thaw last year when China's president, Zhang Jianmin, visited the United States.|7|46
+mels/doyle_1989-07-25_002.pt|pitch/doyle_1989-07-25_002.pt|the news at 630 with Andoil, the new Northern Secretary arrives at Stormant, new proposals to try to resolve the Dublin Postal dispute,|7|37
+mels/doyle_1989-07-25_035.pt|pitch/doyle_1989-07-25_035.pt|Mr Kelly was from Kildare and he had lived at the Iver Hostel ride street for the past 30 years.|7|37
+mels/doyle_2009-12-09_015.pt|pitch/doyle_2009-12-09_015.pt|they are arguing that this country's ban on abortion violates their human rights|7|57
+mels/doyle_1989-07-25_008.pt|pitch/doyle_1989-07-25_008.pt|Dublin Corporation has already banned the machines in the city area, Nile Martin reports.|7|37
+mels/doyle_1980-07-03_029.pt|pitch/doyle_1980-07-03_029.pt|Although the staff of 28 have received notice they say they'll work towards a publication of the paper next Sunday.|7|28
+mels/doyle_1980-07-03_011.pt|pitch/doyle_1980-07-03_011.pt|In Arma a policeman was injured when a bomb exploded in his car in Lonstayles Street he was taken to hospital with leg injuries the car had been parked in the area all morning it's believed the device exploded as he drove off and in Belfast a three-year-old child was struck and killed by a British army sarrison in Violet Street near the rear entrance to Springfield Road police station a bomb was thrown at the station in the same place last night.|7|28
+mels/doyle_1998-06-25_006.pt|pitch/doyle_1998-06-25_006.pt|Man|7|46
+mels/doyle_1998-06-25_007.pt|pitch/doyle_1998-06-25_007.pt|James McAddle has been sentenced to 25 years in jail for his part in the London Docklands bombing.|7|46
+mels/doyle_2009-12-09_017.pt|pitch/doyle_2009-12-09_017.pt|showers some heavy and prolonged with hail and thunder spreading eastwards.|7|57
+mels/doyle_2009-12-09_008.pt|pitch/doyle_2009-12-09_008.pt|vanmagnolte reports.|7|57
+mels/doyle_2009-12-09_012.pt|pitch/doyle_2009-12-09_012.pt|he said action was needed to address the situation, but he declined to say what those actions could be.|7|57
+mels/doyle_1989-07-25_023.pt|pitch/doyle_1989-07-25_023.pt|But, Mr. Fahy's statement delivered to General Yorzylsky during talks on the formation of a new government said he believed the Communist Party wasn't yet ready for the solidarity opposition movement to take power.|7|37
+mels/doyle_1980-07-03_019.pt|pitch/doyle_1980-07-03_019.pt|On income tax the Congress executive was attacked by a number of delegates for not taking an early lead in the reform campaign on the streets.|7|28
+mels/doyle_1980-07-03_006.pt|pitch/doyle_1980-07-03_006.pt|Staff of the Sunday journal say they've been given 24 hours notice and the company is to apply to the high court for a liquidator but the staff say they'll continue working.|7|28
+mels/doyle_1980-07-03_009.pt|pitch/doyle_1980-07-03_009.pt|The majority was almost three to one for acceptance the vote was 519 for and 187 against acceptance.|7|28
+mels/doyle_1980-07-03_021.pt|pitch/doyle_1980-07-03_021.pt|Galway Trade's Council condemned the executive for welcoming the budget tax concessions, though they improved the lot of the higher paid only.|7|28
+mels/doyle_1998-06-25_027.pt|pitch/doyle_1998-06-25_027.pt|I legal affairs correspondent, Mary Wilson.|7|46
+mels/doyle_1998-06-25_026.pt|pitch/doyle_1998-06-25_026.pt|The two inspectors were appointed by the High Court last March.|7|46
+mels/doyle_1998-06-25_040.pt|pitch/doyle_1998-06-25_040.pt|Back north to Xi'an.|7|46
+mels/doyle_1980-07-03_017.pt|pitch/doyle_1980-07-03_017.pt|Delegates accepted a request from the executive of Congress to refer all the motions on nuclear energy for study by the incoming executive.|7|28
+mels/doyle_2009-12-09_009.pt|pitch/doyle_2009-12-09_009.pt|rt is providing special coverage now and air on radio one and rt one television from three twenty and online on www.rte.ie.|7|57
+mels/doyle_1989-07-25_003.pt|pitch/doyle_1989-07-25_003.pt|Dublin County Council votes to ban gaming machines,|7|37
+mels/doyle_1980-07-03_003.pt|pitch/doyle_1980-07-03_003.pt|a three-year-old child has died after being hit by a British army troop carrier|7|28
+mels/doyle_1998-06-25_037.pt|pitch/doyle_1998-06-25_037.pt|Manuel Zamorano, a local counsellor, was killed when a bomb exploded next to his car in the town of Renteria.|7|46
+mels/doyle_2009-12-09_025.pt|pitch/doyle_2009-12-09_025.pt|the number of people being detained in connection with the killing of twenty four year old Danny Fitzgerald.|7|57
+mels/doyle_1980-07-03_014.pt|pitch/doyle_1980-07-03_014.pt|The Irish Congress of Trade unions has put off a final decision for a against nuclear energy.|7|28
+mels/doyle_1989-07-25_016.pt|pitch/doyle_1989-07-25_016.pt|In Thunlara this afternoon, the Minister told Charlie Bird he was disappointed and surprised at Mr. Fahy's decision.|7|37
+mels/doyle_1980-07-03_023.pt|pitch/doyle_1980-07-03_023.pt|Huge crowds welcome the Pope as he drove from the airport through the city to an open air mass at an airfield.|7|28
+mels/doyle_2009-12-09_020.pt|pitch/doyle_2009-12-09_020.pt|he said the government's budget decisions were difficult and required a substantial effort by every citizen, but he said it would be the last push of the crisis.|7|57
+mels/doyle_1998-06-25_014.pt|pitch/doyle_1998-06-25_014.pt|It was carried out by efficiency experts over the past two years.|7|46
+mels/doyle_1998-06-25_016.pt|pitch/doyle_1998-06-25_016.pt|A security correspondent Tom O'Connor.|7|46
+mels/doyle_1998-06-25_015.pt|pitch/doyle_1998-06-25_015.pt|The Department of Defence says it will be used as a basis for reorganizing and redefining the roles of the services.|7|46
+mels/doyle_1980-07-03_024.pt|pitch/doyle_1980-07-03_024.pt|From São Paulo here's a report from our religious affairs correspondent Kevin O'Kelly.|7|28
+mels/doyle_1998-06-25_032.pt|pitch/doyle_1998-06-25_032.pt|He arrived about an hour ago in the former Imperial capital, Xi'an, in northwestern China.|7|46
+mels/doyle_1998-06-25_002.pt|pitch/doyle_1998-06-25_002.pt|Mr. Ahern said he hoped voters would give their backing to those candidates who supported the agreement.|7|46
+mels/doyle_1989-07-25_034.pt|pitch/doyle_1989-07-25_034.pt|Garley at Kevin Street in Dublin want to contact any relatives of Mr Thomas Kelly aged 74 who died on the 8th of January.|7|37
+mels/doyle_1998-06-25_036.pt|pitch/doyle_1998-06-25_036.pt|The attack has been blamed on the separatist group Eta.|7|46
+mels/doyle_1998-06-25_018.pt|pitch/doyle_1998-06-25_018.pt|The deal was approved by the Commission in 1994 when Air France was close to insolvency.|7|46
+mels/doyle_1998-06-25_012.pt|pitch/doyle_1998-06-25_012.pt|It estimates the cost at £235 million over 10 years.|7|46
+mels/doyle_2009-12-09_014.pt|pitch/doyle_2009-12-09_014.pt|a challenge by three women to islands abortion laws has begun at the European Court of Human Rights in Strasbourg.|7|57
+mels/doyle_1998-06-25_008.pt|pitch/doyle_1998-06-25_008.pt|Yesterday, a jury in London found him guilty of conspiracy to cause explosions.|7|46
+mels/doyle_1998-06-25_033.pt|pitch/doyle_1998-06-25_033.pt|Both countries regard the visit as an opportunity to rebuild relations following the massacre in which hundreds of unarmed pro-democracy demonstrators were killed in the center of Beijing.|7|46
+mels/doyle_1989-07-25_017.pt|pitch/doyle_1989-07-25_017.pt|The IFA President, Mr. Tom Clinton, is not to face charges arising out of an alleged shotgun incident at his home last month.|7|37
+mels/doyle_1989-07-25_027.pt|pitch/doyle_1989-07-25_027.pt|Efforts to resolve the unofficial dispute of the central sorting office in Dublin which is affecting mail from the capital to the rest of the country have been going on all day.|7|37
+mels/doyle_1980-07-03_001.pt|pitch/doyle_1980-07-03_001.pt|they are lingas strike is over and the maintenance men are going back to work tomorrow but the company says schedules won't be back to normal until about next Tuesday in our ma,|7|28
+mels/doyle_1998-06-25_021.pt|pitch/doyle_1998-06-25_021.pt|They have welcomed today's verdict, saying the rules on the use of state aid will now be much clearer.|7|46
+mels/doyle_1998-06-25_011.pt|pitch/doyle_1998-06-25_011.pt|A review of the Air Corps and the Naval Service has concluded that neither service can continue to function for much longer without the replacement of key equipment.|7|46
+mels/doyle_1989-07-25_031.pt|pitch/doyle_1989-07-25_031.pt|The Isle of Man's team packet company says tomorrow evening service from Dublin will be delayed because of operational difficulties.|7|37

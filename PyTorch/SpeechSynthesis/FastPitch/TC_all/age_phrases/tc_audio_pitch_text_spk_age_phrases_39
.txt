@@ -1,0 +1,4 @@
+mel	output	text
+mels/finucane_1989-09-16_015.pt	finucane_1989-09-16_015wav	Do you think sort of by the outstanding one?
+mels/nibhriain_1991-05-23_007.pt	nibhriain_1991-05-23_007wav	Well, how has your performance and how has your material and all of that?
+mels/queen_1965_024.pt	queen_1965_024wav	Goodwill exists and when there is an opportunity to show it in practical form, we know what wonderful things it can achieve.

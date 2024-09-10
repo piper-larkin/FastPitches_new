@@ -1,0 +1,3 @@
+mel	output	text
+mels/reagan_1954_015.pt	reagan_1954_015wav	I'll get out of the way.
+mels/odulaing_1976-06-29_006.pt	odulaing_1976-06-29_006wav	As always nowadays called the Skeletori Ayrness, generally the biggest organisation in any country parish, and it's likewise Ron Claire Morris.

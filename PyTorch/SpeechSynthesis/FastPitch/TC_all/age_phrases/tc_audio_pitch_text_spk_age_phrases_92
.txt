@@ -1,0 +1,6 @@
+mel	output	text
+mels/cooke_2001-02-23_072.pt	cooke_2001-02-23_072wav	Well, the polls say almost 70% now agree he is and this was put to them dishonest and untrustworthy.
+mels/cooke_2001-02-23_073.pt	cooke_2001-02-23_073wav	But doesn't this affect his standing as president?
+mels/cooke_2000-11-24_053.pt	cooke_2000-11-24_053wav	The one we see now is a 19th century invention and gave up a public prayer of Thanksgiving.
+mels/cooke_2001-02-23_012.pt	cooke_2001-02-23_012wav	Looking for the norm, you have to discount quite a few of them.
+mels/cooke_2000-11-24_072.pt	cooke_2000-11-24_072wav	A little later, your own enterprising reporter made inquiries.

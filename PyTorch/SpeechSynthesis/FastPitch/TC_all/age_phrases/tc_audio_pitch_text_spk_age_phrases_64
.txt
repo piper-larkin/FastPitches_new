@@ -1,0 +1,14 @@
+mel	output	text
+mels/thatcher_1989_11_08_004.pt	thatcher_1989_11_08_004wav	The United Nations must assert its authority and apply a total economic embargo unless Iraq withdraws without delay.
+mels/lockwood_1980_040.pt	lockwood_1980_040wav	Oh, good heavens, my father more than that, about 67.
+mels/lockwood_1980_081.pt	lockwood_1980_081wav	It's absolutely fatal.
+mels/cooke_1973-10-26_016.pt	cooke_1973-10-26_016wav	It is if anything more common in European reporting than anywhere.
+mels/thatcher_1989_11_21_010.pt	thatcher_1989_11_21_010wav	Businesses can once again get a good return on investment.
+mels/cooke_1973-01-27_050.pt	cooke_1973-01-27_050wav	In the hope that they will so perform, let us pray.
+mels/cooke_1973-05-05_014.pt	cooke_1973-05-05_014wav	It set up the procedure in fact for the impeachment of the president of the United States.
+mels/cooke_1973-01-27_029.pt	cooke_1973-01-27_029wav	Now this has been said in other countries before and once having been said it has been ignored or violated.
+mels/cooke_1973-08-25_029.pt	cooke_1973-08-25_029wav	Most people called it disappointing and there was a widespread feeling of skepticism verging on sarcasm about two points.
+mels/cooke_1973-05-05_024.pt	cooke_1973-05-05_024wav	Well you'll see from even such a mini account of his troubles that they bore no relation to Mr. Nixon's.
+mels/plomley_1978_002.pt	plomley_1978_002wav	Now, parks you already live on an island don't you?
+mels/lockwood_1980_046.pt	lockwood_1980_046wav	Yes, absolutely fabulous, and I can remember a very funny story.
+mels/cooke_1973-08-25_066.pt	cooke_1973-08-25_066wav	A proud prisoner worn ragged by the drip drip drip of the tap that's never turned off.

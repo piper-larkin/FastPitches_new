@@ -1,0 +1,6 @@
+mels/gogan_2009-03-08_020.pt|pitch/gogan_2009-03-08_020.pt|How do you prepare for a tour?|10|74
+mels/gogan_1965-01-01_023.pt|pitch/gogan_1965-01-01_023.pt|How did it all start?|10|30
+mels/gogan_1999-12-21_012.pt|pitch/gogan_1999-12-21_012.pt|In time trouble and lowzy strife, you've still got a darling plan.|10|65
+mels/gogan_1965-01-01_034.pt|pitch/gogan_1965-01-01_034.pt|Have you been away at all?|10|30
+mels/gogan_1965-01-01_014.pt|pitch/gogan_1965-01-01_014.pt|Why is this then?|10|30
+mels/gogan_1965-01-01_037.pt|pitch/gogan_1965-01-01_037.pt|What, what would you like this time, Grace?|10|30

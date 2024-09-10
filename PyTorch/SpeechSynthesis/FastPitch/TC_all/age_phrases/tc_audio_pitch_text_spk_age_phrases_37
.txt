@@ -1,0 +1,7 @@
+mel	output	text
+mels/reagan_1948_021.pt	reagan_1948_021wav	Tax reduction bills have been passed to benefit the higher income brackets alone.
+mels/plomley_1951_021.pt	plomley_1951_021wav	did you enjoy the flying?
+mels/doyle_1989-07-25_003.pt	doyle_1989-07-25_003wav	Dublin County Council votes to ban gaming machines,
+mels/doyle_1989-07-25_008.pt	doyle_1989-07-25_008wav	Dublin Corporation has already banned the machines in the city area, Nile Martin reports.
+mels/queen_1963_005.pt	queen_1963_005wav	One such concerted effort has been the campaign to free the world from hunger.
+mels/plomley_1951_010.pt	plomley_1951_010wav	well let's hear about this music for two thousand that might make it last a little longer.

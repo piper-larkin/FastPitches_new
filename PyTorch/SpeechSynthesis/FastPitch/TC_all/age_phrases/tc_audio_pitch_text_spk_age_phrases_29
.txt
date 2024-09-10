@@ -1,0 +1,3 @@
+mel	output	text
+mels/nibhriain_1981-10-02_026.pt	nibhriain_1981-10-02_026wav	I mean, do you think that they will change, that women will change or, or what?
+mels/queen_1955_001.pt	queen_1955_001wav	no doubt you have been listening as I have to the messages which have been reaching us from all over the world.

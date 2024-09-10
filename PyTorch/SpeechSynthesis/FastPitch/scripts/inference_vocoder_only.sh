@@ -2,8 +2,8 @@
 
 : ${WAVEGLOW:="pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt"}
 
-: ${BATCH_SIZE:=32}     # No difference if 1 or 32 
-: ${OUTPUT_DIR:="./output6_marie/vocoded_marie"}      # changed dir name
+: ${BATCH_SIZE:=16}     # was 32 
+: ${OUTPUT_DIR:="./reference_lawlor/reference"}      # changed dir name
 : ${LOG_FILE:="$OUTPUT_DIR/nvlog_infer.json"}
 : ${AMP:=false}
 : ${TORCHSCRIPT:=false}
@@ -13,14 +13,13 @@
 : ${WARMUP:=0}
 : ${REPEATS:=1}
 : ${CPU:=false}
-
-: ${SPEAKER:=0}
-: ${NUM_SPEAKERS:=1}
+: ${SPEAKER:=16} # doesn't matter 
+: ${NUM_SPEAKERS:=17}
 
 echo -e "\nAMP=$AMP, batch_size=$BATCH_SIZE\n"
 
 ARGS=""
-ARGS+=" -i phrases/marie.tsv"   # Change
+ARGS+=" -i phrases/rainbow_passage_etc_phrases_reference.tsv"   # Change
 ARGS+=" -o $OUTPUT_DIR"
 ARGS+=" --log-file $LOG_FILE"
 ARGS+=" --fastpitch SKIP"
@@ -32,11 +31,11 @@ ARGS+=" --repeats $REPEATS"
 ARGS+=" --warmup-steps $WARMUP"
 ARGS+=" --speaker $SPEAKER"
 ARGS+=" --n-speakers $NUM_SPEAKERS"
-ARGS+=" --dataset-path marie/" # Change
+ARGS+=" --dataset-path reference_lawlor/" # Change
 [ "$CPU" = false ]          && ARGS+=" --cuda"
 [ "$CPU" = false ]          && ARGS+=" --cudnn-benchmark"
 [ "$AMP" = true ]           && ARGS+=" --amp"
-[ "$PHONE" = "true" ]       && ARGS+=" --p-arpabet 1.0"
+[ "$PHONE" = "true" ]       && ARGS+=" --p-arpabet 0.0"
 [ "$TORCHSCRIPT" = "true" ] && ARGS+=" --torchscript"
 
 mkdir -p "$OUTPUT_DIR"

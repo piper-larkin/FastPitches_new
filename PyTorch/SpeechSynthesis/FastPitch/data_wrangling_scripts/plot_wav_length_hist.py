@@ -36,12 +36,12 @@ def plot_duration_histogram(wav_durations):
     plt.ylabel('Frequency')
     # plt.xticks(np.arange(min(wav_durations), max(wav_durations) + 1, 5))  # Adjust step size as needed
     plt.xticks(np.arange(min(wav_durations), max(wav_durations) + 1, 1), fontsize=6, rotation=70, ha='right')
-    plt.savefig('/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/data_wrangling_scripts/histogram_LJS_sec')
+    plt.savefig('/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/data_wrangling_scripts/histogram_TC_sec')
     plt.show()
 
 # Path to the folder containing WAV files
 # folder_path = '/Users/piperlarkin/Downloads/Dissertation materials/TCDSA/main/Data/reagan_80s_sentence_wavs'
-folder_path = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/LJSpeech-1.1/wavs'
+folder_path = '/work/tc062/tc062/plarkin/FastPitches/PyTorch/SpeechSynthesis/FastPitch/TC_all/wavs'
 
 # Get durations of all WAV files in the folder
 wav_durations, dur_over30 = get_all_wav_durations(folder_path)

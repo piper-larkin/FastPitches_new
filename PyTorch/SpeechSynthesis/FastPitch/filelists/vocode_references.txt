@@ -1,0 +1,4 @@
+wavs/rainbow_096.wav|No soldiers either.|3|50
+wavs/rainbow_053.wav|No soldiers either.|3|50
+wavs/rainbow_006.wav|No soldiers either.|3|50
+wavs/rainbow_011.wav|No soldiers either.|3|50

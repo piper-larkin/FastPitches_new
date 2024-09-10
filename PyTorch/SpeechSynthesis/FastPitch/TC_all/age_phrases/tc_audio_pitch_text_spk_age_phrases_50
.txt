@@ -1,0 +1,6 @@
+mel	output	text
+mels/reagan_1961_028.pt	reagan_1961_028wav	Walter Ruther said, it's no secret that the United automobile workers is officially on record as backing a program of national health insurance.
+mels/thatcher_1975_001.pt	thatcher_1975_001wav	some socialists seem to believe that people should be numbers in a state computer.
+mels/byrne_1984-12-05_014.pt	byrne_1984-12-05_014wav	But you slugged up and down this country, Kiran.
+mels/reagan_1961_035.pt	reagan_1961_035wav	It is presented in the idea of a great emergency that millions of our senior citizens are unable to provide needed medical care.
+mels/bowman_1993-05-29_019.pt	bowman_1993-05-29_019wav	The Gaelic League had flourished initially underhyde by 1905, it had over 500 branches, and it was central to the national revival which marked the first decade of the century.

@@ -160,9 +160,12 @@ class TTSDataset(torch.utils.data.Dataset):
             audiopaths_and_text = [audiopaths_and_text]
 
         self.dataset_path = dataset_path
+        # self.audiopaths_and_text = load_filepaths_and_text(
+        #     audiopaths_and_text, dataset_path,
+        #     has_speakers=(n_speakers > 1))
+        # CHANGED above lines to line below, has_speakers always True
         self.audiopaths_and_text = load_filepaths_and_text(
-            audiopaths_and_text, dataset_path,
-            has_speakers=(n_speakers > 1))
+            audiopaths_and_text, dataset_path, has_speakers=True)
         self.load_mel_from_disk = load_mel_from_disk
         if not load_mel_from_disk:
             self.max_wav_value = max_wav_value
@@ -189,13 +192,14 @@ class TTSDataset(torch.utils.data.Dataset):
         if use_betabinomial_interpolator:
             self.betabinomial_interpolator = BetaBinomialInterpolator()
 
-        expected_columns = (2 + int(load_pitch_from_disk) + (n_speakers > 1))
+        expected_columns = (4 + int(load_pitch_from_disk))
+        # Requires speaker + age columns
 
         assert not (load_pitch_from_disk and self.pitch_tmp_dir is not None)
 
         if len(self.audiopaths_and_text[0]) < expected_columns:
             raise ValueError(f'Expected {expected_columns} columns in audiopaths file. '
-                             'The format is <mel_or_wav>|[<pitch>|]<text>[|<speaker_id>]')
+                             'The format is <mel_or_wav>|[<pitch>|]<text>|<speaker_id>|<age>')
 
         if len(self.audiopaths_and_text[0]) > expected_columns:
             print('WARNING: Audiopaths file has more columns than expected')
@@ -206,12 +210,10 @@ class TTSDataset(torch.utils.data.Dataset):
 
     def __getitem__(self, index):
         # Separate filename and text
-        if self.n_speakers > 1:
-            audiopath, *extra, text, speaker = self.audiopaths_and_text[index]
-            speaker = int(speaker)
-        else:
-            audiopath, *extra, text = self.audiopaths_and_text[index]
-            speaker = None
+        audiopath, *extra, text, speaker, age = self.audiopaths_and_text[index] # include age
+
+        speaker = int(speaker)
+        age = int(age)  
 
         mel = self.get_mel(audiopath)
         text = self.get_text(text)
@@ -226,7 +228,7 @@ class TTSDataset(torch.utils.data.Dataset):
             pitch = pitch[None, :]
 
         return (text, mel, len(text), pitch, energy, speaker, attn_prior,
-                audiopath)
+                audiopath, age)
 
     def __len__(self):
         return len(self.audiopaths_and_text)
@@ -245,10 +247,6 @@ class TTSDataset(torch.utils.data.Dataset):
             melspec = torch.squeeze(melspec, 0)
         else:
             melspec = torch.load(filename)
-            # assert melspec.size(0) == self.stft.n_mel_channels, (
-            #     'Mel dimension mismatch: given {}, expected {}'.format(
-            #         melspec.size(0), self.stft.n_mel_channels))
-
         return melspec
 
     def get_text(self, text):
@@ -288,11 +286,7 @@ class TTSDataset(torch.utils.data.Dataset):
 
     def get_pitch(self, index, mel_len=None):
         audiopath, *fields = self.audiopaths_and_text[index]
-
-        if self.n_speakers > 1:
-            spk = int(fields[-1])
-        else:
-            spk = 0
+        spk = int(fields[-2])
 
         if self.load_pitch_from_disk:
             pitchpath = fields[0]
@@ -366,12 +360,13 @@ class TTSCollate:
             pitch_padded[i, :, :pitch.shape[1]] = pitch
             energy_padded[i, :energy.shape[0]] = energy
 
-        if batch[0][5] is not None:
-            speaker = torch.zeros_like(input_lengths)
-            for i in range(len(ids_sorted_decreasing)):
-                speaker[i] = batch[ids_sorted_decreasing[i]][5]
-        else:
-            speaker = None
+        speaker = torch.zeros_like(input_lengths)
+        for i in range(len(ids_sorted_decreasing)):
+            speaker[i] = batch[ids_sorted_decreasing[i]][5]
+
+        age = torch.zeros_like(input_lengths)
+        for i in range(len(ids_sorted_decreasing)):
+            age[i] = batch[ids_sorted_decreasing[i]][-1]    # Last thing in batch, so using -1 here 
 
         attn_prior_padded = torch.zeros(len(batch), max_target_len,
                                         max_input_len)
@@ -388,12 +383,12 @@ class TTSCollate:
 
         return (text_padded, input_lengths, mel_padded, output_lengths, len_x,
                 pitch_padded, energy_padded, speaker, attn_prior_padded,
-                audiopaths)
+                audiopaths, age)
 
 
 def batch_to_gpu(batch):
     (text_padded, input_lengths, mel_padded, output_lengths, len_x,
-     pitch_padded, energy_padded, speaker, attn_prior, audiopaths) = batch
+     pitch_padded, energy_padded, speaker, attn_prior, audiopaths, age) = batch
 
     text_padded = to_gpu(text_padded).long()
     input_lengths = to_gpu(input_lengths).long()
@@ -402,12 +397,12 @@ def batch_to_gpu(batch):
     pitch_padded = to_gpu(pitch_padded).float()
     energy_padded = to_gpu(energy_padded).float()
     attn_prior = to_gpu(attn_prior).float()
-    if speaker is not None:
-        speaker = to_gpu(speaker).long()
+    speaker = to_gpu(speaker).long()    
+    age = to_gpu(age).long() 
 
     # Alignments act as both inputs and targets - pass shallow copies
     x = [text_padded, input_lengths, mel_padded, output_lengths,
-         pitch_padded, energy_padded, speaker, attn_prior, audiopaths]
+         pitch_padded, energy_padded, speaker, attn_prior, audiopaths, age]
     y = [mel_padded, input_lengths, output_lengths]
     len_x = torch.sum(output_lengths)
     return (x, y, len_x)

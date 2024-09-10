@@ -1,0 +1,5 @@
+mel	output	text
+mels/queen_1956_006.pt	queen_1956_006wav	Happy Christmas from us all.
+mels/gogan_1965-01-01_009.pt	gogan_1965-01-01_009wav	You, you train there to be a model would you?
+mels/queen_1956_036.pt	queen_1956_036wav	I wish you all a happy Christmas and a happy New Year.
+mels/byrne_1965-06-07_015.pt	byrne_1965-06-07_015wav	What part does Lynn play in all this and how does she feel about it?

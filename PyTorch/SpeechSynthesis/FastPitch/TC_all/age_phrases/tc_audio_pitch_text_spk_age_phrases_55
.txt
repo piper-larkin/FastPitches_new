@@ -1,0 +1,2 @@
+mel	output	text
+mels/thatcher_1980_001.pt	thatcher_1980_001wav	if I could press a button and genuinely solve the unemployment problem, do you think that I would not press that button this instant?

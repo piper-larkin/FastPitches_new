@@ -1,0 +1,18 @@
+mel	output	text
+mels/reagan_1984_6_6_098.pt	reagan_1984_6_6_098wav	We want a wipe from the face of the earth, the terrible weapons that man now has in his hands.
+mels/reagan_1984_21_10_212.pt	reagan_1984_21_10_212wav	George Bush and I have crossed the country and we've had in these last few months a wonderful experience.
+mels/reagan_1984_7_10_174.pt	reagan_1984_7_10_174wav	We found people making 185% of the poverty level were getting government benefits.
+mels/reagan_1984_21_10_112.pt	reagan_1984_21_10_112wav	I think there's a great difference between the government of Iran threatening our diplomatic personnel.
+mels/reagan_1984_6_6_034.pt	reagan_1984_6_6_034wav	Lord Love it of Scotland who calmly announced when he got to the bridge.
+mels/reagan_1984_21_10_001.pt	reagan_1984_21_10_001wav	no hood,
+mels/reagan_1984_6_6_114.pt	reagan_1984_6_6_114wav	Thank you very much and God bless you all.
+mels/queen_1999_006.pt	queen_1999_006wav	For many of their generation, the future is a source of excitement, hope and challenge.
+mels/reagan_1984_7_10_028.pt	reagan_1984_7_10_028wav	So there is no ratio between taxing and balancing a budget.
+mels/cooke_1982-01-01_043.pt	cooke_1982-01-01_043wav	My seven year old nightmare is ever present to the men and women on the Middle East and desk of the State Department.
+mels/reagan_1984_21_10_120.pt	reagan_1984_21_10_120wav	And it's going to take all the nations together just as when we banded together, we pretty much resolved the whole problem of hijack, sky jackings some time ago.
+mels/reagan_1984_21_10_201.pt	reagan_1984_21_10_201wav	We know nothing about them.
+mels/reagan_1984_6_6_111.pt	reagan_1984_6_6_111wav	Let our actions say to them the words for which Matthew, Ridgeway listened,
+mels/reagan_1984_7_10_003.pt	reagan_1984_7_10_003wav	Already, we have a new recovery that has been going on for about 21 months to the point that we can now call an expansion.
+mels/reagan_1984_7_10_018.pt	reagan_1984_7_10_018wav	If the rate of increase in government spending can be held at 5 percent, we're not far from there.
+mels/cooke_1982-01-01_040.pt	cooke_1982-01-01_040wav	At any rate the Reagan doctrine is not just a repeat performance of the Eisenhower doctrine.
+mels/reagan_1984_7_10_110.pt	reagan_1984_7_10_110wav	We find that schools are extending the curriculum to now have forced teaching of mathematics and science and so forth.

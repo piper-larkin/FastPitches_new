@@ -1,0 +1,2 @@
+mel	output	text
+mels/queen_1966_014.pt	queen_1966_014wav	We know so much more about what can be achieved.

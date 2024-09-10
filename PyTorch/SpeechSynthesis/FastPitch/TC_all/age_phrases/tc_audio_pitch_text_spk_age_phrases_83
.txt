@@ -1,0 +1,6 @@
+mel	output	text
+mels/reagan_1994_008.pt	reagan_1994_008wav	American prestige was at an all time low and our leaders talked about an American malaise.
+mels/reagan_1994_001.pt	reagan_1994_001wav	I am delighted to congratulate all of you on Young America's foundation's 15th annual National Conservative Student Conference.
+mels/queen_2009_008.pt	queen_2009_008wav	This seems to me a right and proper way of showing our enduring debt to those who are killed while actively protecting what is most dear to us all.
+mels/cooke_1992-02-28_014.pt	cooke_1992-02-28_014wav	None of your business snaps Mr. Yeltsin and so say all of us.
+mels/reagan_1994_019.pt	reagan_1994_019wav	Today, political correctness has replaced pro-Marxist ideas as the conventional wisdom on too many campuses.

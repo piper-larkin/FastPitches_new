@@ -1,0 +1,3 @@
+mel	output	text
+mels/cronkite_1963_014.pt	cronkite_1963_014wav	We just have a report from our correspondent Dan, rather in Dallas, that he has confirmed that President Kennedy is dead.
+mels/cronkite_1963_013.pt	cronkite_1963_013wav	A man 25 years old, we are...

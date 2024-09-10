@@ -1,0 +1,23 @@
+mel	output	text
+mels/gogan_2009-03-08_021.pt	gogan_2009-03-08_021wav	What about the stage show now?
+mels/queen_2000_010.pt	queen_2000_010wav	But his ministry only lasted a few years and he himself never wrote anything down.
+mels/reagan_1985_6_2_003.pt	reagan_1985_6_2_003wav	Tonight America is stronger because of the values that we hold dear.
+mels/cooke_1983-06-10_094.pt	cooke_1983-06-10_094wav	I simply didn't want you to throw your money away.
+mels/reagan_1985_5_5_048.pt	reagan_1985_5_5_048wav	That this cruelty too will end and that peace and tranquility will return again.
+mels/reagan_1985_21_11_023.pt	reagan_1985_21_11_023wav	I explained our proposals for equitable, verifiable and deep reductions.
+mels/cooke_1983-06-10_086.pt	cooke_1983-06-10_086wav	My dear friend, he replied, You don't know what you're doing. It's going to be a labor landslide.
+mels/reagan_1985_21_11_061.pt	reagan_1985_21_11_061wav	And citizens of the Soviet Union need to know of America's deep desire for peace and our unwavering attachment to freedom.
+mels/cronkite_1990_073.pt	cronkite_1990_073wav	They're, they're, they're art books.
+mels/reagan_1985_5_5_058.pt	reagan_1985_5_5_058wav	Never again.
+mels/reagan_1985_6_2_021.pt	reagan_1985_6_2_021wav	A revolution carrying us to new heights of progress by pushing back frontiers of knowledge and space.
+mels/byrne_2009-02-21_011.pt	byrne_2009-02-21_011wav	Thank you for your kind messages, but my favorite of all is from Kitty Leonard.
+mels/cronkite_1990_013.pt	cronkite_1990_013wav	And if, uh, if that's the kind of happy rub off while I'm delighted.
+mels/reagan_1985_6_2_092.pt	reagan_1985_6_2_092wav	Yet I know from visiting farmers, many and great financial distress, that we need an orderly transition to a market-oriented farm economy.
+mels/reagan_1985_6_2_012.pt	reagan_1985_6_2_012wav	We're not here to congratulate ourselves on what we have done, but to challenge ourselves to finish what has not yet been done.
+mels/cooke_1983-06-10_040.pt	cooke_1983-06-10_040wav	Now this may be a good or a bad thing.
+mels/gogan_2009-03-08_035.pt	gogan_2009-03-08_035wav	What's the track from the album would you like us to finish on then today?
+mels/queen_2000_014.pt	queen_2000_014wav	If you want to see an expression of Christian faith, you have only to look at our own inspiring cathedrals and abyss.
+mels/reagan_1985_21_11_054.pt	reagan_1985_21_11_054wav	I believe I succeeded.
+mels/cooke_1983-11-11_063.pt	cooke_1983-11-11_063wav	And the reason everyone knows it's true is that Martin Luther King made America see it.
+mels/cooke_1983-06-10_044.pt	cooke_1983-06-10_044wav	He had the cunning to guess what was the most he could get.
+mels/reagan_1985_5_5_043.pt	reagan_1985_5_5_043wav	I simply can't build up my hopes on a foundation consisting of confusion, misery, and death.

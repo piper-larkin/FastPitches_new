@@ -1,0 +1,10 @@
+mel	output	text
+mels/cooke_1971-07-10_074.pt	cooke_1971-07-10_074wav	Mr. Buckwald, as usual, knew precisely what had happened to Mr. Reston and gave us cause to forgive him.
+mels/cooke_1971-06-12_043.pt	cooke_1971-06-12_043wav	In the Wafes home there was a poor teacher, a colored man, who taught him to play a bugle and a coin it.
+mels/cooke_1971-06-12_021.pt	cooke_1971-06-12_021wav	Louis Armstrong died last Tuesday, two days after his 71st birthday.
+mels/cooke_1971-06-12_009.pt	cooke_1971-06-12_009wav	She was frightened by it and a gasped that her son could listen to this jungle band without a blush.
+mels/cooke_1971-06-12_016.pt	cooke_1971-06-12_016wav	It simply scared the wits out of her.
+mels/thatcher_1987_006.pt	thatcher_1987_006wav	They loved secondary picketing.
+mels/cooke_1971-06-12_066.pt	cooke_1971-06-12_066wav	A symbol said his vestia of the best traditions of Negro classical jazz.
+mels/queen_1988_033.pt	queen_1988_033wav	So in sending you my Christmas greeting I pray that God may bless you everyone.
+mels/thatcher_1987_004.pt	thatcher_1987_004wav	They used their power against their members.

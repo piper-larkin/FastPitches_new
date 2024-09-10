@@ -1,0 +1,5 @@
+mel	output	text
+mels/finucane_1979-03-14_007.pt	finucane_1979-03-14_007wav	And yet there was time to be alone if you wanted it.
+mels/doyle_1980-07-03_021.pt	doyle_1980-07-03_021wav	Galway Trade's Council condemned the executive for welcoming the budget tax concessions, though they improved the lot of the higher paid only.
+mels/doyle_1980-07-03_023.pt	doyle_1980-07-03_023wav	Huge crowds welcome the Pope as he drove from the airport through the city to an open air mass at an airfield.
+mels/queen_1954_006.pt	queen_1954_006wav	In the turbulence of this anxious and active world, many people are leading uneventful lonely lives.

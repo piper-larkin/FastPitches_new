@@ -1,0 +1,3 @@
+mel	output	text
+mels/dunne_1990-01-17_008.pt	dunne_1990-01-17_008wav	22-year-old Jerry Carrigan was freed this morning from the top security Paddington Green Police Station.
+mels/bowman_1974-06-10_014.pt	bowman_1974-06-10_014wav	Do you expect that you're very much more, I mean, do you think in a sense pressure groups may have more power than councillors?

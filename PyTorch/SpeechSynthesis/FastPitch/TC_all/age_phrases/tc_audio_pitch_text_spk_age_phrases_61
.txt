@@ -1,0 +1,3 @@
+mel	output	text
+mels/cooke_1970-08-08_017.pt	cooke_1970-08-08_017wav	I suppose we must all have wondered in a distraught way at some time or other how it all started.
+mels/cooke_1970-08-08_031.pt	cooke_1970-08-08_031wav	These two refugees wondered if the American state department had any notion what the coincidence of these two items could signify.

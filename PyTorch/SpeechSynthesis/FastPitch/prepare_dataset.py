@@ -142,7 +142,7 @@ def main():
         for i, batch in enumerate(tqdm.tqdm(data_loader)):
             tik = time.time()
 
-            _, input_lens, mels, mel_lens, _, pitch, _, _, attn_prior, fpaths = batch
+            _, input_lens, mels, mel_lens, _, pitch, _, _, attn_prior, fpaths, age = batch
 
             # Ensure filenames are unique
             for p in fpaths:
@@ -156,8 +156,6 @@ def main():
                     fname = Path(fpaths[j]).with_suffix('.pt').name
                     fpath = Path(args.dataset_path, 'mels', fname)
                     torch.save(mel[:, :mel_lens[j]], fpath)
-                    # print(mel[:, :mel_lens[j]].shape)
-                    # raise
 
             if args.extract_pitch:
                 for j, p in enumerate(pitch):

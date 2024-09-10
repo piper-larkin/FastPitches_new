@@ -1,0 +1,4 @@
+mel	output	text
+mels/doyle_1998-06-25_003.pt	doyle_1998-06-25_003wav	Turn out so far has been much lower than for the referendum on the agreement, but the bowling stations will remain open until 10 o'clock tonight.
+mels/queen_1972_018.pt	queen_1972_018wav	May tolerance and understanding release the people from terror and put gladness in the place of fear.
+mels/doyle_1998-06-25_027.pt	doyle_1998-06-25_027wav	I legal affairs correspondent, Mary Wilson.

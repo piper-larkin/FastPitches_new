@@ -1,0 +1,6 @@
+mel	output	text
+mels/cooke_1974-12-23_070.pt	cooke_1974-12-23_070wav	A copy of an article that I once written on the origins of golf.
+mels/cooke_1974-12-23_017.pt	cooke_1974-12-23_017wav	I believe it's as unavoidably simple as that.
+mels/cooke_1974-12-23_060.pt	cooke_1974-12-23_060wav	Well he hit about six inches behind the ball which rose in an unsteady arc and landed about 120 yards away in front of a deep bunker.
+mels/cooke_1974-12-23_089.pt	cooke_1974-12-23_089wav	Ten years from now I declared there had been a couple of stimulants before lunch.
+mels/cooke_1974-12-23_086.pt	cooke_1974-12-23_086wav	Yes, I said.

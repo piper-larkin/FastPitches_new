@@ -72,7 +72,7 @@ def load_filepaths_and_text(fnames, dataset_path=None, has_speakers=False,
     def split_line(line, root=None):
         parts = line.strip().split(split)
         if has_speakers:
-            paths, non_paths = parts[:-2], parts[-2:]
+            paths, non_paths = parts[:-3], parts[-3:]   # CHANGED from -2 to -3 
         else:
             paths, non_paths = parts[:-1], parts[-1:]
         if root:

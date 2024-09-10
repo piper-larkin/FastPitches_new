@@ -1,0 +1,27 @@
+mel	output	text
+mels/reagan_1983_23_3_070.pt	reagan_1983_23_3_070wav	Another example of what's happened.
+mels/reagan_1983_8_3_047.pt	reagan_1983_8_3_047wav	i think i should point out
+mels/reagan_1983_23_3_081.pt	reagan_1983_23_3_081wav	These warheads can reach their targets in a matter of a few minutes.
+mels/cooke_1981-04-03_018.pt	cooke_1981-04-03_018wav	And by great good luck, he was one doctor in a thousand.
+mels/reagan_1983_25_1_125.pt	reagan_1983_25_1_125wav	We must have adequate export financing to South American products overseas.
+mels/reagan_1983_23_3_036.pt	reagan_1983_23_3_036wav	Since the dawn of the atomic age we've sought to reduce the risk of war by maintaining a strong deterrent and by seeking genuine arms control.
+mels/cooke_1981-08-07_060.pt	cooke_1981-08-07_060wav	What are the terms of the settlement?
+mels/reagan_1983_23_3_179.pt	reagan_1983_23_3_179wav	This adds up to a major effort, and it isn't cheap.
+mels/reagan_1983_25_1_193.pt	reagan_1983_25_1_193wav	As we begin our third year, we have put in place a defense program that redeems the neglect of the past decade.
+mels/reagan_1983_25_1_131.pt	reagan_1983_25_1_131wav	Tax policy, regulatory practices and government programs all need constant re-evaluation in terms of our competitiveness.
+mels/queen_1998_026.pt	queen_1998_026wav	They are lucky to have the freedom to travel and learn about foreign cultures at an age when the appetite for learning is keen.
+mels/reagan_1983_25_1_058.pt	reagan_1983_25_1_058wav	Unless we reduce the dangerous growth rate in government spending, we could face the progress or prospect of sluggish economic growth into the indefinite future.
+mels/reagan_1983_23_3_123.pt	reagan_1983_23_3_123wav	But the Soviet Union is also supporting Cuban military forces in Angola and Ethiopia.
+mels/reagan_1983_23_3_065.pt	reagan_1983_23_3_065wav	Over the same period the Soviet Union built four new classes of submarine-launched ballistic missiles and over 60 new missile submarines.
+mels/reagan_1983_23_3_221.pt	reagan_1983_23_3_221wav	I know this is a formidable technical task, one that may not be accomplished before the end of this century.
+mels/reagan_1983_23_3_181.pt	reagan_1983_23_3_181wav	But we must not be misled by those who would make defense once again the scapegoat of the federal budget.
+mels/cooke_1981-04-03_060.pt	cooke_1981-04-03_060wav	In variably in the presence of the President, who remember is the commander-in-chief of all the armed forces.
+mels/reagan_1983_25_1_080.pt	reagan_1983_25_1_080wav	The strength of our national defense must be restored so that we can pursue prosperity and peace and freedom while maintaining our commitment to the truly needy.
+mels/cooke_1981-04-03_051.pt	cooke_1981-04-03_051wav	He is third in line.
+mels/reagan_1983_23_3_056.pt	reagan_1983_23_3_056wav	For 20 years the Soviet Union has been accumulating enormous military night.
+mels/reagan_1983_23_3_001.pt	reagan_1983_23_3_001wav	uh, my fellow Americans, thank you for sharing your time with me tonight.
+mels/reagan_1983_25_1_039.pt	reagan_1983_25_1_039wav	The problems we inherited were far worse than most inside and out of government had expected.
+mels/reagan_1983_8_3_013.pt	reagan_1983_8_3_013wav	The American experiment in democracy rests on this insight.
+mels/reagan_1983_23_3_212.pt	reagan_1983_23_3_212wav	Wouldn't it be better to save lives than to avenge them?
+mels/reagan_1983_25_1_099.pt	reagan_1983_25_1_099wav	In the food stamp program in the home last year, we identified almost 1.1 billion in overpayments.
+mels/cooke_1981-08-07_043.pt	cooke_1981-08-07_043wav	The owner of the New York Yankees which has been for a generation one of the two or three great teams.

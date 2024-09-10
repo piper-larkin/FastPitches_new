@@ -1,0 +1,10 @@
+mel	output	text
+mels/queen_1970_004.pt	queen_1970_004wav	Yet in all this diversity they had one thing in common.
+mels/plomley_1958_008.pt	plomley_1958_008wav	here is Miss Agnes Nichols
+mels/lawlor_2005-10-06_016.pt	lawlor_2005-10-06_016wav	Do you not give the minister credit for at least saying this is a problem and we've got to stop and fix it?
+mels/plomley_1958_052.pt	plomley_1958_052wav	oh I think so ever done in the fishing?
+mels/plomley_1958_005.pt	plomley_1958_005wav	she's the widow of a distinguished and well-remembered conductor and composer and pianist's
+mels/plomley_1958_045.pt	plomley_1958_045wav	and why do you choose it?
+mels/lawlor_2005-10-06_044.pt	lawlor_2005-10-06_044wav	Kevin Callanen, thank you for taking our call.
+mels/cooke_1953-11-05_048.pt	cooke_1953-11-05_048wav	God help you next season, or next year.
+mels/cooke_1953-11-05_066.pt	cooke_1953-11-05_066wav	I didn't say pay more money on concerts than on baseball since the concert costs about twice as much as the baseball game that would be less impressive.
